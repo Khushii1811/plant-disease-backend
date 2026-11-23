@@ -140,7 +140,7 @@ Automated visual decision-support tool; not a licensed plant pathologist; verify
 - **Citation:** See [CITATION.cff](CITATION.cff) for bibtex and citation metadata.
 
 **Author:** Khushi Patel (GitHub: [@Khushii1811](https://github.com/Khushii1811))  
-**Repositories:** [Backend (Hale)](https://github.com/Khushii1811/plant-disease-backend) | [Frontend](https://github.com/Khushii1811/plant-disease-frontend)
+**Repositories:** [Backend (Hale)](https://github.com/Khushii1811/plant-disease-backend) | [Frontend (UI)](https://github.com/Khushii1811/plant-disease-frontend)
 
 
 ---
