@@ -55,7 +55,7 @@ def main():
 
     if not RELEASE_URL:
         print("\nNotice: RELEASE_URL is currently unset.")
-        print(f"Please download 'model_dualhead_convnext_tiny.pth' from GitHub Releases")
+        print("Please download 'model_dualhead_convnext_tiny.pth' from GitHub Releases")
         print(f"and place it at '{target}'.")
         print(f"Expected SHA-256: {EXPECTED_SHA256}")
         sys.exit(1)
