@@ -16,9 +16,8 @@ import hashlib
 import urllib.request
 from pathlib import Path
 
-# Commented production release asset URL (fill in after creating GitHub Release):
-# RELEASE_URL = "https://github.com/Khushii1811/plant-disease-backend/releases/download/v1.0.0/model_dualhead_convnext_tiny.pth"
-RELEASE_URL = None
+# Production release asset URL:
+RELEASE_URL = "https://github.com/Khushii1811/plant-disease-backend/releases/download/v1.0.0/model_dualhead_convnext_tiny.pth"
 
 EXPECTED_SHA256 = "3bb5785efa957a5fd4eb9d071fa92ff57adbef9788275a810e9cce99cf016dcb"
 TARGET_PATH = Path("models/v1/model_dualhead_convnext_tiny.pth")
