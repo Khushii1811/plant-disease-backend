@@ -1,0 +1,2000 @@
+{
+  "common_support": 10321,
+  "v0_overall": {
+    "accuracy": 0.9362464877434357,
+    "macro_f1": 0.8927497747083729
+  },
+  "v1_overall": {
+    "accuracy": 0.9564964635209766,
+    "macro_f1": 0.9312815304665077
+  },
+  "changed_classes": [
+    {
+      "class_name": "Bell Pepper - Leaf Curl Virus",
+      "v0_count": 14,
+      "v1_count": 0,
+      "common_count": 0,
+      "notes": "Quarantined in P-001 (Bell Pepper duplicate)"
+    },
+    {
+      "class_name": "Bell Pepper - Nutrition Deficiency",
+      "v0_count": 9,
+      "v1_count": 0,
+      "common_count": 0,
+      "notes": "Quarantined in P-001 (Bell Pepper duplicate)"
+    },
+    {
+      "class_name": "Bell Pepper - bell pepper powdery mildew",
+      "v0_count": 8,
+      "v1_count": 0,
+      "common_count": 0,
+      "notes": "Quarantined in P-001 (Bell Pepper duplicate)"
+    },
+    {
+      "class_name": "Citrus - citrus greening disease",
+      "v0_count": 71,
+      "v1_count": 71,
+      "common_count": 14,
+      "notes": "Rebalanced in P-002 (Natural-background images moved to train)"
+    },
+    {
+      "class_name": "Soybean - Healthy",
+      "v0_count": 60,
+      "v1_count": 59,
+      "common_count": 11,
+      "notes": "Rebalanced in P-002 (Natural-background images moved to train)"
+    }
+  ],
+  "per_class": [
+    {
+      "class_name": "Apple - Healthy",
+      "common_support": 51,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "98.04%",
+      "v0_f1": "100.00%",
+      "v1_f1": "99.01%",
+      "acc_delta": "-1.96%",
+      "f1_delta": "-0.99%"
+    },
+    {
+      "class_name": "Apple - Rust",
+      "common_support": 42,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "96.55%",
+      "v1_f1": "97.67%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+1.12%"
+    },
+    {
+      "class_name": "Apple - apple alternaria leaf spot",
+      "common_support": 54,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "100.00%",
+      "v1_f1": "100.00%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+0.00%"
+    },
+    {
+      "class_name": "Apple - apple black rot",
+      "common_support": 48,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "100.00%",
+      "v1_f1": "97.96%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "-2.04%"
+    },
+    {
+      "class_name": "Apple - apple mosaic virus",
+      "common_support": 3,
+      "v0_accuracy": "66.67%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "57.14%",
+      "v1_f1": "66.67%",
+      "acc_delta": "+33.33%",
+      "f1_delta": "+9.52%"
+    },
+    {
+      "class_name": "Apple - apple scab",
+      "common_support": 39,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "98.73%",
+      "v1_f1": "98.73%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+0.00%"
+    },
+    {
+      "class_name": "Banana - Cordana",
+      "common_support": 31,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "87.32%",
+      "v1_f1": "86.11%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "-1.21%"
+    },
+    {
+      "class_name": "Banana - Healthy",
+      "common_support": 97,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "100.00%",
+      "v1_f1": "100.00%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+0.00%"
+    },
+    {
+      "class_name": "Banana - Insectpest",
+      "common_support": 68,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "94.44%",
+      "v1_f1": "96.45%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+2.01%"
+    },
+    {
+      "class_name": "Banana - Moko",
+      "common_support": 44,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "96.70%",
+      "v1_f1": "97.78%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+1.07%"
+    },
+    {
+      "class_name": "Banana - Panama",
+      "common_support": 112,
+      "v0_accuracy": "98.21%",
+      "v1_accuracy": "98.21%",
+      "v0_f1": "93.22%",
+      "v1_f1": "94.83%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+1.61%"
+    },
+    {
+      "class_name": "Banana - Pestalotiopsis",
+      "common_support": 53,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "94.64%",
+      "v1_f1": "95.50%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+0.85%"
+    },
+    {
+      "class_name": "Banana - Sigatoka",
+      "common_support": 372,
+      "v0_accuracy": "85.75%",
+      "v1_accuracy": "89.52%",
+      "v0_f1": "92.20%",
+      "v1_f1": "94.33%",
+      "acc_delta": "+3.76%",
+      "f1_delta": "+2.14%"
+    },
+    {
+      "class_name": "Banana - banana black leaf streak",
+      "common_support": 7,
+      "v0_accuracy": "57.14%",
+      "v1_accuracy": "71.43%",
+      "v0_f1": "38.10%",
+      "v1_f1": "50.00%",
+      "acc_delta": "+14.29%",
+      "f1_delta": "+11.90%"
+    },
+    {
+      "class_name": "Banana - banana bunchy top",
+      "common_support": 14,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "82.35%",
+      "v1_f1": "90.32%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+7.97%"
+    },
+    {
+      "class_name": "Bean - Healthy",
+      "common_support": 32,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "95.52%",
+      "v1_f1": "96.97%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+1.45%"
+    },
+    {
+      "class_name": "Bean - bean angular leaf spot",
+      "common_support": 32,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "100.00%",
+      "v1_f1": "100.00%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+0.00%"
+    },
+    {
+      "class_name": "Bean - bean halo blight",
+      "common_support": 4,
+      "v0_accuracy": "0.00%",
+      "v1_accuracy": "25.00%",
+      "v0_f1": "0.00%",
+      "v1_f1": "33.33%",
+      "acc_delta": "+25.00%",
+      "f1_delta": "+33.33%"
+    },
+    {
+      "class_name": "Bean - bean leaf shot hole",
+      "common_support": 19,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "100.00%",
+      "v1_f1": "97.44%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "-2.56%"
+    },
+    {
+      "class_name": "Bean - bean mosaic virus",
+      "common_support": 4,
+      "v0_accuracy": "25.00%",
+      "v1_accuracy": "0.00%",
+      "v0_f1": "33.33%",
+      "v1_f1": "0.00%",
+      "acc_delta": "-25.00%",
+      "f1_delta": "-33.33%"
+    },
+    {
+      "class_name": "Bean - bean rust",
+      "common_support": 46,
+      "v0_accuracy": "73.91%",
+      "v1_accuracy": "76.09%",
+      "v0_f1": "82.93%",
+      "v1_f1": "85.37%",
+      "acc_delta": "+2.17%",
+      "f1_delta": "+2.44%"
+    },
+    {
+      "class_name": "Bell Pepper - Bacterial Spot",
+      "common_support": 108,
+      "v0_accuracy": "96.30%",
+      "v1_accuracy": "98.15%",
+      "v0_f1": "96.30%",
+      "v1_f1": "96.36%",
+      "acc_delta": "+1.85%",
+      "f1_delta": "+0.07%"
+    },
+    {
+      "class_name": "Bell Pepper - Healthy",
+      "common_support": 139,
+      "v0_accuracy": "99.28%",
+      "v1_accuracy": "99.28%",
+      "v0_f1": "98.57%",
+      "v1_f1": "98.92%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+0.35%"
+    },
+    {
+      "class_name": "Bell Pepper - bell pepper frogeye leaf spot",
+      "common_support": 141,
+      "v0_accuracy": "90.78%",
+      "v1_accuracy": "91.49%",
+      "v0_f1": "95.17%",
+      "v1_f1": "95.20%",
+      "acc_delta": "+0.71%",
+      "f1_delta": "+0.04%"
+    },
+    {
+      "class_name": "Blackgram - Anthracnose",
+      "common_support": 23,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "97.87%",
+      "v1_f1": "97.87%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+0.00%"
+    },
+    {
+      "class_name": "Blackgram - Healthy",
+      "common_support": 22,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "100.00%",
+      "v1_f1": "100.00%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+0.00%"
+    },
+    {
+      "class_name": "Blackgram - Leaf Crinkle",
+      "common_support": 15,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "100.00%",
+      "v1_f1": "100.00%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+0.00%"
+    },
+    {
+      "class_name": "Blackgram - Powdery Mildew",
+      "common_support": 17,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "100.00%",
+      "v1_f1": "97.14%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "-2.86%"
+    },
+    {
+      "class_name": "Blackgram - Yellow Mosaic",
+      "common_support": 23,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "100.00%",
+      "v1_f1": "97.87%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "-2.13%"
+    },
+    {
+      "class_name": "Blueberry - Healthy",
+      "common_support": 52,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "100.00%",
+      "v1_f1": "99.05%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "-0.95%"
+    },
+    {
+      "class_name": "Blueberry - blueberry rust",
+      "common_support": 4,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "75.00%",
+      "v0_f1": "88.89%",
+      "v1_f1": "85.71%",
+      "acc_delta": "-25.00%",
+      "f1_delta": "-3.17%"
+    },
+    {
+      "class_name": "Blueberry - blueberry scorch",
+      "common_support": 3,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "75.00%",
+      "v1_f1": "100.00%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+25.00%"
+    },
+    {
+      "class_name": "Broccoli - Healthy",
+      "common_support": 2,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "100.00%",
+      "v1_f1": "100.00%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+0.00%"
+    },
+    {
+      "class_name": "Broccoli - broccoli alternaria leaf spot",
+      "common_support": 3,
+      "v0_accuracy": "33.33%",
+      "v1_accuracy": "33.33%",
+      "v0_f1": "50.00%",
+      "v1_f1": "50.00%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+0.00%"
+    },
+    {
+      "class_name": "Cabbage - Healthy",
+      "common_support": 7,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "100.00%",
+      "v1_f1": "93.33%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "-6.67%"
+    },
+    {
+      "class_name": "Cabbage - Tip Burn",
+      "common_support": 2,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "80.00%",
+      "v1_f1": "100.00%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+20.00%"
+    },
+    {
+      "class_name": "Cabbage - cabbage alternaria leaf spot",
+      "common_support": 7,
+      "v0_accuracy": "42.86%",
+      "v1_accuracy": "42.86%",
+      "v0_f1": "54.55%",
+      "v1_f1": "54.55%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+0.00%"
+    },
+    {
+      "class_name": "Cabbage - cabbage black rot",
+      "common_support": 11,
+      "v0_accuracy": "81.82%",
+      "v1_accuracy": "90.91%",
+      "v0_f1": "75.00%",
+      "v1_f1": "80.00%",
+      "acc_delta": "+9.09%",
+      "f1_delta": "+5.00%"
+    },
+    {
+      "class_name": "Cabbage - cabbage downy mildew",
+      "common_support": 8,
+      "v0_accuracy": "50.00%",
+      "v1_accuracy": "62.50%",
+      "v0_f1": "66.67%",
+      "v1_f1": "71.43%",
+      "acc_delta": "+12.50%",
+      "f1_delta": "+4.76%"
+    },
+    {
+      "class_name": "Cauliflower - Blackrot",
+      "common_support": 4,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "100.00%",
+      "v1_f1": "100.00%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+0.00%"
+    },
+    {
+      "class_name": "Cauliflower - Downy mildew",
+      "common_support": 15,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "96.77%",
+      "v1_f1": "96.77%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+0.00%"
+    },
+    {
+      "class_name": "Cauliflower - Healthy",
+      "common_support": 16,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "100.00%",
+      "v1_f1": "100.00%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+0.00%"
+    },
+    {
+      "class_name": "Cherry - Healthy",
+      "common_support": 61,
+      "v0_accuracy": "98.36%",
+      "v1_accuracy": "98.36%",
+      "v0_f1": "99.17%",
+      "v1_f1": "98.36%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "-0.81%"
+    },
+    {
+      "class_name": "Cherry - cherry brown spot",
+      "common_support": 55,
+      "v0_accuracy": "98.18%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "99.08%",
+      "v1_f1": "100.00%",
+      "acc_delta": "+1.82%",
+      "f1_delta": "+0.92%"
+    },
+    {
+      "class_name": "Cherry - cherry leaf scorch",
+      "common_support": 58,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "98.28%",
+      "v0_f1": "99.15%",
+      "v1_f1": "99.13%",
+      "acc_delta": "-1.72%",
+      "f1_delta": "-0.01%"
+    },
+    {
+      "class_name": "Cherry - cherry leaf spot",
+      "common_support": 8,
+      "v0_accuracy": "87.50%",
+      "v1_accuracy": "62.50%",
+      "v0_f1": "73.68%",
+      "v1_f1": "76.92%",
+      "acc_delta": "-25.00%",
+      "f1_delta": "+3.24%"
+    },
+    {
+      "class_name": "Cherry - cherry powdery mildew",
+      "common_support": 30,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "100.00%",
+      "v1_f1": "100.00%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+0.00%"
+    },
+    {
+      "class_name": "Cherry - cherry purple leaf spot",
+      "common_support": 55,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "100.00%",
+      "v1_f1": "100.00%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+0.00%"
+    },
+    {
+      "class_name": "Cherry - cherry shot hole",
+      "common_support": 18,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "100.00%",
+      "v1_f1": "100.00%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+0.00%"
+    },
+    {
+      "class_name": "Chilli - Bacterial Spot",
+      "common_support": 11,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "95.65%",
+      "v1_f1": "95.65%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+0.00%"
+    },
+    {
+      "class_name": "Chilli - Cercospora Leaf Spot",
+      "common_support": 15,
+      "v0_accuracy": "93.33%",
+      "v1_accuracy": "93.33%",
+      "v0_f1": "93.33%",
+      "v1_f1": "93.33%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+0.00%"
+    },
+    {
+      "class_name": "Chilli - Healthy",
+      "common_support": 33,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "100.00%",
+      "v1_f1": "100.00%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+0.00%"
+    },
+    {
+      "class_name": "Chilli - Leaf Curl Virus",
+      "common_support": 39,
+      "v0_accuracy": "41.03%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "58.18%",
+      "v1_f1": "100.00%",
+      "acc_delta": "+58.97%",
+      "f1_delta": "+41.82%"
+    },
+    {
+      "class_name": "Chilli - Nutrition Deficiency",
+      "common_support": 43,
+      "v0_accuracy": "67.44%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "80.56%",
+      "v1_f1": "100.00%",
+      "acc_delta": "+32.56%",
+      "f1_delta": "+19.44%"
+    },
+    {
+      "class_name": "Chilli - White Spot",
+      "common_support": 15,
+      "v0_accuracy": "80.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "88.89%",
+      "v1_f1": "100.00%",
+      "acc_delta": "+20.00%",
+      "f1_delta": "+11.11%"
+    },
+    {
+      "class_name": "Citrus - Black spot",
+      "common_support": 13,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "63.41%",
+      "v1_f1": "100.00%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+36.59%"
+    },
+    {
+      "class_name": "Citrus - Healthy",
+      "common_support": 41,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "100.00%",
+      "v1_f1": "100.00%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+0.00%"
+    },
+    {
+      "class_name": "Citrus - citrus algal leaf spot",
+      "common_support": 18,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "97.30%",
+      "v1_f1": "100.00%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+2.70%"
+    },
+    {
+      "class_name": "Citrus - citrus canker",
+      "common_support": 37,
+      "v0_accuracy": "91.89%",
+      "v1_accuracy": "94.59%",
+      "v0_f1": "93.15%",
+      "v1_f1": "95.89%",
+      "acc_delta": "+2.70%",
+      "f1_delta": "+2.74%"
+    },
+    {
+      "class_name": "Citrus - citrus greening disease",
+      "common_support": 14,
+      "v0_accuracy": "0.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "0.00%",
+      "v1_f1": "96.55%",
+      "acc_delta": "+100.00%",
+      "f1_delta": "+96.55%"
+    },
+    {
+      "class_name": "Citrus - citrus scab",
+      "common_support": 8,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "100.00%",
+      "v1_f1": "100.00%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+0.00%"
+    },
+    {
+      "class_name": "Coffee - Healthy",
+      "common_support": 33,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "100.00%",
+      "v1_f1": "100.00%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+0.00%"
+    },
+    {
+      "class_name": "Coffee - Leaf Miner",
+      "common_support": 35,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "97.14%",
+      "v0_f1": "98.59%",
+      "v1_f1": "97.14%",
+      "acc_delta": "-2.86%",
+      "f1_delta": "-1.45%"
+    },
+    {
+      "class_name": "Coffee - Phoma",
+      "common_support": 36,
+      "v0_accuracy": "97.22%",
+      "v1_accuracy": "97.22%",
+      "v0_f1": "95.89%",
+      "v1_f1": "95.89%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+0.00%"
+    },
+    {
+      "class_name": "Coffee - coffee leaf rust",
+      "common_support": 42,
+      "v0_accuracy": "92.86%",
+      "v1_accuracy": "92.86%",
+      "v0_f1": "95.12%",
+      "v1_f1": "96.30%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+1.17%"
+    },
+    {
+      "class_name": "Corn - Healthy",
+      "common_support": 116,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "100.00%",
+      "v1_f1": "100.00%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+0.00%"
+    },
+    {
+      "class_name": "Corn - Northern Leaf Blight",
+      "common_support": 87,
+      "v0_accuracy": "93.10%",
+      "v1_accuracy": "91.95%",
+      "v0_f1": "93.64%",
+      "v1_f1": "92.49%",
+      "acc_delta": "-1.15%",
+      "f1_delta": "-1.16%"
+    },
+    {
+      "class_name": "Corn - Rust",
+      "common_support": 51,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "98.04%",
+      "v0_f1": "97.14%",
+      "v1_f1": "97.09%",
+      "acc_delta": "-1.96%",
+      "f1_delta": "-0.06%"
+    },
+    {
+      "class_name": "Corn - corn gray leaf spot",
+      "common_support": 54,
+      "v0_accuracy": "92.59%",
+      "v1_accuracy": "88.89%",
+      "v0_f1": "91.74%",
+      "v1_f1": "88.07%",
+      "acc_delta": "-3.70%",
+      "f1_delta": "-3.67%"
+    },
+    {
+      "class_name": "Corn - corn holcus leaf spot",
+      "common_support": 15,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "96.77%",
+      "v1_f1": "96.77%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+0.00%"
+    },
+    {
+      "class_name": "Cucumber - Healthy",
+      "common_support": 15,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "100.00%",
+      "v1_f1": "100.00%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+0.00%"
+    },
+    {
+      "class_name": "Cucumber - cucumber angular leaf spot",
+      "common_support": 19,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "94.74%",
+      "v0_f1": "90.48%",
+      "v1_f1": "87.80%",
+      "acc_delta": "-5.26%",
+      "f1_delta": "-2.67%"
+    },
+    {
+      "class_name": "Cucumber - cucumber bacterial wilt",
+      "common_support": 25,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "98.04%",
+      "v1_f1": "100.00%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+1.96%"
+    },
+    {
+      "class_name": "Cucumber - cucumber powdery mildew",
+      "common_support": 16,
+      "v0_accuracy": "87.50%",
+      "v1_accuracy": "87.50%",
+      "v0_f1": "87.50%",
+      "v1_f1": "90.32%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+2.82%"
+    },
+    {
+      "class_name": "Eggplant - Cercospora Leaf Spot",
+      "common_support": 20,
+      "v0_accuracy": "85.00%",
+      "v1_accuracy": "85.00%",
+      "v0_f1": "89.47%",
+      "v1_f1": "91.89%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+2.42%"
+    },
+    {
+      "class_name": "Eggplant - Healthy",
+      "common_support": 20,
+      "v0_accuracy": "95.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "95.00%",
+      "v1_f1": "97.56%",
+      "acc_delta": "+5.00%",
+      "f1_delta": "+2.56%"
+    },
+    {
+      "class_name": "Eggplant - Little Leaf",
+      "common_support": 20,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "100.00%",
+      "v1_f1": "100.00%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+0.00%"
+    },
+    {
+      "class_name": "Eggplant - Mosaic Virus",
+      "common_support": 14,
+      "v0_accuracy": "92.86%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "89.66%",
+      "v1_f1": "93.33%",
+      "acc_delta": "+7.14%",
+      "f1_delta": "+3.68%"
+    },
+    {
+      "class_name": "Eggplant - White Mold",
+      "common_support": 20,
+      "v0_accuracy": "95.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "90.48%",
+      "v1_f1": "95.24%",
+      "acc_delta": "+5.00%",
+      "f1_delta": "+4.76%"
+    },
+    {
+      "class_name": "Eggplant - Wilt",
+      "common_support": 20,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "97.56%",
+      "v1_f1": "100.00%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+2.44%"
+    },
+    {
+      "class_name": "Fig - Healthy",
+      "common_support": 21,
+      "v0_accuracy": "95.24%",
+      "v1_accuracy": "95.24%",
+      "v0_f1": "95.24%",
+      "v1_f1": "95.24%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+0.00%"
+    },
+    {
+      "class_name": "Fig - fig brown spot",
+      "common_support": 16,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "100.00%",
+      "v1_f1": "100.00%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+0.00%"
+    },
+    {
+      "class_name": "Fig - fig leaf blight",
+      "common_support": 35,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "98.59%",
+      "v1_f1": "100.00%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+1.41%"
+    },
+    {
+      "class_name": "Fig - fig rust",
+      "common_support": 21,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "100.00%",
+      "v1_f1": "100.00%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+0.00%"
+    },
+    {
+      "class_name": "Ginger - Bacterial Wilt",
+      "common_support": 16,
+      "v0_accuracy": "93.75%",
+      "v1_accuracy": "93.75%",
+      "v0_f1": "96.77%",
+      "v1_f1": "96.77%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+0.00%"
+    },
+    {
+      "class_name": "Ginger - Dehydrated",
+      "common_support": 262,
+      "v0_accuracy": "45.80%",
+      "v1_accuracy": "69.47%",
+      "v0_f1": "60.91%",
+      "v1_f1": "79.13%",
+      "acc_delta": "+23.66%",
+      "f1_delta": "+18.22%"
+    },
+    {
+      "class_name": "Ginger - Healthy",
+      "common_support": 113,
+      "v0_accuracy": "83.19%",
+      "v1_accuracy": "91.15%",
+      "v0_f1": "84.30%",
+      "v1_f1": "82.73%",
+      "acc_delta": "+7.96%",
+      "f1_delta": "-1.57%"
+    },
+    {
+      "class_name": "Ginger - Leaf Blight",
+      "common_support": 226,
+      "v0_accuracy": "82.74%",
+      "v1_accuracy": "80.97%",
+      "v0_f1": "82.56%",
+      "v1_f1": "84.14%",
+      "acc_delta": "-1.77%",
+      "f1_delta": "+1.58%"
+    },
+    {
+      "class_name": "Ginger - Pest Damage",
+      "common_support": 88,
+      "v0_accuracy": "90.91%",
+      "v1_accuracy": "89.77%",
+      "v0_f1": "51.95%",
+      "v1_f1": "67.52%",
+      "acc_delta": "-1.14%",
+      "f1_delta": "+15.57%"
+    },
+    {
+      "class_name": "Ginger - ginger leaf spot",
+      "common_support": 2,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "100.00%",
+      "v1_f1": "100.00%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+0.00%"
+    },
+    {
+      "class_name": "Ginger - ginger sheath blight",
+      "common_support": 6,
+      "v0_accuracy": "83.33%",
+      "v1_accuracy": "66.67%",
+      "v0_f1": "90.91%",
+      "v1_f1": "80.00%",
+      "acc_delta": "-16.67%",
+      "f1_delta": "-10.91%"
+    },
+    {
+      "class_name": "Grape - Black Rot",
+      "common_support": 24,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "92.31%",
+      "v1_f1": "94.12%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+1.81%"
+    },
+    {
+      "class_name": "Grape - Esca (Black Measles)",
+      "common_support": 240,
+      "v0_accuracy": "98.33%",
+      "v1_accuracy": "98.75%",
+      "v0_f1": "99.16%",
+      "v1_f1": "99.37%",
+      "acc_delta": "+0.42%",
+      "f1_delta": "+0.21%"
+    },
+    {
+      "class_name": "Grape - Healthy",
+      "common_support": 25,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "100.00%",
+      "v1_f1": "98.04%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "-1.96%"
+    },
+    {
+      "class_name": "Grape - Leaf Blight",
+      "common_support": 215,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "100.00%",
+      "v1_f1": "100.00%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+0.00%"
+    },
+    {
+      "class_name": "Grape - grape bacterial rot",
+      "common_support": 10,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "100.00%",
+      "v1_f1": "100.00%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+0.00%"
+    },
+    {
+      "class_name": "Grape - grape downy mildew",
+      "common_support": 97,
+      "v0_accuracy": "98.97%",
+      "v1_accuracy": "97.94%",
+      "v0_f1": "99.48%",
+      "v1_f1": "98.96%",
+      "acc_delta": "-1.03%",
+      "f1_delta": "-0.52%"
+    },
+    {
+      "class_name": "Grape - grape leafroll disease",
+      "common_support": 6,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "92.31%",
+      "v1_f1": "85.71%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "-6.59%"
+    },
+    {
+      "class_name": "Grape - grape powdery mildew",
+      "common_support": 40,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "98.77%",
+      "v1_f1": "97.56%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "-1.20%"
+    },
+    {
+      "class_name": "Groundnut - Early leaf spot",
+      "common_support": 116,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "94.69%",
+      "v1_f1": "97.48%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+2.79%"
+    },
+    {
+      "class_name": "Groundnut - Early rust",
+      "common_support": 133,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "98.88%",
+      "v1_f1": "100.00%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+1.12%"
+    },
+    {
+      "class_name": "Groundnut - Healthy",
+      "common_support": 29,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "100.00%",
+      "v1_f1": "100.00%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+0.00%"
+    },
+    {
+      "class_name": "Groundnut - Late leaf spot",
+      "common_support": 184,
+      "v0_accuracy": "91.85%",
+      "v1_accuracy": "97.28%",
+      "v0_f1": "95.21%",
+      "v1_f1": "98.62%",
+      "acc_delta": "+5.43%",
+      "f1_delta": "+3.41%"
+    },
+    {
+      "class_name": "Groundnut - Nutrition deficiency",
+      "common_support": 160,
+      "v0_accuracy": "99.38%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "99.69%",
+      "v1_f1": "100.00%",
+      "acc_delta": "+0.62%",
+      "f1_delta": "+0.31%"
+    },
+    {
+      "class_name": "Groundnut - Rust",
+      "common_support": 151,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "99.67%",
+      "v1_f1": "100.00%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+0.33%"
+    },
+    {
+      "class_name": "Guava - Anthracnose",
+      "common_support": 84,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "98.81%",
+      "v0_f1": "96.55%",
+      "v1_f1": "99.40%",
+      "acc_delta": "-1.19%",
+      "f1_delta": "+2.85%"
+    },
+    {
+      "class_name": "Guava - Canker",
+      "common_support": 124,
+      "v0_accuracy": "93.55%",
+      "v1_accuracy": "96.77%",
+      "v0_f1": "95.87%",
+      "v1_f1": "97.96%",
+      "acc_delta": "+3.23%",
+      "f1_delta": "+2.09%"
+    },
+    {
+      "class_name": "Guava - Dot",
+      "common_support": 108,
+      "v0_accuracy": "94.44%",
+      "v1_accuracy": "93.52%",
+      "v0_f1": "78.16%",
+      "v1_f1": "88.99%",
+      "acc_delta": "-0.93%",
+      "f1_delta": "+10.83%"
+    },
+    {
+      "class_name": "Guava - Healthy",
+      "common_support": 225,
+      "v0_accuracy": "78.67%",
+      "v1_accuracy": "93.33%",
+      "v0_f1": "87.19%",
+      "v1_f1": "95.67%",
+      "acc_delta": "+14.67%",
+      "f1_delta": "+8.48%"
+    },
+    {
+      "class_name": "Guava - Mummification",
+      "common_support": 28,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "96.55%",
+      "v1_f1": "96.55%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+0.00%"
+    },
+    {
+      "class_name": "Guava - Rust",
+      "common_support": 124,
+      "v0_accuracy": "97.58%",
+      "v1_accuracy": "99.19%",
+      "v0_f1": "97.98%",
+      "v1_f1": "97.62%",
+      "acc_delta": "+1.61%",
+      "f1_delta": "-0.36%"
+    },
+    {
+      "class_name": "Guava - Spiraling Whitefly",
+      "common_support": 95,
+      "v0_accuracy": "97.89%",
+      "v1_accuracy": "97.89%",
+      "v0_f1": "98.94%",
+      "v1_f1": "98.94%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+0.00%"
+    },
+    {
+      "class_name": "Jamun - Bacterial Spot",
+      "common_support": 40,
+      "v0_accuracy": "97.50%",
+      "v1_accuracy": "97.50%",
+      "v0_f1": "98.73%",
+      "v1_f1": "98.73%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+0.00%"
+    },
+    {
+      "class_name": "Jamun - Brown Blight",
+      "common_support": 40,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "100.00%",
+      "v1_f1": "100.00%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+0.00%"
+    },
+    {
+      "class_name": "Jamun - Healthy",
+      "common_support": 28,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "98.25%",
+      "v1_f1": "98.25%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+0.00%"
+    },
+    {
+      "class_name": "Jamun - Powdery Mildew",
+      "common_support": 40,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "100.00%",
+      "v1_f1": "100.00%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+0.00%"
+    },
+    {
+      "class_name": "Jamun - Sooty Mold",
+      "common_support": 40,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "100.00%",
+      "v1_f1": "100.00%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+0.00%"
+    },
+    {
+      "class_name": "Mango - Anthracnose",
+      "common_support": 50,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "100.00%",
+      "v1_f1": "100.00%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+0.00%"
+    },
+    {
+      "class_name": "Mango - Bacterial Canker",
+      "common_support": 50,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "100.00%",
+      "v1_f1": "100.00%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+0.00%"
+    },
+    {
+      "class_name": "Mango - Cutting Weevil",
+      "common_support": 50,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "100.00%",
+      "v1_f1": "100.00%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+0.00%"
+    },
+    {
+      "class_name": "Mango - Die Back",
+      "common_support": 50,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "100.00%",
+      "v1_f1": "100.00%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+0.00%"
+    },
+    {
+      "class_name": "Mango - Gall Midge",
+      "common_support": 50,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "100.00%",
+      "v1_f1": "100.00%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+0.00%"
+    },
+    {
+      "class_name": "Mango - Healthy",
+      "common_support": 50,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "100.00%",
+      "v1_f1": "100.00%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+0.00%"
+    },
+    {
+      "class_name": "Mango - Powdery Mildew",
+      "common_support": 50,
+      "v0_accuracy": "98.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "98.99%",
+      "v1_f1": "100.00%",
+      "acc_delta": "+2.00%",
+      "f1_delta": "+1.01%"
+    },
+    {
+      "class_name": "Mango - Sooty Mould",
+      "common_support": 50,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "99.01%",
+      "v1_f1": "100.00%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+0.99%"
+    },
+    {
+      "class_name": "Paddy - Bacterial Leaf Blight",
+      "common_support": 36,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "100.00%",
+      "v1_f1": "100.00%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+0.00%"
+    },
+    {
+      "class_name": "Paddy - Blast",
+      "common_support": 42,
+      "v0_accuracy": "90.48%",
+      "v1_accuracy": "95.24%",
+      "v0_f1": "95.00%",
+      "v1_f1": "97.56%",
+      "acc_delta": "+4.76%",
+      "f1_delta": "+2.56%"
+    },
+    {
+      "class_name": "Paddy - Brown Spot",
+      "common_support": 39,
+      "v0_accuracy": "97.44%",
+      "v1_accuracy": "97.44%",
+      "v0_f1": "93.83%",
+      "v1_f1": "96.20%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+2.38%"
+    },
+    {
+      "class_name": "Paddy - Healthy",
+      "common_support": 44,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "98.88%",
+      "v1_f1": "98.88%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+0.00%"
+    },
+    {
+      "class_name": "Paddy - Leaf Scald",
+      "common_support": 36,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "100.00%",
+      "v1_f1": "100.00%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+0.00%"
+    },
+    {
+      "class_name": "Paddy - Narrow Brown Spot",
+      "common_support": 41,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "100.00%",
+      "v1_f1": "100.00%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+0.00%"
+    },
+    {
+      "class_name": "Peach - Healthy",
+      "common_support": 39,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "98.73%",
+      "v1_f1": "100.00%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+1.27%"
+    },
+    {
+      "class_name": "Peach - peach bacterial spot",
+      "common_support": 60,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "100.00%",
+      "v1_f1": "100.00%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+0.00%"
+    },
+    {
+      "class_name": "Peach - peach leaf curl",
+      "common_support": 14,
+      "v0_accuracy": "85.71%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "92.31%",
+      "v1_f1": "100.00%",
+      "acc_delta": "+14.29%",
+      "f1_delta": "+7.69%"
+    },
+    {
+      "class_name": "Peach - peach leaf shot hole",
+      "common_support": 3,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "85.71%",
+      "v1_f1": "85.71%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+0.00%"
+    },
+    {
+      "class_name": "Pear - Healthy",
+      "common_support": 41,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "97.56%",
+      "v0_f1": "97.62%",
+      "v1_f1": "97.56%",
+      "acc_delta": "-2.44%",
+      "f1_delta": "-0.06%"
+    },
+    {
+      "class_name": "Pear - pear black spot",
+      "common_support": 128,
+      "v0_accuracy": "93.75%",
+      "v1_accuracy": "97.66%",
+      "v0_f1": "93.02%",
+      "v1_f1": "95.06%",
+      "acc_delta": "+3.91%",
+      "f1_delta": "+2.03%"
+    },
+    {
+      "class_name": "Pear - pear fire blight",
+      "common_support": 18,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "100.00%",
+      "v1_f1": "100.00%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+0.00%"
+    },
+    {
+      "class_name": "Pear - pear leaf curl",
+      "common_support": 6,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "92.31%",
+      "v1_f1": "92.31%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+0.00%"
+    },
+    {
+      "class_name": "Pear - pear slug damage",
+      "common_support": 172,
+      "v0_accuracy": "94.19%",
+      "v1_accuracy": "94.77%",
+      "v0_f1": "95.58%",
+      "v1_f1": "97.02%",
+      "acc_delta": "+0.58%",
+      "f1_delta": "+1.45%"
+    },
+    {
+      "class_name": "Plum - Healthy",
+      "common_support": 14,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "77.78%",
+      "v1_f1": "87.50%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+9.72%"
+    },
+    {
+      "class_name": "Plum - plum insect hole",
+      "common_support": 71,
+      "v0_accuracy": "85.92%",
+      "v1_accuracy": "88.73%",
+      "v0_f1": "89.05%",
+      "v1_f1": "94.03%",
+      "acc_delta": "+2.82%",
+      "f1_delta": "+4.98%"
+    },
+    {
+      "class_name": "Plum - plum weevil",
+      "common_support": 10,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "100.00%",
+      "v1_f1": "100.00%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+0.00%"
+    },
+    {
+      "class_name": "Plum - plum yellow leaf",
+      "common_support": 81,
+      "v0_accuracy": "92.59%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "94.34%",
+      "v1_f1": "97.59%",
+      "acc_delta": "+7.41%",
+      "f1_delta": "+3.25%"
+    },
+    {
+      "class_name": "Potato - Early Blight",
+      "common_support": 136,
+      "v0_accuracy": "93.38%",
+      "v1_accuracy": "94.12%",
+      "v0_f1": "95.13%",
+      "v1_f1": "94.81%",
+      "acc_delta": "+0.74%",
+      "f1_delta": "-0.32%"
+    },
+    {
+      "class_name": "Potato - Healthy",
+      "common_support": 46,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "97.87%",
+      "v1_f1": "98.92%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+1.05%"
+    },
+    {
+      "class_name": "Potato - Late Blight",
+      "common_support": 144,
+      "v0_accuracy": "96.53%",
+      "v1_accuracy": "96.53%",
+      "v0_f1": "97.54%",
+      "v1_f1": "96.53%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "-1.02%"
+    },
+    {
+      "class_name": "Potato - fungal diseases",
+      "common_support": 41,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "97.56%",
+      "v0_f1": "95.35%",
+      "v1_f1": "94.12%",
+      "acc_delta": "-2.44%",
+      "f1_delta": "-1.23%"
+    },
+    {
+      "class_name": "Potato - pest damage",
+      "common_support": 31,
+      "v0_accuracy": "93.55%",
+      "v1_accuracy": "93.55%",
+      "v0_f1": "95.08%",
+      "v1_f1": "95.08%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+0.00%"
+    },
+    {
+      "class_name": "Potato - potato cyst nematode",
+      "common_support": 24,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "92.31%",
+      "v1_f1": "94.12%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+1.81%"
+    },
+    {
+      "class_name": "Potato - potato virus",
+      "common_support": 27,
+      "v0_accuracy": "92.59%",
+      "v1_accuracy": "96.30%",
+      "v0_f1": "96.15%",
+      "v1_f1": "98.11%",
+      "acc_delta": "+3.70%",
+      "f1_delta": "+1.96%"
+    },
+    {
+      "class_name": "Radish - Black leaf spot",
+      "common_support": 49,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "100.00%",
+      "v1_f1": "100.00%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+0.00%"
+    },
+    {
+      "class_name": "Radish - Downey mildew",
+      "common_support": 52,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "99.05%",
+      "v1_f1": "100.00%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+0.95%"
+    },
+    {
+      "class_name": "Radish - Flea beetle",
+      "common_support": 46,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "100.00%",
+      "v1_f1": "100.00%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+0.00%"
+    },
+    {
+      "class_name": "Radish - Healthy",
+      "common_support": 57,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "100.00%",
+      "v1_f1": "100.00%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+0.00%"
+    },
+    {
+      "class_name": "Radish - Mosaic",
+      "common_support": 49,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "98.99%",
+      "v1_f1": "98.99%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+0.00%"
+    },
+    {
+      "class_name": "Soybean - Bacterial Blight",
+      "common_support": 18,
+      "v0_accuracy": "94.44%",
+      "v1_accuracy": "88.89%",
+      "v0_f1": "91.89%",
+      "v1_f1": "91.43%",
+      "acc_delta": "-5.56%",
+      "f1_delta": "-0.46%"
+    },
+    {
+      "class_name": "Soybean - Bacterial Pustule",
+      "common_support": 11,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "95.65%",
+      "v1_f1": "95.65%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+0.00%"
+    },
+    {
+      "class_name": "Soybean - Brown Spot",
+      "common_support": 3,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "75.00%",
+      "v1_f1": "75.00%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+0.00%"
+    },
+    {
+      "class_name": "Soybean - Cercospora Leaf Blight",
+      "common_support": 7,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "100.00%",
+      "v1_f1": "100.00%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+0.00%"
+    },
+    {
+      "class_name": "Soybean - Downy Mildew",
+      "common_support": 6,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "48.00%",
+      "v1_f1": "70.59%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+22.59%"
+    },
+    {
+      "class_name": "Soybean - Frogeye Leaf Spot",
+      "common_support": 19,
+      "v0_accuracy": "94.74%",
+      "v1_accuracy": "94.74%",
+      "v0_f1": "85.71%",
+      "v1_f1": "90.00%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+4.29%"
+    },
+    {
+      "class_name": "Soybean - Healthy",
+      "common_support": 11,
+      "v0_accuracy": "0.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "0.00%",
+      "v1_f1": "95.65%",
+      "acc_delta": "+100.00%",
+      "f1_delta": "+95.65%"
+    },
+    {
+      "class_name": "Soybean - Powdery Mildew",
+      "common_support": 13,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "100.00%",
+      "v1_f1": "100.00%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+0.00%"
+    },
+    {
+      "class_name": "Soybean - Rust",
+      "common_support": 24,
+      "v0_accuracy": "66.67%",
+      "v1_accuracy": "75.00%",
+      "v0_f1": "74.42%",
+      "v1_f1": "80.00%",
+      "acc_delta": "+8.33%",
+      "f1_delta": "+5.58%"
+    },
+    {
+      "class_name": "Soybean - Sudden Death Syndrome",
+      "common_support": 11,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "100.00%",
+      "v1_f1": "95.65%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "-4.35%"
+    },
+    {
+      "class_name": "Soybean - Target Leaf Spot",
+      "common_support": 11,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "91.67%",
+      "v1_f1": "88.00%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "-3.67%"
+    },
+    {
+      "class_name": "Soybean - Yellow Mosaic",
+      "common_support": 11,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "100.00%",
+      "v1_f1": "100.00%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+0.00%"
+    },
+    {
+      "class_name": "Strawberry - Healthy",
+      "common_support": 50,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "100.00%",
+      "v1_f1": "100.00%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+0.00%"
+    },
+    {
+      "class_name": "Strawberry - strawberry angular leaf spot",
+      "common_support": 25,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "100.00%",
+      "v1_f1": "98.04%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "-1.96%"
+    },
+    {
+      "class_name": "Strawberry - strawberry leaf scorch",
+      "common_support": 44,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "100.00%",
+      "v1_f1": "100.00%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+0.00%"
+    },
+    {
+      "class_name": "Strawberry - strawberry leaf spot",
+      "common_support": 20,
+      "v0_accuracy": "95.00%",
+      "v1_accuracy": "95.00%",
+      "v0_f1": "92.68%",
+      "v1_f1": "92.68%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+0.00%"
+    },
+    {
+      "class_name": "Strawberry - strawberry powdery mildew",
+      "common_support": 51,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "100.00%",
+      "v1_f1": "100.00%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+0.00%"
+    },
+    {
+      "class_name": "Sugarcane - Healthy",
+      "common_support": 12,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "100.00%",
+      "v1_f1": "100.00%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+0.00%"
+    },
+    {
+      "class_name": "Sugarcane - Mosaic",
+      "common_support": 2,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "100.00%",
+      "v1_f1": "80.00%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "-20.00%"
+    },
+    {
+      "class_name": "Sugarcane - Red Rot",
+      "common_support": 20,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "95.24%",
+      "v1_f1": "95.24%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+0.00%"
+    },
+    {
+      "class_name": "Sugarcane - Rust",
+      "common_support": 4,
+      "v0_accuracy": "50.00%",
+      "v1_accuracy": "50.00%",
+      "v0_f1": "66.67%",
+      "v1_f1": "66.67%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+0.00%"
+    },
+    {
+      "class_name": "Sugarcane - Yellow",
+      "common_support": 9,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "88.89%",
+      "v0_f1": "100.00%",
+      "v1_f1": "94.12%",
+      "acc_delta": "-11.11%",
+      "f1_delta": "-5.88%"
+    },
+    {
+      "class_name": "Tomato - Bacterial Spot",
+      "common_support": 222,
+      "v0_accuracy": "91.44%",
+      "v1_accuracy": "93.24%",
+      "v0_f1": "94.86%",
+      "v1_f1": "94.95%",
+      "acc_delta": "+1.80%",
+      "f1_delta": "+0.09%"
+    },
+    {
+      "class_name": "Tomato - Healthy",
+      "common_support": 154,
+      "v0_accuracy": "98.05%",
+      "v1_accuracy": "98.70%",
+      "v0_f1": "98.69%",
+      "v1_f1": "98.38%",
+      "acc_delta": "+0.65%",
+      "f1_delta": "-0.31%"
+    },
+    {
+      "class_name": "Tomato - Spider Mites",
+      "common_support": 168,
+      "v0_accuracy": "94.05%",
+      "v1_accuracy": "93.45%",
+      "v0_f1": "96.64%",
+      "v1_f1": "93.73%",
+      "acc_delta": "-0.60%",
+      "f1_delta": "-2.90%"
+    },
+    {
+      "class_name": "Tomato - Target Spot",
+      "common_support": 141,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "99.29%",
+      "v0_f1": "95.27%",
+      "v1_f1": "93.33%",
+      "acc_delta": "-0.71%",
+      "f1_delta": "-1.94%"
+    },
+    {
+      "class_name": "Tomato - tomato early blight",
+      "common_support": 99,
+      "v0_accuracy": "97.98%",
+      "v1_accuracy": "95.96%",
+      "v0_f1": "93.27%",
+      "v1_f1": "95.48%",
+      "acc_delta": "-2.02%",
+      "f1_delta": "+2.21%"
+    },
+    {
+      "class_name": "Tomato - tomato late blight",
+      "common_support": 195,
+      "v0_accuracy": "95.38%",
+      "v1_accuracy": "97.44%",
+      "v0_f1": "96.88%",
+      "v1_f1": "97.44%",
+      "acc_delta": "+2.05%",
+      "f1_delta": "+0.56%"
+    },
+    {
+      "class_name": "Tomato - tomato leaf mold",
+      "common_support": 109,
+      "v0_accuracy": "91.74%",
+      "v1_accuracy": "91.74%",
+      "v0_f1": "95.24%",
+      "v1_f1": "95.69%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+0.46%"
+    },
+    {
+      "class_name": "Tomato - tomato mosaic virus",
+      "common_support": 43,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "80.37%",
+      "v1_f1": "87.76%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+7.38%"
+    },
+    {
+      "class_name": "Tomato - tomato septoria leaf spot",
+      "common_support": 181,
+      "v0_accuracy": "98.90%",
+      "v1_accuracy": "100.00%",
+      "v0_f1": "99.17%",
+      "v1_f1": "99.45%",
+      "acc_delta": "+1.10%",
+      "f1_delta": "+0.28%"
+    },
+    {
+      "class_name": "Tomato - tomato yellow leaf curl virus",
+      "common_support": 328,
+      "v0_accuracy": "96.95%",
+      "v1_accuracy": "92.99%",
+      "v0_f1": "98.45%",
+      "v1_f1": "96.37%",
+      "acc_delta": "-3.96%",
+      "f1_delta": "-2.09%"
+    },
+    {
+      "class_name": "Zucchini - Healthy",
+      "common_support": 6,
+      "v0_accuracy": "66.67%",
+      "v1_accuracy": "83.33%",
+      "v0_f1": "72.73%",
+      "v1_f1": "83.33%",
+      "acc_delta": "+16.67%",
+      "f1_delta": "+10.61%"
+    },
+    {
+      "class_name": "Zucchini - zucchini angular leaf spot",
+      "common_support": 8,
+      "v0_accuracy": "62.50%",
+      "v1_accuracy": "62.50%",
+      "v0_f1": "66.67%",
+      "v1_f1": "66.67%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+0.00%"
+    },
+    {
+      "class_name": "Zucchini - zucchini anthracnose",
+      "common_support": 4,
+      "v0_accuracy": "100.00%",
+      "v1_accuracy": "75.00%",
+      "v0_f1": "61.54%",
+      "v1_f1": "54.55%",
+      "acc_delta": "-25.00%",
+      "f1_delta": "-6.99%"
+    },
+    {
+      "class_name": "Zucchini - zucchini bacterial leaf spot",
+      "common_support": 2,
+      "v0_accuracy": "50.00%",
+      "v1_accuracy": "50.00%",
+      "v0_f1": "66.67%",
+      "v1_f1": "50.00%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "-16.67%"
+    },
+    {
+      "class_name": "Zucchini - zucchini downy mildew",
+      "common_support": 12,
+      "v0_accuracy": "41.67%",
+      "v1_accuracy": "50.00%",
+      "v0_f1": "55.56%",
+      "v1_f1": "60.00%",
+      "acc_delta": "+8.33%",
+      "f1_delta": "+4.44%"
+    },
+    {
+      "class_name": "Zucchini - zucchini powdery mildew",
+      "common_support": 16,
+      "v0_accuracy": "75.00%",
+      "v1_accuracy": "81.25%",
+      "v0_f1": "82.76%",
+      "v1_f1": "86.67%",
+      "acc_delta": "+6.25%",
+      "f1_delta": "+3.91%"
+    },
+    {
+      "class_name": "Zucchini - zucchini yellow mosaic virus",
+      "common_support": 18,
+      "v0_accuracy": "88.89%",
+      "v1_accuracy": "88.89%",
+      "v0_f1": "88.89%",
+      "v1_f1": "91.43%",
+      "acc_delta": "+0.00%",
+      "f1_delta": "+2.54%"
+    }
+  ]
+}

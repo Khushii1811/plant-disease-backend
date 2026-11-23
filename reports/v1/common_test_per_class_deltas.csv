@@ -1,0 +1,190 @@
+class_name,crop,support,v0_f1,v1_f1,f1_delta
+Apple - Healthy,Apple,51,1.0,0.9901,-0.0099
+Apple - Rust,Apple,42,1.0,0.9882,-0.0118
+Apple - apple alternaria leaf spot,Apple,54,1.0,1.0,0.0
+Apple - apple black rot,Apple,48,1.0,1.0,0.0
+Apple - apple mosaic virus,Apple,3,0.5714,0.8571,0.2857
+Apple - apple scab,Apple,39,0.975,0.9873,0.0123
+Banana - Cordana,Banana,31,0.8732,0.8611,-0.0121
+Banana - Healthy,Banana,97,1.0,1.0,0.0
+Banana - Insectpest,Banana,68,0.9577,0.9645,0.0068
+Banana - Moko,Banana,44,0.9778,0.9888,0.011
+Banana - Panama,Banana,112,0.9402,0.9483,0.0081
+Banana - Pestalotiopsis,Banana,53,0.9138,0.955,0.0412
+Banana - Sigatoka,Banana,372,0.9282,0.9433,0.0152
+Banana - banana black leaf streak,Banana,7,0.4762,0.5,0.0238
+Banana - banana bunchy top,Banana,14,0.9032,0.9333,0.0301
+Bean - Healthy,Bean,32,0.9846,0.9697,-0.0149
+Bean - bean angular leaf spot,Bean,32,0.9846,1.0,0.0154
+Bean - bean halo blight,Bean,4,0.1538,0.2,0.0462
+Bean - bean leaf shot hole,Bean,19,0.9744,1.0,0.0256
+Bean - bean mosaic virus,Bean,4,0.0,0.4,0.4
+Bean - bean rust,Bean,46,0.8675,0.8837,0.0163
+Bell Pepper - Bacterial Spot,Bell Pepper,108,0.9811,0.972,-0.0092
+Bell Pepper - Healthy,Bell Pepper,139,0.9928,0.9857,-0.0071
+Bell Pepper - bell pepper frogeye leaf spot,Bell Pepper,141,0.9478,0.9478,0.0
+Blackgram - Anthracnose,Blackgram,23,1.0,1.0,0.0
+Blackgram - Healthy,Blackgram,22,0.9167,1.0,0.0833
+Blackgram - Leaf Crinkle,Blackgram,15,1.0,1.0,0.0
+Blackgram - Powdery Mildew,Blackgram,17,0.9714,0.9714,0.0
+Blackgram - Yellow Mosaic,Blackgram,23,0.9787,0.9787,0.0
+Blueberry - Healthy,Blueberry,52,1.0,0.9905,-0.0095
+Blueberry - blueberry rust,Blueberry,4,0.6667,0.6667,0.0
+Blueberry - blueberry scorch,Blueberry,3,0.8571,0.8571,0.0
+Broccoli - Healthy,Broccoli,2,0.6667,0.6667,0.0
+Broccoli - broccoli alternaria leaf spot,Broccoli,3,0.5714,0.4444,-0.127
+Cabbage - Healthy,Cabbage,7,0.9333,0.9333,0.0
+Cabbage - Tip Burn,Cabbage,2,1.0,0.8,-0.2
+Cabbage - cabbage alternaria leaf spot,Cabbage,7,0.5,0.5,0.0
+Cabbage - cabbage black rot,Cabbage,11,0.7407,0.7692,0.0285
+Cabbage - cabbage downy mildew,Cabbage,8,0.7143,0.8235,0.1092
+Cauliflower - Blackrot,Cauliflower,4,0.8,0.8889,0.0889
+Cauliflower - Downy mildew,Cauliflower,15,0.9677,1.0,0.0323
+Cauliflower - Healthy,Cauliflower,16,1.0,1.0,0.0
+Cherry - Healthy,Cherry,61,0.9836,0.9836,0.0
+Cherry - cherry brown spot,Cherry,55,0.9908,1.0,0.0092
+Cherry - cherry leaf scorch,Cherry,58,0.9828,0.9913,0.0085
+Cherry - cherry leaf spot,Cherry,8,0.7778,0.7059,-0.0719
+Cherry - cherry powdery mildew,Cherry,30,1.0,1.0,0.0
+Cherry - cherry purple leaf spot,Cherry,55,1.0,1.0,0.0
+Cherry - cherry shot hole,Cherry,18,1.0,1.0,0.0
+Chilli - Bacterial Spot,Chilli,11,0.9565,0.9565,0.0
+Chilli - Cercospora Leaf Spot,Chilli,15,0.9655,0.9655,0.0
+Chilli - Healthy,Chilli,33,1.0,1.0,0.0
+Citrus - Healthy,Citrus,41,1.0,1.0,0.0
+Citrus - citrus algal leaf spot,Citrus,18,0.973,1.0,0.027
+Citrus - citrus canker,Citrus,37,0.8974,0.9211,0.0236
+Citrus - citrus scab,Citrus,8,1.0,1.0,0.0
+Coffee - Healthy,Coffee,33,1.0,1.0,0.0
+Coffee - Leaf Miner,Coffee,35,0.9714,0.9714,0.0
+Coffee - Phoma,Coffee,36,0.9722,0.9589,-0.0133
+Coffee - coffee leaf rust,Coffee,42,0.95,0.963,0.013
+Corn - Healthy,Corn,116,1.0,1.0,0.0
+Corn - Northern Leaf Blight,Corn,87,0.9318,0.931,-0.0008
+Corn - Rust,Corn,51,0.9709,0.9709,0.0
+Corn - corn gray leaf spot,Corn,54,0.9074,0.8807,-0.0267
+Corn - corn holcus leaf spot,Corn,15,0.9677,0.9677,0.0
+Cucumber - Healthy,Cucumber,15,1.0,1.0,0.0
+Cucumber - cucumber angular leaf spot,Cucumber,19,0.8571,0.85,-0.0071
+Cucumber - cucumber bacterial wilt,Cucumber,25,0.9804,0.9804,0.0
+Cucumber - cucumber powdery mildew,Cucumber,16,0.9375,0.8667,-0.0708
+Eggplant - Cercospora Leaf Spot,Eggplant,20,0.8947,0.9189,0.0242
+Eggplant - Healthy,Eggplant,20,0.95,0.9756,0.0256
+Eggplant - Little Leaf,Eggplant,20,1.0,1.0,0.0
+Eggplant - Mosaic Virus,Eggplant,14,0.8966,0.9333,0.0368
+Eggplant - White Mold,Eggplant,20,0.9268,0.9756,0.0488
+Eggplant - Wilt,Eggplant,20,0.9756,1.0,0.0244
+Fig - Healthy,Fig,21,0.9524,0.9524,0.0
+Fig - fig brown spot,Fig,16,1.0,1.0,0.0
+Fig - fig leaf blight,Fig,35,0.9859,1.0,0.0141
+Fig - fig rust,Fig,21,1.0,1.0,0.0
+Ginger - Bacterial Wilt,Ginger,16,0.9677,0.9677,0.0
+Ginger - Dehydrated,Ginger,262,0.5323,0.7913,0.259
+Ginger - Healthy,Ginger,113,0.8216,0.824,0.0024
+Ginger - Leaf Blight,Ginger,226,0.8109,0.8387,0.0278
+Ginger - Pest Damage,Ginger,88,0.4969,0.6781,0.1812
+Ginger - ginger leaf spot,Ginger,2,1.0,1.0,0.0
+Ginger - ginger sheath blight,Ginger,6,0.7692,1.0,0.2308
+Grape - Black Rot,Grape,24,0.9057,0.9412,0.0355
+Grape - Esca (Black Measles),Grape,240,0.9937,0.9937,0.0
+Grape - Healthy,Grape,25,0.9804,0.9615,-0.0189
+Grape - Leaf Blight,Grape,215,0.9977,1.0,0.0023
+Grape - grape bacterial rot,Grape,10,0.9524,1.0,0.0476
+Grape - grape downy mildew,Grape,97,0.9896,0.9896,0.0
+Grape - grape leafroll disease,Grape,6,1.0,0.8,-0.2
+Grape - grape powdery mildew,Grape,40,0.9756,0.9756,0.0
+Groundnut - Early leaf spot,Groundnut,116,0.9547,0.9748,0.0201
+Groundnut - Early rust,Groundnut,133,0.9963,1.0,0.0037
+Groundnut - Healthy,Groundnut,29,1.0,1.0,0.0
+Groundnut - Late leaf spot,Groundnut,184,0.9634,0.9862,0.0228
+Groundnut - Nutrition deficiency,Groundnut,160,1.0,1.0,0.0
+Groundnut - Rust,Groundnut,151,0.9934,1.0,0.0066
+Guava - Anthracnose,Guava,84,0.96,0.994,0.034
+Guava - Canker,Guava,124,0.9633,0.9796,0.0163
+Guava - Dot,Guava,108,0.7823,0.8899,0.1076
+Guava - Healthy,Guava,225,0.8894,0.9567,0.0673
+Guava - Mummification,Guava,28,0.9655,0.9655,0.0
+Guava - Rust,Guava,124,0.9798,0.9762,-0.0036
+Guava - Spiraling Whitefly,Guava,95,0.984,0.9894,0.0054
+Jamun - Bacterial Spot,Jamun,40,0.9873,0.9873,0.0
+Jamun - Brown Blight,Jamun,40,0.9877,1.0,0.0123
+Jamun - Healthy,Jamun,28,0.9825,0.9825,0.0
+Jamun - Powdery Mildew,Jamun,40,1.0,1.0,0.0
+Jamun - Sooty Mold,Jamun,40,1.0,1.0,0.0
+Mango - Anthracnose,Mango,50,1.0,1.0,0.0
+Mango - Bacterial Canker,Mango,50,1.0,1.0,0.0
+Mango - Cutting Weevil,Mango,50,1.0,1.0,0.0
+Mango - Die Back,Mango,50,1.0,1.0,0.0
+Mango - Gall Midge,Mango,50,1.0,1.0,0.0
+Mango - Healthy,Mango,50,1.0,1.0,0.0
+Mango - Powdery Mildew,Mango,50,1.0,1.0,0.0
+Mango - Sooty Mould,Mango,50,1.0,1.0,0.0
+Paddy - Bacterial Leaf Blight,Paddy,36,1.0,1.0,0.0
+Paddy - Blast,Paddy,42,0.95,0.9756,0.0256
+Paddy - Brown Spot,Paddy,39,0.95,0.962,0.012
+Paddy - Healthy,Paddy,44,0.9778,0.9888,0.011
+Paddy - Leaf Scald,Paddy,36,1.0,1.0,0.0
+Paddy - Narrow Brown Spot,Paddy,41,1.0,1.0,0.0
+Peach - Healthy,Peach,39,0.9873,1.0,0.0127
+Peach - peach bacterial spot,Peach,60,0.9917,0.9917,0.0
+Peach - peach leaf curl,Peach,14,0.8966,0.9333,0.0368
+Peach - peach leaf shot hole,Peach,3,1.0,1.0,0.0
+Pear - Healthy,Pear,41,0.9756,0.9756,0.0
+Pear - pear black spot,Pear,128,0.938,0.9506,0.0126
+Pear - pear fire blight,Pear,18,1.0,1.0,0.0
+Pear - pear leaf curl,Pear,6,1.0,0.9231,-0.0769
+Pear - pear slug damage,Pear,172,0.9591,0.9702,0.0112
+Plum - Healthy,Plum,14,0.8,0.875,0.075
+Plum - plum insect hole,Plum,71,0.9254,0.9403,0.0149
+Plum - plum weevil,Plum,10,1.0,1.0,0.0
+Plum - plum yellow leaf,Plum,81,0.963,0.9759,0.0129
+Potato - Early Blight,Potato,136,0.9509,0.9517,0.0007
+Potato - Healthy,Potato,46,0.9787,0.9892,0.0105
+Potato - Late Blight,Potato,144,0.9756,0.9754,-0.0002
+Potato - fungal diseases,Potato,41,0.988,0.9762,-0.0118
+Potato - pest damage,Potato,31,0.9667,0.9667,0.0
+Potato - potato cyst nematode,Potato,24,0.9231,0.9412,0.0181
+Potato - potato virus,Potato,27,0.9434,0.9811,0.0377
+Radish - Black leaf spot,Radish,49,1.0,1.0,0.0
+Radish - Downey mildew,Radish,52,1.0,1.0,0.0
+Radish - Flea beetle,Radish,46,1.0,1.0,0.0
+Radish - Healthy,Radish,57,1.0,1.0,0.0
+Radish - Mosaic,Radish,49,1.0,0.9899,-0.0101
+Soybean - Bacterial Blight,Soybean,18,0.8889,0.9143,0.0254
+Soybean - Bacterial Pustule,Soybean,11,0.9524,1.0,0.0476
+Soybean - Brown Spot,Soybean,3,1.0,0.8571,-0.1429
+Soybean - Cercospora Leaf Blight,Soybean,7,1.0,1.0,0.0
+Soybean - Downy Mildew,Soybean,6,0.5455,0.7059,0.1604
+Soybean - Frogeye Leaf Spot,Soybean,19,0.8571,0.878,0.0209
+Soybean - Powdery Mildew,Soybean,13,1.0,1.0,0.0
+Soybean - Rust,Soybean,24,0.7442,0.8444,0.1003
+Soybean - Sudden Death Syndrome,Soybean,11,0.88,0.9565,0.0765
+Soybean - Target Leaf Spot,Soybean,11,0.9167,0.9167,0.0
+Soybean - Yellow Mosaic,Soybean,11,1.0,1.0,0.0
+Strawberry - Healthy,Strawberry,50,1.0,1.0,0.0
+Strawberry - strawberry angular leaf spot,Strawberry,25,0.9434,0.9091,-0.0343
+Strawberry - strawberry leaf scorch,Strawberry,44,1.0,1.0,0.0
+Strawberry - strawberry leaf spot,Strawberry,20,0.9524,0.9302,-0.0221
+Strawberry - strawberry powdery mildew,Strawberry,51,1.0,1.0,0.0
+Sugarcane - Healthy,Sugarcane,12,1.0,1.0,0.0
+Sugarcane - Mosaic,Sugarcane,2,1.0,0.8,-0.2
+Sugarcane - Red Rot,Sugarcane,20,0.9756,0.9756,0.0
+Sugarcane - Rust,Sugarcane,4,0.6667,0.6667,0.0
+Sugarcane - Yellow,Sugarcane,9,1.0,0.9412,-0.0588
+Tomato - Bacterial Spot,Tomato,222,0.9267,0.9274,0.0007
+Tomato - Healthy,Tomato,154,0.9742,0.9837,0.0095
+Tomato - Spider Mites,Tomato,168,0.9288,0.9341,0.0053
+Tomato - Target Spot,Tomato,141,0.902,0.9333,0.0314
+Tomato - tomato early blight,Tomato,99,0.9543,0.9645,0.0102
+Tomato - tomato late blight,Tomato,195,0.9639,0.9717,0.0078
+Tomato - tomato leaf mold,Tomato,109,0.9159,0.9417,0.0259
+Tomato - tomato mosaic virus,Tomato,43,0.8866,0.9032,0.0166
+Tomato - tomato septoria leaf spot,Tomato,181,0.9834,0.9945,0.0111
+Tomato - tomato yellow leaf curl virus,Tomato,328,0.9653,0.962,-0.0033
+Zucchini - Healthy,Zucchini,6,0.7273,0.8333,0.1061
+Zucchini - zucchini angular leaf spot,Zucchini,8,0.625,0.6667,0.0417
+Zucchini - zucchini anthracnose,Zucchini,4,0.5,0.5455,0.0455
+Zucchini - zucchini bacterial leaf spot,Zucchini,2,0.6667,0.6667,0.0
+Zucchini - zucchini downy mildew,Zucchini,12,0.6,0.6316,0.0316
+Zucchini - zucchini powdery mildew,Zucchini,16,0.9032,0.875,-0.0282
+Zucchini - zucchini yellow mosaic virus,Zucchini,18,0.8889,0.9143,0.0254

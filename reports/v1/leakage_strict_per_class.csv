@@ -1,0 +1,196 @@
+class_name,train_count,val_count,test_count,val_strict_twins,val_strict_share,test_strict_twins,test_strict_share,test_loose_twins,test_loose_share
+Apple - Healthy,410,51,51,2,0.0392,1,0.0196,0,0.0
+Apple - Rust,332,42,42,0,0.0,0,0.0,0,0.0
+Apple - apple alternaria leaf spot,313,59,54,0,0.0,0,0.0,0,0.0
+Apple - apple black rot,382,48,48,0,0.0,0,0.0,0,0.0
+Apple - apple mosaic virus,33,3,3,0,0.0,0,0.0,0,0.0
+Apple - apple scab,316,39,39,0,0.0,0,0.0,0,0.0
+Banana - Cordana,248,31,31,0,0.0,0,0.0,0,0.0
+Banana - Healthy,766,98,97,1,0.0102,2,0.0206,0,0.0
+Banana - Insectpest,545,69,68,0,0.0,0,0.0,0,0.0
+Banana - Moko,354,35,44,0,0.0,0,0.0,0,0.0
+Banana - Panama,897,109,112,0,0.0,1,0.0089,0,0.0
+Banana - Pestalotiopsis,375,46,53,1,0.0217,2,0.0377,0,0.0
+Banana - Sigatoka,2842,366,372,1,0.0027,2,0.0054,0,0.0
+Banana - banana black leaf streak,56,7,7,0,0.0,0,0.0,0,0.0
+Banana - banana bunchy top,84,13,14,0,0.0,0,0.0,0,0.0
+Bean - Healthy,214,27,32,0,0.0,0,0.0,0,0.0
+Bean - bean angular leaf spot,262,33,32,0,0.0,0,0.0,0,0.0
+Bean - bean halo blight,33,4,4,0,0.0,0,0.0,0,0.0
+Bean - bean leaf shot hole,121,18,19,0,0.0,0,0.0,0,0.0
+Bean - bean mosaic virus,26,4,4,0,0.0,0,0.0,0,0.0
+Bean - bean rust,268,37,46,0,0.0,0,0.0,0,0.0
+Bell Pepper - Bacterial Spot,807,101,108,0,0.0,0,0.0,0,0.0
+Bell Pepper - Healthy,1197,148,139,1,0.0068,3,0.0216,0,0.0
+Bell Pepper - bell pepper frogeye leaf spot,1130,155,141,26,0.1677,14,0.0993,0,0.0
+Blackgram - Anthracnose,183,23,23,0,0.0,0,0.0,0,0.0
+Blackgram - Healthy,172,22,22,0,0.0,0,0.0,0,0.0
+Blackgram - Leaf Crinkle,119,14,15,0,0.0,0,0.0,0,0.0
+Blackgram - Powdery Mildew,140,18,17,0,0.0,0,0.0,0,0.0
+Blackgram - Yellow Mosaic,179,22,23,0,0.0,0,0.0,0,0.0
+Blueberry - Healthy,416,52,52,0,0.0,0,0.0,0,0.0
+Blueberry - blueberry rust,33,4,4,0,0.0,0,0.0,0,0.0
+Blueberry - blueberry scorch,27,4,3,0,0.0,0,0.0,0,0.0
+Broccoli - Healthy,11,2,2,0,0.0,0,0.0,0,0.0
+Broccoli - broccoli alternaria leaf spot,20,2,3,0,0.0,0,0.0,0,0.0
+Cabbage - Healthy,30,6,7,0,0.0,0,0.0,0,0.0
+Cabbage - Tip Burn,13,2,2,0,0.0,0,0.0,0,0.0
+Cabbage - cabbage alternaria leaf spot,45,6,7,0,0.0,0,0.0,0,0.0
+Cabbage - cabbage black rot,70,15,11,0,0.0,0,0.0,0,0.0
+Cabbage - cabbage downy mildew,24,6,8,0,0.0,0,0.0,0,0.0
+Cauliflower - Blackrot,19,4,4,0,0.0,1,0.25,0,0.0
+Cauliflower - Downy mildew,96,12,15,0,0.0,1,0.0667,0,0.0
+Cauliflower - Healthy,136,18,16,0,0.0,0,0.0,0,0.0
+Cherry - Healthy,491,61,61,0,0.0,2,0.0328,0,0.0
+Cherry - cherry brown spot,310,49,55,0,0.0,2,0.0364,0,0.0
+Cherry - cherry leaf scorch,332,57,58,0,0.0,0,0.0,0,0.0
+Cherry - cherry leaf spot,62,10,8,0,0.0,0,0.0,0,0.0
+Cherry - cherry powdery mildew,243,30,30,0,0.0,0,0.0,0,0.0
+Cherry - cherry purple leaf spot,310,50,55,0,0.0,0,0.0,0,0.0
+Cherry - cherry shot hole,102,20,18,0,0.0,0,0.0,0,0.0
+Chilli - Bacterial Spot,40,10,11,0,0.0,0,0.0,0,0.0
+Chilli - Cercospora Leaf Spot,127,15,15,0,0.0,1,0.0667,0,0.0
+Chilli - Healthy,192,39,33,2,0.0513,1,0.0303,0,0.0
+Chilli - Leaf Curl Virus,237,37,39,6,0.1622,1,0.0256,0,0.0
+Chilli - Nutrition Deficiency,240,45,43,2,0.0444,1,0.0233,0,0.0
+Chilli - White Spot,113,17,15,1,0.0588,1,0.0667,0,0.0
+Citrus - Black spot,101,13,13,0,0.0,1,0.0769,0,0.0
+Citrus - Healthy,313,41,41,0,0.0,3,0.0732,0,0.0
+Citrus - citrus algal leaf spot,158,18,18,0,0.0,2,0.1111,0,0.0
+Citrus - citrus canker,263,32,37,0,0.0,0,0.0,0,0.0
+Citrus - citrus greening disease,565,70,71,0,0.0,0,0.0,0,0.0
+Citrus - citrus scab,52,6,8,0,0.0,0,0.0,0,0.0
+Coffee - Healthy,114,36,33,0,0.0,0,0.0,0,0.0
+Coffee - Leaf Miner,44,28,35,0,0.0,0,0.0,0,0.0
+Coffee - Phoma,42,34,36,0,0.0,0,0.0,0,0.0
+Coffee - coffee leaf rust,330,42,42,0,0.0,0,0.0,0,0.0
+Corn - Healthy,915,116,116,0,0.0,0,0.0,0,0.0
+Corn - Northern Leaf Blight,386,74,87,0,0.0,0,0.0,0,0.0
+Corn - Rust,405,51,51,0,0.0,0,0.0,0,0.0
+Corn - corn gray leaf spot,429,54,54,0,0.0,0,0.0,0,0.0
+Corn - corn holcus leaf spot,95,14,15,0,0.0,0,0.0,0,0.0
+Cucumber - Healthy,124,15,15,0,0.0,0,0.0,0,0.0
+Cucumber - cucumber angular leaf spot,141,12,19,0,0.0,0,0.0,0,0.0
+Cucumber - cucumber bacterial wilt,204,26,25,0,0.0,0,0.0,0,0.0
+Cucumber - cucumber powdery mildew,119,13,16,0,0.0,0,0.0,0,0.0
+Eggplant - Cercospora Leaf Spot,159,20,20,0,0.0,0,0.0,0,0.0
+Eggplant - Healthy,160,20,20,0,0.0,0,0.0,0,0.0
+Eggplant - Little Leaf,154,20,20,1,0.05,1,0.05,0,0.0
+Eggplant - Mosaic Virus,58,13,14,0,0.0,0,0.0,0,0.0
+Eggplant - White Mold,155,20,20,0,0.0,0,0.0,0,0.0
+Eggplant - Wilt,157,20,20,0,0.0,1,0.05,0,0.0
+Fig - Healthy,147,21,21,0,0.0,0,0.0,0,0.0
+Fig - fig brown spot,121,18,16,0,0.0,0,0.0,0,0.0
+Fig - fig leaf blight,229,38,35,0,0.0,0,0.0,0,0.0
+Fig - fig rust,142,21,21,0,0.0,0,0.0,0,0.0
+Ginger - Bacterial Wilt,127,16,16,3,0.1875,6,0.375,0,0.0
+Ginger - Dehydrated,2096,262,262,9,0.0344,8,0.0305,0,0.0
+Ginger - Healthy,900,112,113,1,0.0089,3,0.0265,0,0.0
+Ginger - Leaf Blight,1806,226,226,16,0.0708,18,0.0796,0,0.0
+Ginger - Pest Damage,704,88,88,1,0.0114,0,0.0,0,0.0
+Ginger - ginger leaf spot,13,2,2,0,0.0,0,0.0,0,0.0
+Ginger - ginger sheath blight,52,7,6,0,0.0,0,0.0,0,0.0
+Grape - Black Rot,197,24,24,0,0.0,0,0.0,0,0.0
+Grape - Esca (Black Measles),1920,240,240,158,0.6583,167,0.6958,0,0.0
+Grape - Healthy,203,25,25,0,0.0,0,0.0,0,0.0
+Grape - Leaf Blight,1722,215,215,166,0.7721,182,0.8465,0,0.0
+Grape - grape bacterial rot,80,10,10,1,0.1,0,0.0,0,0.0
+Grape - grape downy mildew,772,97,97,0,0.0,0,0.0,0,0.0
+Grape - grape leafroll disease,57,8,6,0,0.0,0,0.0,0,0.0
+Grape - grape powdery mildew,320,40,40,1,0.025,1,0.025,0,0.0
+Groundnut - Early leaf spot,836,113,116,4,0.0354,11,0.0948,0,0.0
+Groundnut - Early rust,861,135,133,21,0.1556,12,0.0902,0,0.0
+Groundnut - Healthy,169,35,29,7,0.2,5,0.1724,0,0.0
+Groundnut - Late leaf spot,1361,182,184,12,0.0659,6,0.0326,0,0.0
+Groundnut - Nutrition deficiency,1093,159,160,11,0.0692,14,0.0875,0,0.0
+Groundnut - Rust,990,153,151,21,0.1373,9,0.0596,0,0.0
+Guava - Anthracnose,662,82,84,34,0.4146,62,0.7381,0,0.0
+Guava - Canker,972,120,124,17,0.1417,12,0.0968,0,0.0
+Guava - Dot,836,105,108,28,0.2667,26,0.2407,0,0.0
+Guava - Healthy,1784,222,225,38,0.1712,36,0.16,0,0.0
+Guava - Mummification,220,27,28,1,0.037,0,0.0,0,0.0
+Guava - Rust,977,121,124,31,0.2562,30,0.2419,0,0.0
+Guava - Spiraling Whitefly,754,94,95,14,0.1489,16,0.1684,0,0.0
+Jamun - Bacterial Spot,320,40,40,38,0.95,38,0.95,0,0.0
+Jamun - Brown Blight,320,40,40,40,1.0,40,1.0,0,0.0
+Jamun - Healthy,217,27,28,24,0.8889,26,0.9286,0,0.0
+Jamun - Powdery Mildew,320,40,40,32,0.8,32,0.8,0,0.0
+Jamun - Sooty Mold,320,40,40,29,0.725,25,0.625,0,0.0
+Mango - Anthracnose,388,48,50,0,0.0,0,0.0,0,0.0
+Mango - Bacterial Canker,400,50,50,0,0.0,0,0.0,0,0.0
+Mango - Cutting Weevil,400,50,50,0,0.0,0,0.0,0,0.0
+Mango - Die Back,394,49,50,1,0.0204,4,0.08,0,0.0
+Mango - Gall Midge,400,50,50,2,0.04,0,0.0,0,0.0
+Mango - Healthy,400,50,50,1,0.02,1,0.02,0,0.0
+Mango - Powdery Mildew,400,50,50,0,0.0,0,0.0,0,0.0
+Mango - Sooty Mould,400,50,50,0,0.0,1,0.02,0,0.0
+Paddy - Bacterial Leaf Blight,290,36,36,27,0.75,24,0.6667,3,0.0833
+Paddy - Blast,336,42,42,25,0.5952,24,0.5714,0,0.0
+Paddy - Brown Spot,314,39,39,13,0.3333,20,0.5128,0,0.0
+Paddy - Healthy,348,44,44,16,0.3636,16,0.3636,0,0.0
+Paddy - Leaf Scald,285,36,36,36,1.0,31,0.8611,1,0.0278
+Paddy - Narrow Brown Spot,327,41,41,33,0.8049,32,0.7805,0,0.0
+Peach - Healthy,311,39,39,0,0.0,1,0.0256,0,0.0
+Peach - peach bacterial spot,475,60,60,0,0.0,0,0.0,0,0.0
+Peach - peach leaf curl,114,12,14,0,0.0,1,0.0714,0,0.0
+Peach - peach leaf shot hole,29,4,3,0,0.0,0,0.0,0,0.0
+Pear - Healthy,263,40,41,1,0.025,0,0.0,0,0.0
+Pear - pear black spot,938,121,128,1,0.0083,0,0.0,0,0.0
+Pear - pear fire blight,101,19,18,0,0.0,0,0.0,0,0.0
+Pear - pear leaf curl,42,5,6,0,0.0,0,0.0,0,0.0
+Pear - pear slug damage,1373,172,172,0,0.0,0,0.0,0,0.0
+Plum - Healthy,100,14,14,0,0.0,0,0.0,0,0.0
+Plum - plum insect hole,532,71,71,2,0.0282,0,0.0,0,0.0
+Plum - plum weevil,79,10,10,1,0.1,0,0.0,0,0.0
+Plum - plum yellow leaf,624,81,81,1,0.0123,7,0.0864,0,0.0
+Potato - Early Blight,1076,138,136,1,0.0072,2,0.0147,0,0.0
+Potato - Healthy,349,47,46,2,0.0426,2,0.0435,0,0.0
+Potato - Late Blight,1107,142,144,1,0.007,0,0.0,0,0.0
+Potato - fungal diseases,318,39,41,0,0.0,0,0.0,0,0.0
+Potato - pest damage,227,32,31,0,0.0,0,0.0,0,0.0
+Potato - potato cyst nematode,188,25,24,0,0.0,0,0.0,0,0.0
+Potato - potato virus,198,26,27,1,0.0385,0,0.0,0,0.0
+Radish - Black leaf spot,334,48,49,15,0.3125,14,0.2857,0,0.0
+Radish - Downey mildew,317,48,52,5,0.1042,8,0.1538,0,0.0
+Radish - Flea beetle,358,44,46,12,0.2727,10,0.2174,0,0.0
+Radish - Healthy,397,56,57,19,0.3393,12,0.2105,3,0.0526
+Radish - Mosaic,285,49,49,7,0.1429,6,0.1224,0,0.0
+Soybean - Bacterial Blight,160,18,18,1,0.0556,1,0.0556,0,0.0
+Soybean - Bacterial Pustule,88,11,11,0,0.0,0,0.0,0,0.0
+Soybean - Brown Spot,21,3,3,0,0.0,0,0.0,0,0.0
+Soybean - Cercospora Leaf Blight,65,7,7,0,0.0,0,0.0,0,0.0
+Soybean - Downy Mildew,46,7,6,0,0.0,0,0.0,0,0.0
+Soybean - Frogeye Leaf Spot,141,13,19,0,0.0,1,0.0526,0,0.0
+Soybean - Healthy,478,60,59,0,0.0,0,0.0,0,0.0
+Soybean - Powdery Mildew,111,13,13,9,0.6923,7,0.5385,0,0.0
+Soybean - Rust,198,24,24,0,0.0,0,0.0,0,0.0
+Soybean - Sudden Death Syndrome,88,11,11,0,0.0,0,0.0,0,0.0
+Soybean - Target Leaf Spot,88,11,11,0,0.0,0,0.0,0,0.0
+Soybean - Yellow Mosaic,81,11,11,0,0.0,0,0.0,0,0.0
+Strawberry - Healthy,401,50,50,0,0.0,0,0.0,0,0.0
+Strawberry - strawberry angular leaf spot,190,25,25,0,0.0,0,0.0,0,0.0
+Strawberry - strawberry leaf scorch,348,44,44,0,0.0,0,0.0,0,0.0
+Strawberry - strawberry leaf spot,155,20,20,0,0.0,0,0.0,0,0.0
+Strawberry - strawberry powdery mildew,404,51,51,0,0.0,0,0.0,0,0.0
+Sugarcane - Healthy,94,11,12,0,0.0,0,0.0,0,0.0
+Sugarcane - Mosaic,19,3,2,0,0.0,0,0.0,0,0.0
+Sugarcane - Red Rot,153,19,20,0,0.0,0,0.0,0,0.0
+Sugarcane - Rust,32,4,4,0,0.0,0,0.0,0,0.0
+Sugarcane - Yellow,67,8,9,0,0.0,0,0.0,0,0.0
+Tomato - Bacterial Spot,1786,216,222,1,0.0046,3,0.0135,0,0.0
+Tomato - Healthy,1178,157,154,0,0.0,2,0.013,0,0.0
+Tomato - Spider Mites,1333,166,168,2,0.012,1,0.006,0,0.0
+Tomato - Target Spot,1123,140,141,0,0.0,0,0.0,0,0.0
+Tomato - tomato early blight,798,102,99,0,0.0,0,0.0,0,0.0
+Tomato - tomato late blight,1499,189,195,0,0.0,0,0.0,0,0.0
+Tomato - tomato leaf mold,771,105,109,1,0.0095,0,0.0,0,0.0
+Tomato - tomato mosaic virus,327,41,43,0,0.0,0,0.0,0,0.0
+Tomato - tomato septoria leaf spot,1411,177,181,0,0.0,0,0.0,0,0.0
+Tomato - tomato yellow leaf curl virus,2585,331,328,0,0.0,2,0.0061,0,0.0
+Zucchini - Healthy,46,6,6,0,0.0,0,0.0,0,0.0
+Zucchini - zucchini angular leaf spot,61,8,8,0,0.0,0,0.0,0,0.0
+Zucchini - zucchini anthracnose,37,4,4,0,0.0,0,0.0,0,0.0
+Zucchini - zucchini bacterial leaf spot,17,2,2,0,0.0,0,0.0,0,0.0
+Zucchini - zucchini downy mildew,79,10,12,0,0.0,0,0.0,0,0.0
+Zucchini - zucchini powdery mildew,101,10,16,0,0.0,0,0.0,0,0.0
+Zucchini - zucchini yellow mosaic virus,155,18,18,0,0.0,0,0.0,0,0.0

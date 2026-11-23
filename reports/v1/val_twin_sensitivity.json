@@ -1,0 +1,144 @@
+{
+  "metadata": {
+    "description": "Validation twin sensitivity analysis removing 162 train-val near-duplicate twins from reports/v1/p008_plan_DRYRUN.csv",
+    "date": "2026-11-22",
+    "total_val_samples": 9349,
+    "quarantined_twin_samples": 162,
+    "clean_val_samples": 9187
+  },
+  "temperature_comparison": {
+    "current_full_val": {
+      "num_samples": 9349,
+      "T_crop": 0.5931,
+      "T_disease": 0.5013,
+      "val_crop_ece_uncalibrated_pct": 4.81,
+      "val_crop_ece_calibrated_pct": 0.13,
+      "val_disease_ece_uncalibrated_pct": 28.46,
+      "val_disease_ece_calibrated_pct": 0.68,
+      "val_joint_ece_pct": 0.76,
+      "tau_060_metrics": {
+        "tau": 0.6,
+        "covered_N": 9071,
+        "coverage_pct": 97.03,
+        "covered_accuracy_pct": 97.25,
+        "uncertain_N": 278,
+        "uncertain_pct": 2.97,
+        "uncertain_accuracy_pct": 54.68
+      }
+    },
+    "clean_val_with_current_temperatures": {
+      "num_samples": 9187,
+      "T_crop": 0.5931,
+      "T_disease": 0.5013,
+      "val_crop_ece_calibrated_pct": 0.13,
+      "val_disease_ece_calibrated_pct": 0.69,
+      "val_joint_ece_pct": 0.78,
+      "tau_060_metrics": {
+        "tau": 0.6,
+        "covered_N": 8909,
+        "coverage_pct": 96.97,
+        "covered_accuracy_pct": 97.21,
+        "uncertain_N": 278,
+        "uncertain_pct": 3.03,
+        "uncertain_accuracy_pct": 54.68
+      }
+    },
+    "clean_val_with_refitted_temperatures": {
+      "num_samples": 9187,
+      "T_crop": 0.5936,
+      "T_disease": 0.5014,
+      "T_crop_delta": 0.0005,
+      "T_disease_delta": 0.0001,
+      "val_crop_ece_uncalibrated_pct": 4.81,
+      "val_crop_ece_calibrated_pct": 0.13,
+      "val_disease_ece_uncalibrated_pct": 28.76,
+      "val_disease_ece_calibrated_pct": 0.71,
+      "val_joint_ece_pct": 0.78,
+      "tau_060_metrics": {
+        "tau": 0.6,
+        "covered_N": 8909,
+        "coverage_pct": 96.97,
+        "covered_accuracy_pct": 97.21,
+        "uncertain_N": 278,
+        "uncertain_pct": 3.03,
+        "uncertain_accuracy_pct": 54.68
+      },
+      "equivalent_tau_matching_coverage": {
+        "tau": 0.595,
+        "covered_N": 8920,
+        "coverage_pct": 97.09,
+        "covered_accuracy_pct": 97.15,
+        "uncertain_N": 267,
+        "uncertain_pct": 2.91,
+        "uncertain_accuracy_pct": 54.68
+      }
+    }
+  },
+  "twin_impact_summary": {
+    "T_disease_shift": "0.5013 -> 0.5014 (delta: +0.0001)",
+    "T_crop_shift": "0.5931 -> 0.5936 (delta: +0.0005)",
+    "clean_val_disease_ece_change_pct": "0.69% -> 0.71%",
+    "clean_val_tau_060_coverage_pct": "96.97% -> 96.97%",
+    "clean_val_tau_060_accuracy_pct": "97.21% -> 97.21%",
+    "re_selected_tau_for_target_coverage": 0.595
+  },
+  "test_split_clean_evaluation": {
+    "num_test_samples": 9279,
+    "current_calibration": {
+      "T_crop": 0.5931,
+      "T_disease": 0.5013,
+      "crop_accuracy_pct": 99.28,
+      "soft_gated_disease_accuracy_pct": 96.03,
+      "calibrated_joint_ece_pct": 0.58,
+      "disease_head_ece_pct": 0.47,
+      "tau_060_metrics": {
+        "tau": 0.6,
+        "covered_N": 8999,
+        "coverage_pct": 96.98,
+        "covered_correct": 8776,
+        "covered_accuracy_pct": 97.52,
+        "uncertain_N": 280,
+        "uncertain_pct": 3.02,
+        "uncertain_correct": 135,
+        "uncertain_accuracy_pct": 48.21
+      }
+    },
+    "refitted_clean_val_calibration": {
+      "T_crop": 0.5936,
+      "T_disease": 0.5014,
+      "crop_accuracy_pct": 99.28,
+      "soft_gated_disease_accuracy_pct": 96.03,
+      "calibrated_joint_ece_pct": 0.58,
+      "disease_head_ece_pct": 0.48,
+      "tau_060_metrics": {
+        "tau": 0.6,
+        "covered_N": 8999,
+        "coverage_pct": 96.98,
+        "covered_correct": 8776,
+        "covered_accuracy_pct": 97.52,
+        "uncertain_N": 280,
+        "uncertain_pct": 3.02,
+        "uncertain_correct": 135,
+        "uncertain_accuracy_pct": 48.21
+      }
+    },
+    "delta": {
+      "accuracy_delta_pct": 0.0,
+      "joint_ece_delta_pct": 0.0,
+      "coverage_at_060_delta_pct": 0.0,
+      "covered_accuracy_at_060_delta_pct": 0.0
+    }
+  },
+  "val_support_drop_check": {
+    "threshold": 3,
+    "classes_with_val_support_below_3_after_p008": 0,
+    "lowest_class_support": {
+      "class": "Jamun - Bacterial Spot",
+      "val_before": 31,
+      "val_after": 4,
+      "test_before": 1,
+      "test_after": 1,
+      "note": "Flagged in twin_check.json under classes_support_below_3 because test support is 1 and val support drops from 31 to 4; zero classes have val support strictly below 3."
+    }
+  }
+}

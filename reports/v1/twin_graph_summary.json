@@ -1,0 +1,8 @@
+{
+  "total_active_images": 91984,
+  "total_twin_pairs_d_le_4": 2829,
+  "exact_phash_d0_pairs": 1066,
+  "near_duplicate_d1_4_pairs": 1763,
+  "total_multi_image_clusters": 1621,
+  "cross_split_clusters": 154
+}

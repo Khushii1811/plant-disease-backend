@@ -1,0 +1,21 @@
+class_name,crop,test_total,zero_bit_duplicates,zero_bit_share,total_twins_le4
+Grape - Leaf Blight,Grape,215,181,0.8419,182
+Grape - Esca (Black Measles),Grape,240,165,0.6875,167
+Guava - Anthracnose,Guava,84,46,0.5476,62
+Jamun - Brown Blight,Jamun,40,40,1.0,40
+Jamun - Bacterial Spot,Jamun,40,35,0.875,38
+Jamun - Powdery Mildew,Jamun,40,29,0.725,32
+Paddy - Leaf Scald,Paddy,36,28,0.7778,31
+Jamun - Healthy,Jamun,28,25,0.8929,26
+Jamun - Sooty Mold,Jamun,40,25,0.625,25
+Paddy - Narrow Brown Spot,Paddy,41,24,0.5854,32
+Paddy - Bacterial Leaf Blight,Paddy,36,23,0.6389,24
+Paddy - Blast,Paddy,42,21,0.5,24
+Paddy - Brown Spot,Paddy,39,17,0.4359,20
+Paddy - Healthy,Paddy,44,6,0.1364,16
+Soybean - Powdery Mildew,Soybean,13,2,0.1538,7
+Guava - Dot,Guava,108,2,0.0185,26
+Soybean - Bacterial Blight,Soybean,18,1,0.0556,1
+Grape - grape powdery mildew,Grape,40,1,0.025,1
+Groundnut - Rust,Groundnut,151,1,0.0066,9
+Groundnut - Late leaf spot,Groundnut,184,1,0.0054,6

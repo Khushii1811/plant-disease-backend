@@ -1,0 +1,37 @@
+================================================================================
+DATASET SNAPSHOT SUMMARY (v1.0 Production Release)
+================================================================================
+Total Images: 96,835
+Manifest SHA-256: 7267ec4595eff802731eff86618dc79de33820752037ee5e92b88468cda89c30
+Train Images: 78,187
+Val Images:   9,321
+Test Images:  9,327
+Num Classes:  195
+Unknown Sources: 326 (0.34%)
+
+COUNTS PER SPLIT:
+  train     :   78187
+  val       :    9321
+  test      :    9327
+
+TOP 20 SOURCES:
+  plantvillage_legacy_baseline  :  42213 (43.59%)
+  ginger_research               :   6963 (7.19%)
+  kaggle_pv2                    :   5744 (5.93%)
+  mendeley_grape_niphad         :   5299 (5.47%)
+  mendeley_guava                :   4710 (4.86%)
+  mango_mendeley                :   3957 (4.09%)
+  plantcity                     :   3807 (3.93%)
+  paddy_doctor_kaggle           :   2253 (2.33%)
+  rice_lab                      :   2051 (2.12%)
+  potato_kaggle                 :   1961 (2.03%)
+  syedzainmir_pear              :   1717 (1.77%)
+  mendeley_bell_pepper          :   1554 (1.60%)
+  corn_kaggle                   :   1509 (1.56%)
+  jamun_foliar                  :   1508 (1.56%)
+  plum_lab_mendeley             :   1165 (1.20%)
+  eggplant_kaggle               :   1066 (1.10%)
+  chilli_nirob                  :   1055 (1.09%)
+  diamos                        :    956 (0.99%)
+  datasetninja                  :    941 (0.97%)
+  therealoise_bean              :    873 (0.90%)

@@ -1,0 +1,106 @@
+{
+  "model_name": "DualHead ConvNeXt-Tiny",
+  "version": "v1.0.0",
+  "status": "production_release",
+  "created_at": "2026-11-16T11:10:48.100519+00:00",
+  "random_seed": null,
+  "random_seed_note": "training run was not seeded; seeding added later in 16635f4",
+  "initialization": {
+    "source": "ImageNet-22k pretrained / 1k fine-tuned (convnext_tiny.fb_in22k_ft_in1k via timm)",
+    "no_v0_weights_used": true,
+    "no_v0_resume_used": true,
+    "code_paths_verified": [
+      "src/models/train_dualhead.py: build_dualhead_convnext_tiny(pretrained=True)",
+      "src/models/convnext.py: timm.create_model('convnext_tiny.fb_in22k_ft_in1k', pretrained=True)",
+      "CLI arguments: --version v1 --epochs 25 --warmup-epochs 5 (no --resume flag passed)"
+    ]
+  },
+  "source_code": {
+    "repository": "https://github.com/Khushii1811/plant-disease-detection",
+    "history_note": "Training commit refers to the private development history; not present in this repository.",
+    "training_git_commit": "21086895979c683ed3c2044da7b9ca919f1dbaa0",
+    "training_tree_dirty": true,
+    "training_tree_dirty_note": "Working tree had uncommitted modifications during training run cb46c7f8f10f45e59ad809720c7bccb6",
+    "bundle_build_git_commit": "0a3c3e14fde98a70d7f52f5aad857815794d82a9",
+    "training_script": "src/models/train_dualhead.py"
+  },
+  "dataset_provenance": {
+    "training_snapshot_sha256": "5b5bc90a052d10a4d9ffc9b0659c95fa280ddd493da4e24fe9753a34f19fbde2",
+    "training_snapshot_total_images": 92165,
+    "training_snapshot_split_counts": {
+      "train": 73356,
+      "val": 9349,
+      "test": 9460
+    },
+    "release_snapshot_sha256": "9822de8f77e4a587b8752772af85fbc8c0978e50354f108968d3065e736c50cd",
+    "release_snapshot_total_images": 91984,
+    "release_snapshot_split_counts": {
+      "train": 73356,
+      "val": 9349,
+      "test": 9279
+    },
+    "weights_trained_on_release_snapshot": false,
+    "manifest_sha256": "9822de8f77e4a587b8752772af85fbc8c0978e50354f108968d3065e736c50cd",
+    "manifest_path": "reports/v1/dataset_v1.csv",
+    "total_curated_images": 91984,
+    "num_classes": 177,
+    "num_crops": 33,
+    "patches_applied": [
+      "P-001: Quarantined 253 Bell Pepper synthetic duplicate impostors",
+      "P-002: Rebalanced Citrus Greening and Soybean Healthy splits to 80/10/10",
+      "P-003: Quarantined 1,415 0-bit cross-split perceptual hash leakage twin frames",
+      "P-004: Quarantined 1,245 label conflicts (941) and cross-split duplicates (304)",
+      "P-005: Quarantined 4,665 non-foliar/severe mixed images; relabeled 3,062; merged 498",
+      "P-006: Repartitioned 21 hoarded classes to 80/10/10 with min(val)>=3, min(test)>=3",
+      "P-007: Quarantined 181 near-duplicate test leakage frames into data/raw/quarantine_test_leakage_twins/test/ (test purified leak-free N=9,279)"
+    ],
+    "split_counts": {
+      "train": 73356,
+      "val": 9349,
+      "test": 9279
+    }
+  },
+  "training_run": {
+    "mlflow_run_id": "cb46c7f8f10f45e59ad809720c7bccb6",
+    "mlflow_experiment": "dualhead_convnext_tiny",
+    "chosen_epoch": 20,
+    "total_epochs_configured": 25,
+    "wall_clock_time_hours": 2.13,
+    "training_environment": {
+      "python_version": "3.13.1",
+      "pytorch_version": "2.6.0+cu124",
+      "cuda_version": "12.4",
+      "os": "Windows 11",
+      "hardware": "NVIDIA GeForce RTX 3050 Laptop GPU (4096 MiB, Driver 566.07)"
+    },
+    "hyperparameters": {
+      "epochs": 25,
+      "warmup_epochs": 5,
+      "batch_size": 16,
+      "head_lr": 0.0002,
+      "stage3_lr": 3e-05,
+      "stage2_lr": 1e-05,
+      "unfreeze_stages": 2,
+      "crop_loss_weight": 0.3,
+      "disease_loss_weight": 1.0,
+      "label_smoothing": 0.05,
+      "optimizer": "AdamW",
+      "weight_decay": 0.01
+    }
+  },
+  "validation_selection_metrics": {
+    "step": 19,
+    "epoch": 20,
+    "val_loss": 3.15271,
+    "val_crop_acc": 0.99583,
+    "val_raw_disease_acc": 0.95882,
+    "val_masked_disease_acc": 0.96,
+    "val_masked_disease_acc_note": "MLflow masked disease-head accuracy: 8,975 of 9,349 (0.9600). Serving-score soft-gated accuracy on validation is a different metric yielding 8,974 of 9,349 (0.9599).",
+    "val_macro_f1": 0.94952
+  },
+  "calibration": {
+    "T_disease": 0.5013,
+    "T_crop": 0.5931,
+    "method": "Vectorized Platt Temperature Scaling (L-BFGS NLL minimization on 9,349 Val samples)"
+  }
+}

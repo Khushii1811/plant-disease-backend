@@ -1,0 +1,1882 @@
+[
+  {
+    "class_name": "Jamun - Brown Blight",
+    "test_filename": "jamun_brown_blight_test_0001.jpg",
+    "test_path": "data/processed/test/Jamun - Brown Blight/jamun_brown_blight_test_0001.jpg",
+    "train_filename": "jamun_brown_blight_train_0254.jpg",
+    "train_path": "data/processed/train/Jamun - Brown Blight/jamun_brown_blight_train_0254.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Brown Blight",
+    "test_filename": "jamun_brown_blight_test_0002.jpg",
+    "test_path": "data/processed/test/Jamun - Brown Blight/jamun_brown_blight_test_0002.jpg",
+    "train_filename": "jamun_brown_blight_train_0226.jpg",
+    "train_path": "data/processed/train/Jamun - Brown Blight/jamun_brown_blight_train_0226.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Brown Blight",
+    "test_filename": "jamun_brown_blight_test_0003.jpg",
+    "test_path": "data/processed/test/Jamun - Brown Blight/jamun_brown_blight_test_0003.jpg",
+    "train_filename": "jamun_brown_blight_train_0140.jpg",
+    "train_path": "data/processed/train/Jamun - Brown Blight/jamun_brown_blight_train_0140.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Brown Blight",
+    "test_filename": "jamun_brown_blight_test_0004.jpg",
+    "test_path": "data/processed/test/Jamun - Brown Blight/jamun_brown_blight_test_0004.jpg",
+    "train_filename": "jamun_brown_blight_train_0247.jpg",
+    "train_path": "data/processed/train/Jamun - Brown Blight/jamun_brown_blight_train_0247.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Brown Blight",
+    "test_filename": "jamun_brown_blight_test_0005.jpg",
+    "test_path": "data/processed/test/Jamun - Brown Blight/jamun_brown_blight_test_0005.jpg",
+    "train_filename": "jamun_brown_blight_train_0092.jpg",
+    "train_path": "data/processed/train/Jamun - Brown Blight/jamun_brown_blight_train_0092.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Brown Blight",
+    "test_filename": "jamun_brown_blight_test_0006.jpg",
+    "test_path": "data/processed/test/Jamun - Brown Blight/jamun_brown_blight_test_0006.jpg",
+    "train_filename": "jamun_brown_blight_train_0092.jpg",
+    "train_path": "data/processed/train/Jamun - Brown Blight/jamun_brown_blight_train_0092.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Brown Blight",
+    "test_filename": "jamun_brown_blight_test_0007.jpg",
+    "test_path": "data/processed/test/Jamun - Brown Blight/jamun_brown_blight_test_0007.jpg",
+    "train_filename": "jamun_brown_blight_train_0073.jpg",
+    "train_path": "data/processed/train/Jamun - Brown Blight/jamun_brown_blight_train_0073.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Brown Blight",
+    "test_filename": "jamun_brown_blight_test_0008.jpg",
+    "test_path": "data/processed/test/Jamun - Brown Blight/jamun_brown_blight_test_0008.jpg",
+    "train_filename": "jamun_brown_blight_train_0155.jpg",
+    "train_path": "data/processed/train/Jamun - Brown Blight/jamun_brown_blight_train_0155.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Brown Blight",
+    "test_filename": "jamun_brown_blight_test_0009.jpg",
+    "test_path": "data/processed/test/Jamun - Brown Blight/jamun_brown_blight_test_0009.jpg",
+    "train_filename": "jamun_brown_blight_train_0002.jpg",
+    "train_path": "data/processed/train/Jamun - Brown Blight/jamun_brown_blight_train_0002.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Brown Blight",
+    "test_filename": "jamun_brown_blight_test_0010.jpg",
+    "test_path": "data/processed/test/Jamun - Brown Blight/jamun_brown_blight_test_0010.jpg",
+    "train_filename": "jamun_brown_blight_train_0113.jpg",
+    "train_path": "data/processed/train/Jamun - Brown Blight/jamun_brown_blight_train_0113.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Brown Blight",
+    "test_filename": "jamun_brown_blight_test_0011.jpg",
+    "test_path": "data/processed/test/Jamun - Brown Blight/jamun_brown_blight_test_0011.jpg",
+    "train_filename": "jamun_brown_blight_train_0078.jpg",
+    "train_path": "data/processed/train/Jamun - Brown Blight/jamun_brown_blight_train_0078.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Brown Blight",
+    "test_filename": "jamun_brown_blight_test_0012.jpg",
+    "test_path": "data/processed/test/Jamun - Brown Blight/jamun_brown_blight_test_0012.jpg",
+    "train_filename": "jamun_brown_blight_train_0098.jpg",
+    "train_path": "data/processed/train/Jamun - Brown Blight/jamun_brown_blight_train_0098.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Brown Blight",
+    "test_filename": "jamun_brown_blight_test_0013.jpg",
+    "test_path": "data/processed/test/Jamun - Brown Blight/jamun_brown_blight_test_0013.jpg",
+    "train_filename": "jamun_brown_blight_train_0064.jpg",
+    "train_path": "data/processed/train/Jamun - Brown Blight/jamun_brown_blight_train_0064.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Brown Blight",
+    "test_filename": "jamun_brown_blight_test_0014.jpg",
+    "test_path": "data/processed/test/Jamun - Brown Blight/jamun_brown_blight_test_0014.jpg",
+    "train_filename": "jamun_brown_blight_train_0134.jpg",
+    "train_path": "data/processed/train/Jamun - Brown Blight/jamun_brown_blight_train_0134.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Brown Blight",
+    "test_filename": "jamun_brown_blight_test_0015.jpg",
+    "test_path": "data/processed/test/Jamun - Brown Blight/jamun_brown_blight_test_0015.jpg",
+    "train_filename": "jamun_brown_blight_train_0001.jpg",
+    "train_path": "data/processed/train/Jamun - Brown Blight/jamun_brown_blight_train_0001.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Brown Blight",
+    "test_filename": "jamun_brown_blight_test_0016.jpg",
+    "test_path": "data/processed/test/Jamun - Brown Blight/jamun_brown_blight_test_0016.jpg",
+    "train_filename": "jamun_brown_blight_train_0240.jpg",
+    "train_path": "data/processed/train/Jamun - Brown Blight/jamun_brown_blight_train_0240.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Brown Blight",
+    "test_filename": "jamun_brown_blight_test_0017.jpg",
+    "test_path": "data/processed/test/Jamun - Brown Blight/jamun_brown_blight_test_0017.jpg",
+    "train_filename": "jamun_brown_blight_train_0095.jpg",
+    "train_path": "data/processed/train/Jamun - Brown Blight/jamun_brown_blight_train_0095.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Brown Blight",
+    "test_filename": "jamun_brown_blight_test_0018.jpg",
+    "test_path": "data/processed/test/Jamun - Brown Blight/jamun_brown_blight_test_0018.jpg",
+    "train_filename": "jamun_brown_blight_train_0198.jpg",
+    "train_path": "data/processed/train/Jamun - Brown Blight/jamun_brown_blight_train_0198.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Brown Blight",
+    "test_filename": "jamun_brown_blight_test_0019.jpg",
+    "test_path": "data/processed/test/Jamun - Brown Blight/jamun_brown_blight_test_0019.jpg",
+    "train_filename": "jamun_brown_blight_train_0192.jpg",
+    "train_path": "data/processed/train/Jamun - Brown Blight/jamun_brown_blight_train_0192.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Brown Blight",
+    "test_filename": "jamun_brown_blight_test_0020.jpg",
+    "test_path": "data/processed/test/Jamun - Brown Blight/jamun_brown_blight_test_0020.jpg",
+    "train_filename": "jamun_brown_blight_train_0156.jpg",
+    "train_path": "data/processed/train/Jamun - Brown Blight/jamun_brown_blight_train_0156.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Brown Blight",
+    "test_filename": "jamun_brown_blight_test_0021.jpg",
+    "test_path": "data/processed/test/Jamun - Brown Blight/jamun_brown_blight_test_0021.jpg",
+    "train_filename": "jamun_brown_blight_train_0181.jpg",
+    "train_path": "data/processed/train/Jamun - Brown Blight/jamun_brown_blight_train_0181.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Brown Blight",
+    "test_filename": "jamun_brown_blight_test_0022.jpg",
+    "test_path": "data/processed/test/Jamun - Brown Blight/jamun_brown_blight_test_0022.jpg",
+    "train_filename": "jamun_brown_blight_train_0045.jpg",
+    "train_path": "data/processed/train/Jamun - Brown Blight/jamun_brown_blight_train_0045.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Brown Blight",
+    "test_filename": "jamun_brown_blight_test_0023.jpg",
+    "test_path": "data/processed/test/Jamun - Brown Blight/jamun_brown_blight_test_0023.jpg",
+    "train_filename": "jamun_brown_blight_train_0117.jpg",
+    "train_path": "data/processed/train/Jamun - Brown Blight/jamun_brown_blight_train_0117.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Brown Blight",
+    "test_filename": "jamun_brown_blight_test_0024.jpg",
+    "test_path": "data/processed/test/Jamun - Brown Blight/jamun_brown_blight_test_0024.jpg",
+    "train_filename": "jamun_brown_blight_train_0170.jpg",
+    "train_path": "data/processed/train/Jamun - Brown Blight/jamun_brown_blight_train_0170.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Brown Blight",
+    "test_filename": "jamun_brown_blight_test_0025.jpg",
+    "test_path": "data/processed/test/Jamun - Brown Blight/jamun_brown_blight_test_0025.jpg",
+    "train_filename": "jamun_brown_blight_train_0254.jpg",
+    "train_path": "data/processed/train/Jamun - Brown Blight/jamun_brown_blight_train_0254.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Brown Blight",
+    "test_filename": "jamun_brown_blight_test_0026.jpg",
+    "test_path": "data/processed/test/Jamun - Brown Blight/jamun_brown_blight_test_0026.jpg",
+    "train_filename": "jamun_brown_blight_train_0181.jpg",
+    "train_path": "data/processed/train/Jamun - Brown Blight/jamun_brown_blight_train_0181.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Brown Blight",
+    "test_filename": "jamun_brown_blight_test_0027.jpg",
+    "test_path": "data/processed/test/Jamun - Brown Blight/jamun_brown_blight_test_0027.jpg",
+    "train_filename": "jamun_brown_blight_train_0036.jpg",
+    "train_path": "data/processed/train/Jamun - Brown Blight/jamun_brown_blight_train_0036.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Brown Blight",
+    "test_filename": "jamun_brown_blight_test_0028.jpg",
+    "test_path": "data/processed/test/Jamun - Brown Blight/jamun_brown_blight_test_0028.jpg",
+    "train_filename": "jamun_brown_blight_train_0005.jpg",
+    "train_path": "data/processed/train/Jamun - Brown Blight/jamun_brown_blight_train_0005.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Brown Blight",
+    "test_filename": "jamun_brown_blight_test_0029.jpg",
+    "test_path": "data/processed/test/Jamun - Brown Blight/jamun_brown_blight_test_0029.jpg",
+    "train_filename": "jamun_brown_blight_train_0159.jpg",
+    "train_path": "data/processed/train/Jamun - Brown Blight/jamun_brown_blight_train_0159.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Brown Blight",
+    "test_filename": "jamun_brown_blight_test_0030.jpg",
+    "test_path": "data/processed/test/Jamun - Brown Blight/jamun_brown_blight_test_0030.jpg",
+    "train_filename": "jamun_brown_blight_train_0080.jpg",
+    "train_path": "data/processed/train/Jamun - Brown Blight/jamun_brown_blight_train_0080.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Brown Blight",
+    "test_filename": "jamun_brown_blight_test_0031.jpg",
+    "test_path": "data/processed/test/Jamun - Brown Blight/jamun_brown_blight_test_0031.jpg",
+    "train_filename": "jamun_brown_blight_train_0293.jpg",
+    "train_path": "data/processed/train/Jamun - Brown Blight/jamun_brown_blight_train_0293.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Brown Blight",
+    "test_filename": "jamun_brown_blight_test_0032.jpg",
+    "test_path": "data/processed/test/Jamun - Brown Blight/jamun_brown_blight_test_0032.jpg",
+    "train_filename": "jamun_brown_blight_train_0271.jpg",
+    "train_path": "data/processed/train/Jamun - Brown Blight/jamun_brown_blight_train_0271.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Brown Blight",
+    "test_filename": "jamun_brown_blight_test_0033.jpg",
+    "test_path": "data/processed/test/Jamun - Brown Blight/jamun_brown_blight_test_0033.jpg",
+    "train_filename": "jamun_brown_blight_train_0024.jpg",
+    "train_path": "data/processed/train/Jamun - Brown Blight/jamun_brown_blight_train_0024.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Brown Blight",
+    "test_filename": "jamun_brown_blight_test_0034.jpg",
+    "test_path": "data/processed/test/Jamun - Brown Blight/jamun_brown_blight_test_0034.jpg",
+    "train_filename": "jamun_brown_blight_train_0049.jpg",
+    "train_path": "data/processed/train/Jamun - Brown Blight/jamun_brown_blight_train_0049.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Brown Blight",
+    "test_filename": "jamun_brown_blight_test_0035.jpg",
+    "test_path": "data/processed/test/Jamun - Brown Blight/jamun_brown_blight_test_0035.jpg",
+    "train_filename": "jamun_brown_blight_train_0033.jpg",
+    "train_path": "data/processed/train/Jamun - Brown Blight/jamun_brown_blight_train_0033.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Brown Blight",
+    "test_filename": "jamun_brown_blight_test_0036.jpg",
+    "test_path": "data/processed/test/Jamun - Brown Blight/jamun_brown_blight_test_0036.jpg",
+    "train_filename": "jamun_brown_blight_train_0226.jpg",
+    "train_path": "data/processed/train/Jamun - Brown Blight/jamun_brown_blight_train_0226.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Brown Blight",
+    "test_filename": "jamun_brown_blight_test_0037.jpg",
+    "test_path": "data/processed/test/Jamun - Brown Blight/jamun_brown_blight_test_0037.jpg",
+    "train_filename": "jamun_brown_blight_train_0078.jpg",
+    "train_path": "data/processed/train/Jamun - Brown Blight/jamun_brown_blight_train_0078.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Brown Blight",
+    "test_filename": "jamun_brown_blight_test_0038.jpg",
+    "test_path": "data/processed/test/Jamun - Brown Blight/jamun_brown_blight_test_0038.jpg",
+    "train_filename": "jamun_brown_blight_train_0019.jpg",
+    "train_path": "data/processed/train/Jamun - Brown Blight/jamun_brown_blight_train_0019.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Brown Blight",
+    "test_filename": "jamun_brown_blight_test_0039.jpg",
+    "test_path": "data/processed/test/Jamun - Brown Blight/jamun_brown_blight_test_0039.jpg",
+    "train_filename": "jamun_brown_blight_train_0027.jpg",
+    "train_path": "data/processed/train/Jamun - Brown Blight/jamun_brown_blight_train_0027.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Brown Blight",
+    "test_filename": "jamun_brown_blight_test_0040.jpg",
+    "test_path": "data/processed/test/Jamun - Brown Blight/jamun_brown_blight_test_0040.jpg",
+    "train_filename": "jamun_brown_blight_train_0100.jpg",
+    "train_path": "data/processed/train/Jamun - Brown Blight/jamun_brown_blight_train_0100.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Bacterial Spot",
+    "test_filename": "jamun_bacterial_spot_test_0001.jpg",
+    "test_path": "data/processed/test/Jamun - Bacterial Spot/jamun_bacterial_spot_test_0001.jpg",
+    "train_filename": "jamun_bacterial_spot_train_0214.jpg",
+    "train_path": "data/processed/train/Jamun - Bacterial Spot/jamun_bacterial_spot_train_0214.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Bacterial Spot",
+    "test_filename": "jamun_bacterial_spot_test_0002.jpg",
+    "test_path": "data/processed/test/Jamun - Bacterial Spot/jamun_bacterial_spot_test_0002.jpg",
+    "train_filename": "jamun_bacterial_spot_train_0064.jpg",
+    "train_path": "data/processed/train/Jamun - Bacterial Spot/jamun_bacterial_spot_train_0064.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Bacterial Spot",
+    "test_filename": "jamun_bacterial_spot_test_0003.jpg",
+    "test_path": "data/processed/test/Jamun - Bacterial Spot/jamun_bacterial_spot_test_0003.jpg",
+    "train_filename": "jamun_bacterial_spot_train_0054.jpg",
+    "train_path": "data/processed/train/Jamun - Bacterial Spot/jamun_bacterial_spot_train_0054.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Bacterial Spot",
+    "test_filename": "jamun_bacterial_spot_test_0004.jpg",
+    "test_path": "data/processed/test/Jamun - Bacterial Spot/jamun_bacterial_spot_test_0004.jpg",
+    "train_filename": "jamun_bacterial_spot_train_0130.jpg",
+    "train_path": "data/processed/train/Jamun - Bacterial Spot/jamun_bacterial_spot_train_0130.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Bacterial Spot",
+    "test_filename": "jamun_bacterial_spot_test_0005.jpg",
+    "test_path": "data/processed/test/Jamun - Bacterial Spot/jamun_bacterial_spot_test_0005.jpg",
+    "train_filename": "jamun_bacterial_spot_train_0163.jpg",
+    "train_path": "data/processed/train/Jamun - Bacterial Spot/jamun_bacterial_spot_train_0163.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Bacterial Spot",
+    "test_filename": "jamun_bacterial_spot_test_0006.jpg",
+    "test_path": "data/processed/test/Jamun - Bacterial Spot/jamun_bacterial_spot_test_0006.jpg",
+    "train_filename": "jamun_bacterial_spot_train_0095.jpg",
+    "train_path": "data/processed/train/Jamun - Bacterial Spot/jamun_bacterial_spot_train_0095.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Bacterial Spot",
+    "test_filename": "jamun_bacterial_spot_test_0007.jpg",
+    "test_path": "data/processed/test/Jamun - Bacterial Spot/jamun_bacterial_spot_test_0007.jpg",
+    "train_filename": "jamun_bacterial_spot_train_0003.jpg",
+    "train_path": "data/processed/train/Jamun - Bacterial Spot/jamun_bacterial_spot_train_0003.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Bacterial Spot",
+    "test_filename": "jamun_bacterial_spot_test_0008.jpg",
+    "test_path": "data/processed/test/Jamun - Bacterial Spot/jamun_bacterial_spot_test_0008.jpg",
+    "train_filename": "jamun_bacterial_spot_train_0030.jpg",
+    "train_path": "data/processed/train/Jamun - Bacterial Spot/jamun_bacterial_spot_train_0030.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Bacterial Spot",
+    "test_filename": "jamun_bacterial_spot_test_0009.jpg",
+    "test_path": "data/processed/test/Jamun - Bacterial Spot/jamun_bacterial_spot_test_0009.jpg",
+    "train_filename": "jamun_bacterial_spot_train_0124.jpg",
+    "train_path": "data/processed/train/Jamun - Bacterial Spot/jamun_bacterial_spot_train_0124.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Bacterial Spot",
+    "test_filename": "jamun_bacterial_spot_test_0010.jpg",
+    "test_path": "data/processed/test/Jamun - Bacterial Spot/jamun_bacterial_spot_test_0010.jpg",
+    "train_filename": "jamun_bacterial_spot_train_0054.jpg",
+    "train_path": "data/processed/train/Jamun - Bacterial Spot/jamun_bacterial_spot_train_0054.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Bacterial Spot",
+    "test_filename": "jamun_bacterial_spot_test_0011.jpg",
+    "test_path": "data/processed/test/Jamun - Bacterial Spot/jamun_bacterial_spot_test_0011.jpg",
+    "train_filename": "jamun_bacterial_spot_train_0033.jpg",
+    "train_path": "data/processed/train/Jamun - Bacterial Spot/jamun_bacterial_spot_train_0033.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Bacterial Spot",
+    "test_filename": "jamun_bacterial_spot_test_0012.jpg",
+    "test_path": "data/processed/test/Jamun - Bacterial Spot/jamun_bacterial_spot_test_0012.jpg",
+    "train_filename": "jamun_bacterial_spot_train_0146.jpg",
+    "train_path": "data/processed/train/Jamun - Bacterial Spot/jamun_bacterial_spot_train_0146.jpg",
+    "dist": 4,
+    "is_zero": false,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Bacterial Spot",
+    "test_filename": "jamun_bacterial_spot_test_0013.jpg",
+    "test_path": "data/processed/test/Jamun - Bacterial Spot/jamun_bacterial_spot_test_0013.jpg",
+    "train_filename": "jamun_bacterial_spot_train_0220.jpg",
+    "train_path": "data/processed/train/Jamun - Bacterial Spot/jamun_bacterial_spot_train_0220.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Bacterial Spot",
+    "test_filename": "jamun_bacterial_spot_test_0014.jpg",
+    "test_path": "data/processed/test/Jamun - Bacterial Spot/jamun_bacterial_spot_test_0014.jpg",
+    "train_filename": "jamun_bacterial_spot_train_0201.jpg",
+    "train_path": "data/processed/train/Jamun - Bacterial Spot/jamun_bacterial_spot_train_0201.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Bacterial Spot",
+    "test_filename": "jamun_bacterial_spot_test_0015.jpg",
+    "test_path": "data/processed/test/Jamun - Bacterial Spot/jamun_bacterial_spot_test_0015.jpg",
+    "train_filename": "jamun_bacterial_spot_train_0242.jpg",
+    "train_path": "data/processed/train/Jamun - Bacterial Spot/jamun_bacterial_spot_train_0242.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Bacterial Spot",
+    "test_filename": "jamun_bacterial_spot_test_0016.jpg",
+    "test_path": "data/processed/test/Jamun - Bacterial Spot/jamun_bacterial_spot_test_0016.jpg",
+    "train_filename": "jamun_bacterial_spot_train_0131.jpg",
+    "train_path": "data/processed/train/Jamun - Bacterial Spot/jamun_bacterial_spot_train_0131.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Bacterial Spot",
+    "test_filename": "jamun_bacterial_spot_test_0017.jpg",
+    "test_path": "data/processed/test/Jamun - Bacterial Spot/jamun_bacterial_spot_test_0017.jpg",
+    "train_filename": "jamun_bacterial_spot_train_0195.jpg",
+    "train_path": "data/processed/train/Jamun - Bacterial Spot/jamun_bacterial_spot_train_0195.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Bacterial Spot",
+    "test_filename": "jamun_bacterial_spot_test_0018.jpg",
+    "test_path": "data/processed/test/Jamun - Bacterial Spot/jamun_bacterial_spot_test_0018.jpg",
+    "train_filename": "jamun_bacterial_spot_train_0095.jpg",
+    "train_path": "data/processed/train/Jamun - Bacterial Spot/jamun_bacterial_spot_train_0095.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Bacterial Spot",
+    "test_filename": "jamun_bacterial_spot_test_0019.jpg",
+    "test_path": "data/processed/test/Jamun - Bacterial Spot/jamun_bacterial_spot_test_0019.jpg",
+    "train_filename": "jamun_bacterial_spot_train_0097.jpg",
+    "train_path": "data/processed/train/Jamun - Bacterial Spot/jamun_bacterial_spot_train_0097.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Bacterial Spot",
+    "test_filename": "jamun_bacterial_spot_test_0020.jpg",
+    "test_path": "data/processed/test/Jamun - Bacterial Spot/jamun_bacterial_spot_test_0020.jpg",
+    "train_filename": "jamun_bacterial_spot_train_0225.jpg",
+    "train_path": "data/processed/train/Jamun - Bacterial Spot/jamun_bacterial_spot_train_0225.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Bacterial Spot",
+    "test_filename": "jamun_bacterial_spot_test_0021.jpg",
+    "test_path": "data/processed/test/Jamun - Bacterial Spot/jamun_bacterial_spot_test_0021.jpg",
+    "train_filename": "jamun_bacterial_spot_train_0038.jpg",
+    "train_path": "data/processed/train/Jamun - Bacterial Spot/jamun_bacterial_spot_train_0038.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Bacterial Spot",
+    "test_filename": "jamun_bacterial_spot_test_0022.jpg",
+    "test_path": "data/processed/test/Jamun - Bacterial Spot/jamun_bacterial_spot_test_0022.jpg",
+    "train_filename": "jamun_bacterial_spot_train_0146.jpg",
+    "train_path": "data/processed/train/Jamun - Bacterial Spot/jamun_bacterial_spot_train_0146.jpg",
+    "dist": 4,
+    "is_zero": false,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Bacterial Spot",
+    "test_filename": "jamun_bacterial_spot_test_0023.jpg",
+    "test_path": "data/processed/test/Jamun - Bacterial Spot/jamun_bacterial_spot_test_0023.jpg",
+    "train_filename": "jamun_bacterial_spot_train_0139.jpg",
+    "train_path": "data/processed/train/Jamun - Bacterial Spot/jamun_bacterial_spot_train_0139.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Bacterial Spot",
+    "test_filename": "jamun_bacterial_spot_test_0024.jpg",
+    "test_path": "data/processed/test/Jamun - Bacterial Spot/jamun_bacterial_spot_test_0024.jpg",
+    "train_filename": "jamun_bacterial_spot_train_0196.jpg",
+    "train_path": "data/processed/train/Jamun - Bacterial Spot/jamun_bacterial_spot_train_0196.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Bacterial Spot",
+    "test_filename": "jamun_bacterial_spot_test_0025.jpg",
+    "test_path": "data/processed/test/Jamun - Bacterial Spot/jamun_bacterial_spot_test_0025.jpg",
+    "train_filename": "jamun_bacterial_spot_train_0146.jpg",
+    "train_path": "data/processed/train/Jamun - Bacterial Spot/jamun_bacterial_spot_train_0146.jpg",
+    "dist": 4,
+    "is_zero": false,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Bacterial Spot",
+    "test_filename": "jamun_bacterial_spot_test_0026.jpg",
+    "test_path": "data/processed/test/Jamun - Bacterial Spot/jamun_bacterial_spot_test_0026.jpg",
+    "train_filename": "jamun_bacterial_spot_train_0102.jpg",
+    "train_path": "data/processed/train/Jamun - Bacterial Spot/jamun_bacterial_spot_train_0102.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Bacterial Spot",
+    "test_filename": "jamun_bacterial_spot_test_0027.jpg",
+    "test_path": "data/processed/test/Jamun - Bacterial Spot/jamun_bacterial_spot_test_0027.jpg",
+    "train_filename": "jamun_bacterial_spot_train_0057.jpg",
+    "train_path": "data/processed/train/Jamun - Bacterial Spot/jamun_bacterial_spot_train_0057.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Bacterial Spot",
+    "test_filename": "jamun_bacterial_spot_test_0028.jpg",
+    "test_path": "data/processed/test/Jamun - Bacterial Spot/jamun_bacterial_spot_test_0028.jpg",
+    "train_filename": "jamun_bacterial_spot_train_0047.jpg",
+    "train_path": "data/processed/train/Jamun - Bacterial Spot/jamun_bacterial_spot_train_0047.jpg",
+    "dist": 14,
+    "is_zero": false,
+    "is_strict": false
+  },
+  {
+    "class_name": "Jamun - Bacterial Spot",
+    "test_filename": "jamun_bacterial_spot_test_0029.jpg",
+    "test_path": "data/processed/test/Jamun - Bacterial Spot/jamun_bacterial_spot_test_0029.jpg",
+    "train_filename": "jamun_bacterial_spot_train_0032.jpg",
+    "train_path": "data/processed/train/Jamun - Bacterial Spot/jamun_bacterial_spot_train_0032.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Bacterial Spot",
+    "test_filename": "jamun_bacterial_spot_test_0030.jpg",
+    "test_path": "data/processed/test/Jamun - Bacterial Spot/jamun_bacterial_spot_test_0030.jpg",
+    "train_filename": "jamun_bacterial_spot_train_0036.jpg",
+    "train_path": "data/processed/train/Jamun - Bacterial Spot/jamun_bacterial_spot_train_0036.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Bacterial Spot",
+    "test_filename": "jamun_bacterial_spot_test_0031.jpg",
+    "test_path": "data/processed/test/Jamun - Bacterial Spot/jamun_bacterial_spot_test_0031.jpg",
+    "train_filename": "jamun_bacterial_spot_train_0016.jpg",
+    "train_path": "data/processed/train/Jamun - Bacterial Spot/jamun_bacterial_spot_train_0016.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Bacterial Spot",
+    "test_filename": "jamun_bacterial_spot_test_0032.jpg",
+    "test_path": "data/processed/test/Jamun - Bacterial Spot/jamun_bacterial_spot_test_0032.jpg",
+    "train_filename": "jamun_bacterial_spot_train_0074.jpg",
+    "train_path": "data/processed/train/Jamun - Bacterial Spot/jamun_bacterial_spot_train_0074.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Bacterial Spot",
+    "test_filename": "jamun_bacterial_spot_test_0033.jpg",
+    "test_path": "data/processed/test/Jamun - Bacterial Spot/jamun_bacterial_spot_test_0033.jpg",
+    "train_filename": "jamun_bacterial_spot_train_0047.jpg",
+    "train_path": "data/processed/train/Jamun - Bacterial Spot/jamun_bacterial_spot_train_0047.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Bacterial Spot",
+    "test_filename": "jamun_bacterial_spot_test_0034.jpg",
+    "test_path": "data/processed/test/Jamun - Bacterial Spot/jamun_bacterial_spot_test_0034.jpg",
+    "train_filename": "jamun_bacterial_spot_train_0114.jpg",
+    "train_path": "data/processed/train/Jamun - Bacterial Spot/jamun_bacterial_spot_train_0114.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Bacterial Spot",
+    "test_filename": "jamun_bacterial_spot_test_0035.jpg",
+    "test_path": "data/processed/test/Jamun - Bacterial Spot/jamun_bacterial_spot_test_0035.jpg",
+    "train_filename": "jamun_bacterial_spot_train_0043.jpg",
+    "train_path": "data/processed/train/Jamun - Bacterial Spot/jamun_bacterial_spot_train_0043.jpg",
+    "dist": 8,
+    "is_zero": false,
+    "is_strict": false
+  },
+  {
+    "class_name": "Jamun - Bacterial Spot",
+    "test_filename": "jamun_bacterial_spot_test_0036.jpg",
+    "test_path": "data/processed/test/Jamun - Bacterial Spot/jamun_bacterial_spot_test_0036.jpg",
+    "train_filename": "jamun_bacterial_spot_train_0230.jpg",
+    "train_path": "data/processed/train/Jamun - Bacterial Spot/jamun_bacterial_spot_train_0230.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Bacterial Spot",
+    "test_filename": "jamun_bacterial_spot_test_0037.jpg",
+    "test_path": "data/processed/test/Jamun - Bacterial Spot/jamun_bacterial_spot_test_0037.jpg",
+    "train_filename": "jamun_bacterial_spot_train_0205.jpg",
+    "train_path": "data/processed/train/Jamun - Bacterial Spot/jamun_bacterial_spot_train_0205.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Bacterial Spot",
+    "test_filename": "jamun_bacterial_spot_test_0038.jpg",
+    "test_path": "data/processed/test/Jamun - Bacterial Spot/jamun_bacterial_spot_test_0038.jpg",
+    "train_filename": "jamun_bacterial_spot_train_0198.jpg",
+    "train_path": "data/processed/train/Jamun - Bacterial Spot/jamun_bacterial_spot_train_0198.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Bacterial Spot",
+    "test_filename": "jamun_bacterial_spot_test_0039.jpg",
+    "test_path": "data/processed/test/Jamun - Bacterial Spot/jamun_bacterial_spot_test_0039.jpg",
+    "train_filename": "jamun_bacterial_spot_train_0105.jpg",
+    "train_path": "data/processed/train/Jamun - Bacterial Spot/jamun_bacterial_spot_train_0105.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Bacterial Spot",
+    "test_filename": "jamun_bacterial_spot_test_0040.jpg",
+    "test_path": "data/processed/test/Jamun - Bacterial Spot/jamun_bacterial_spot_test_0040.jpg",
+    "train_filename": "jamun_bacterial_spot_train_0139.jpg",
+    "train_path": "data/processed/train/Jamun - Bacterial Spot/jamun_bacterial_spot_train_0139.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Healthy",
+    "test_filename": "jamun_healthy_test_0001.jpg",
+    "test_path": "data/processed/test/Jamun - Healthy/jamun_healthy_test_0001.jpg",
+    "train_filename": "jamun_healthy_train_0180.jpg",
+    "train_path": "data/processed/train/Jamun - Healthy/jamun_healthy_train_0180.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Healthy",
+    "test_filename": "jamun_healthy_test_0002.jpg",
+    "test_path": "data/processed/test/Jamun - Healthy/jamun_healthy_test_0002.jpg",
+    "train_filename": "jamun_healthy_train_0008.jpg",
+    "train_path": "data/processed/train/Jamun - Healthy/jamun_healthy_train_0008.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Healthy",
+    "test_filename": "jamun_healthy_test_0003.jpg",
+    "test_path": "data/processed/test/Jamun - Healthy/jamun_healthy_test_0003.jpg",
+    "train_filename": "jamun_healthy_train_0160.jpg",
+    "train_path": "data/processed/train/Jamun - Healthy/jamun_healthy_train_0160.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Healthy",
+    "test_filename": "jamun_healthy_test_0004.jpg",
+    "test_path": "data/processed/test/Jamun - Healthy/jamun_healthy_test_0004.jpg",
+    "train_filename": "jamun_healthy_train_0216.jpg",
+    "train_path": "data/processed/train/Jamun - Healthy/jamun_healthy_train_0216.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Healthy",
+    "test_filename": "jamun_healthy_test_0005.jpg",
+    "test_path": "data/processed/test/Jamun - Healthy/jamun_healthy_test_0005.jpg",
+    "train_filename": "jamun_healthy_train_0044.jpg",
+    "train_path": "data/processed/train/Jamun - Healthy/jamun_healthy_train_0044.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Healthy",
+    "test_filename": "jamun_healthy_test_0006.jpg",
+    "test_path": "data/processed/test/Jamun - Healthy/jamun_healthy_test_0006.jpg",
+    "train_filename": "jamun_healthy_train_0214.jpg",
+    "train_path": "data/processed/train/Jamun - Healthy/jamun_healthy_train_0214.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Healthy",
+    "test_filename": "jamun_healthy_test_0007.jpg",
+    "test_path": "data/processed/test/Jamun - Healthy/jamun_healthy_test_0007.jpg",
+    "train_filename": "jamun_healthy_train_0009.jpg",
+    "train_path": "data/processed/train/Jamun - Healthy/jamun_healthy_train_0009.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Healthy",
+    "test_filename": "jamun_healthy_test_0008.jpg",
+    "test_path": "data/processed/test/Jamun - Healthy/jamun_healthy_test_0008.jpg",
+    "train_filename": "jamun_healthy_train_0196.jpg",
+    "train_path": "data/processed/train/Jamun - Healthy/jamun_healthy_train_0196.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Healthy",
+    "test_filename": "jamun_healthy_test_0009.jpg",
+    "test_path": "data/processed/test/Jamun - Healthy/jamun_healthy_test_0009.jpg",
+    "train_filename": "jamun_healthy_train_0106.jpg",
+    "train_path": "data/processed/train/Jamun - Healthy/jamun_healthy_train_0106.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Healthy",
+    "test_filename": "jamun_healthy_test_0010.jpg",
+    "test_path": "data/processed/test/Jamun - Healthy/jamun_healthy_test_0010.jpg",
+    "train_filename": "jamun_healthy_train_0150.jpg",
+    "train_path": "data/processed/train/Jamun - Healthy/jamun_healthy_train_0150.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Healthy",
+    "test_filename": "jamun_healthy_test_0011.jpg",
+    "test_path": "data/processed/test/Jamun - Healthy/jamun_healthy_test_0011.jpg",
+    "train_filename": "jamun_healthy_train_0098.jpg",
+    "train_path": "data/processed/train/Jamun - Healthy/jamun_healthy_train_0098.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Healthy",
+    "test_filename": "jamun_healthy_test_0012.jpg",
+    "test_path": "data/processed/test/Jamun - Healthy/jamun_healthy_test_0012.jpg",
+    "train_filename": "jamun_healthy_train_0101.jpg",
+    "train_path": "data/processed/train/Jamun - Healthy/jamun_healthy_train_0101.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Healthy",
+    "test_filename": "jamun_healthy_test_0013.jpg",
+    "test_path": "data/processed/test/Jamun - Healthy/jamun_healthy_test_0013.jpg",
+    "train_filename": "jamun_healthy_train_0122.jpg",
+    "train_path": "data/processed/train/Jamun - Healthy/jamun_healthy_train_0122.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Healthy",
+    "test_filename": "jamun_healthy_test_0014.jpg",
+    "test_path": "data/processed/test/Jamun - Healthy/jamun_healthy_test_0014.jpg",
+    "train_filename": "jamun_healthy_train_0050.jpg",
+    "train_path": "data/processed/train/Jamun - Healthy/jamun_healthy_train_0050.jpg",
+    "dist": 4,
+    "is_zero": false,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Healthy",
+    "test_filename": "jamun_healthy_test_0015.jpg",
+    "test_path": "data/processed/test/Jamun - Healthy/jamun_healthy_test_0015.jpg",
+    "train_filename": "jamun_healthy_train_0075.jpg",
+    "train_path": "data/processed/train/Jamun - Healthy/jamun_healthy_train_0075.jpg",
+    "dist": 6,
+    "is_zero": false,
+    "is_strict": false
+  },
+  {
+    "class_name": "Jamun - Healthy",
+    "test_filename": "jamun_healthy_test_0016.jpg",
+    "test_path": "data/processed/test/Jamun - Healthy/jamun_healthy_test_0016.jpg",
+    "train_filename": "jamun_healthy_train_0057.jpg",
+    "train_path": "data/processed/train/Jamun - Healthy/jamun_healthy_train_0057.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Healthy",
+    "test_filename": "jamun_healthy_test_0017.jpg",
+    "test_path": "data/processed/test/Jamun - Healthy/jamun_healthy_test_0017.jpg",
+    "train_filename": "jamun_healthy_train_0187.jpg",
+    "train_path": "data/processed/train/Jamun - Healthy/jamun_healthy_train_0187.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Healthy",
+    "test_filename": "jamun_healthy_test_0018.jpg",
+    "test_path": "data/processed/test/Jamun - Healthy/jamun_healthy_test_0018.jpg",
+    "train_filename": "jamun_healthy_train_0110.jpg",
+    "train_path": "data/processed/train/Jamun - Healthy/jamun_healthy_train_0110.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Healthy",
+    "test_filename": "jamun_healthy_test_0019.jpg",
+    "test_path": "data/processed/test/Jamun - Healthy/jamun_healthy_test_0019.jpg",
+    "train_filename": "jamun_healthy_train_0120.jpg",
+    "train_path": "data/processed/train/Jamun - Healthy/jamun_healthy_train_0120.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Healthy",
+    "test_filename": "jamun_healthy_test_0020.jpg",
+    "test_path": "data/processed/test/Jamun - Healthy/jamun_healthy_test_0020.jpg",
+    "train_filename": "jamun_healthy_train_0189.jpg",
+    "train_path": "data/processed/train/Jamun - Healthy/jamun_healthy_train_0189.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Healthy",
+    "test_filename": "jamun_healthy_test_0021.jpg",
+    "test_path": "data/processed/test/Jamun - Healthy/jamun_healthy_test_0021.jpg",
+    "train_filename": "jamun_healthy_train_0024.jpg",
+    "train_path": "data/processed/train/Jamun - Healthy/jamun_healthy_train_0024.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Healthy",
+    "test_filename": "jamun_healthy_test_0022.jpg",
+    "test_path": "data/processed/test/Jamun - Healthy/jamun_healthy_test_0022.jpg",
+    "train_filename": "jamun_healthy_train_0041.jpg",
+    "train_path": "data/processed/train/Jamun - Healthy/jamun_healthy_train_0041.jpg",
+    "dist": 12,
+    "is_zero": false,
+    "is_strict": false
+  },
+  {
+    "class_name": "Jamun - Healthy",
+    "test_filename": "jamun_healthy_test_0023.jpg",
+    "test_path": "data/processed/test/Jamun - Healthy/jamun_healthy_test_0023.jpg",
+    "train_filename": "jamun_healthy_train_0136.jpg",
+    "train_path": "data/processed/train/Jamun - Healthy/jamun_healthy_train_0136.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Healthy",
+    "test_filename": "jamun_healthy_test_0024.jpg",
+    "test_path": "data/processed/test/Jamun - Healthy/jamun_healthy_test_0024.jpg",
+    "train_filename": "jamun_healthy_train_0085.jpg",
+    "train_path": "data/processed/train/Jamun - Healthy/jamun_healthy_train_0085.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Healthy",
+    "test_filename": "jamun_healthy_test_0025.jpg",
+    "test_path": "data/processed/test/Jamun - Healthy/jamun_healthy_test_0025.jpg",
+    "train_filename": "jamun_healthy_train_0146.jpg",
+    "train_path": "data/processed/train/Jamun - Healthy/jamun_healthy_train_0146.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Healthy",
+    "test_filename": "jamun_healthy_test_0026.jpg",
+    "test_path": "data/processed/test/Jamun - Healthy/jamun_healthy_test_0026.jpg",
+    "train_filename": "jamun_healthy_train_0217.jpg",
+    "train_path": "data/processed/train/Jamun - Healthy/jamun_healthy_train_0217.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Healthy",
+    "test_filename": "jamun_healthy_test_0027.jpg",
+    "test_path": "data/processed/test/Jamun - Healthy/jamun_healthy_test_0027.jpg",
+    "train_filename": "jamun_healthy_train_0169.jpg",
+    "train_path": "data/processed/train/Jamun - Healthy/jamun_healthy_train_0169.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Healthy",
+    "test_filename": "jamun_healthy_test_0028.jpg",
+    "test_path": "data/processed/test/Jamun - Healthy/jamun_healthy_test_0028.jpg",
+    "train_filename": "jamun_healthy_train_0148.jpg",
+    "train_path": "data/processed/train/Jamun - Healthy/jamun_healthy_train_0148.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Powdery Mildew",
+    "test_filename": "jamun_powdery_mildew_test_0001.jpg",
+    "test_path": "data/processed/test/Jamun - Powdery Mildew/jamun_powdery_mildew_test_0001.jpg",
+    "train_filename": "jamun_powdery_mildew_train_0103.jpg",
+    "train_path": "data/processed/train/Jamun - Powdery Mildew/jamun_powdery_mildew_train_0103.jpg",
+    "dist": 6,
+    "is_zero": false,
+    "is_strict": false
+  },
+  {
+    "class_name": "Jamun - Powdery Mildew",
+    "test_filename": "jamun_powdery_mildew_test_0002.jpg",
+    "test_path": "data/processed/test/Jamun - Powdery Mildew/jamun_powdery_mildew_test_0002.jpg",
+    "train_filename": "jamun_powdery_mildew_train_0103.jpg",
+    "train_path": "data/processed/train/Jamun - Powdery Mildew/jamun_powdery_mildew_train_0103.jpg",
+    "dist": 10,
+    "is_zero": false,
+    "is_strict": false
+  },
+  {
+    "class_name": "Jamun - Powdery Mildew",
+    "test_filename": "jamun_powdery_mildew_test_0003.jpg",
+    "test_path": "data/processed/test/Jamun - Powdery Mildew/jamun_powdery_mildew_test_0003.jpg",
+    "train_filename": "jamun_powdery_mildew_train_0031.jpg",
+    "train_path": "data/processed/train/Jamun - Powdery Mildew/jamun_powdery_mildew_train_0031.jpg",
+    "dist": 8,
+    "is_zero": false,
+    "is_strict": false
+  },
+  {
+    "class_name": "Jamun - Powdery Mildew",
+    "test_filename": "jamun_powdery_mildew_test_0004.jpg",
+    "test_path": "data/processed/test/Jamun - Powdery Mildew/jamun_powdery_mildew_test_0004.jpg",
+    "train_filename": "jamun_powdery_mildew_train_0224.jpg",
+    "train_path": "data/processed/train/Jamun - Powdery Mildew/jamun_powdery_mildew_train_0224.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Powdery Mildew",
+    "test_filename": "jamun_powdery_mildew_test_0005.jpg",
+    "test_path": "data/processed/test/Jamun - Powdery Mildew/jamun_powdery_mildew_test_0005.jpg",
+    "train_filename": "jamun_powdery_mildew_train_0016.jpg",
+    "train_path": "data/processed/train/Jamun - Powdery Mildew/jamun_powdery_mildew_train_0016.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Powdery Mildew",
+    "test_filename": "jamun_powdery_mildew_test_0006.jpg",
+    "test_path": "data/processed/test/Jamun - Powdery Mildew/jamun_powdery_mildew_test_0006.jpg",
+    "train_filename": "jamun_powdery_mildew_train_0008.jpg",
+    "train_path": "data/processed/train/Jamun - Powdery Mildew/jamun_powdery_mildew_train_0008.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Powdery Mildew",
+    "test_filename": "jamun_powdery_mildew_test_0007.jpg",
+    "test_path": "data/processed/test/Jamun - Powdery Mildew/jamun_powdery_mildew_test_0007.jpg",
+    "train_filename": "jamun_powdery_mildew_train_0159.jpg",
+    "train_path": "data/processed/train/Jamun - Powdery Mildew/jamun_powdery_mildew_train_0159.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Powdery Mildew",
+    "test_filename": "jamun_powdery_mildew_test_0008.jpg",
+    "test_path": "data/processed/test/Jamun - Powdery Mildew/jamun_powdery_mildew_test_0008.jpg",
+    "train_filename": "jamun_powdery_mildew_train_0010.jpg",
+    "train_path": "data/processed/train/Jamun - Powdery Mildew/jamun_powdery_mildew_train_0010.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Powdery Mildew",
+    "test_filename": "jamun_powdery_mildew_test_0009.jpg",
+    "test_path": "data/processed/test/Jamun - Powdery Mildew/jamun_powdery_mildew_test_0009.jpg",
+    "train_filename": "jamun_powdery_mildew_train_0092.jpg",
+    "train_path": "data/processed/train/Jamun - Powdery Mildew/jamun_powdery_mildew_train_0092.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Powdery Mildew",
+    "test_filename": "jamun_powdery_mildew_test_0010.jpg",
+    "test_path": "data/processed/test/Jamun - Powdery Mildew/jamun_powdery_mildew_test_0010.jpg",
+    "train_filename": "jamun_powdery_mildew_train_0067.jpg",
+    "train_path": "data/processed/train/Jamun - Powdery Mildew/jamun_powdery_mildew_train_0067.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Powdery Mildew",
+    "test_filename": "jamun_powdery_mildew_test_0011.jpg",
+    "test_path": "data/processed/test/Jamun - Powdery Mildew/jamun_powdery_mildew_test_0011.jpg",
+    "train_filename": "jamun_powdery_mildew_train_0273.jpg",
+    "train_path": "data/processed/train/Jamun - Powdery Mildew/jamun_powdery_mildew_train_0273.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Powdery Mildew",
+    "test_filename": "jamun_powdery_mildew_test_0012.jpg",
+    "test_path": "data/processed/test/Jamun - Powdery Mildew/jamun_powdery_mildew_test_0012.jpg",
+    "train_filename": "jamun_powdery_mildew_train_0218.jpg",
+    "train_path": "data/processed/train/Jamun - Powdery Mildew/jamun_powdery_mildew_train_0218.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Powdery Mildew",
+    "test_filename": "jamun_powdery_mildew_test_0013.jpg",
+    "test_path": "data/processed/test/Jamun - Powdery Mildew/jamun_powdery_mildew_test_0013.jpg",
+    "train_filename": "jamun_powdery_mildew_train_0047.jpg",
+    "train_path": "data/processed/train/Jamun - Powdery Mildew/jamun_powdery_mildew_train_0047.jpg",
+    "dist": 12,
+    "is_zero": false,
+    "is_strict": false
+  },
+  {
+    "class_name": "Jamun - Powdery Mildew",
+    "test_filename": "jamun_powdery_mildew_test_0014.jpg",
+    "test_path": "data/processed/test/Jamun - Powdery Mildew/jamun_powdery_mildew_test_0014.jpg",
+    "train_filename": "jamun_powdery_mildew_train_0032.jpg",
+    "train_path": "data/processed/train/Jamun - Powdery Mildew/jamun_powdery_mildew_train_0032.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Powdery Mildew",
+    "test_filename": "jamun_powdery_mildew_test_0015.jpg",
+    "test_path": "data/processed/test/Jamun - Powdery Mildew/jamun_powdery_mildew_test_0015.jpg",
+    "train_filename": "jamun_powdery_mildew_train_0231.jpg",
+    "train_path": "data/processed/train/Jamun - Powdery Mildew/jamun_powdery_mildew_train_0231.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Powdery Mildew",
+    "test_filename": "jamun_powdery_mildew_test_0016.jpg",
+    "test_path": "data/processed/test/Jamun - Powdery Mildew/jamun_powdery_mildew_test_0016.jpg",
+    "train_filename": "jamun_powdery_mildew_train_0080.jpg",
+    "train_path": "data/processed/train/Jamun - Powdery Mildew/jamun_powdery_mildew_train_0080.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Powdery Mildew",
+    "test_filename": "jamun_powdery_mildew_test_0017.jpg",
+    "test_path": "data/processed/test/Jamun - Powdery Mildew/jamun_powdery_mildew_test_0017.jpg",
+    "train_filename": "jamun_powdery_mildew_train_0233.jpg",
+    "train_path": "data/processed/train/Jamun - Powdery Mildew/jamun_powdery_mildew_train_0233.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Powdery Mildew",
+    "test_filename": "jamun_powdery_mildew_test_0018.jpg",
+    "test_path": "data/processed/test/Jamun - Powdery Mildew/jamun_powdery_mildew_test_0018.jpg",
+    "train_filename": "jamun_powdery_mildew_train_0069.jpg",
+    "train_path": "data/processed/train/Jamun - Powdery Mildew/jamun_powdery_mildew_train_0069.jpg",
+    "dist": 4,
+    "is_zero": false,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Powdery Mildew",
+    "test_filename": "jamun_powdery_mildew_test_0019.jpg",
+    "test_path": "data/processed/test/Jamun - Powdery Mildew/jamun_powdery_mildew_test_0019.jpg",
+    "train_filename": "jamun_powdery_mildew_train_0207.jpg",
+    "train_path": "data/processed/train/Jamun - Powdery Mildew/jamun_powdery_mildew_train_0207.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Powdery Mildew",
+    "test_filename": "jamun_powdery_mildew_test_0020.jpg",
+    "test_path": "data/processed/test/Jamun - Powdery Mildew/jamun_powdery_mildew_test_0020.jpg",
+    "train_filename": "jamun_powdery_mildew_train_0069.jpg",
+    "train_path": "data/processed/train/Jamun - Powdery Mildew/jamun_powdery_mildew_train_0069.jpg",
+    "dist": 4,
+    "is_zero": false,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Powdery Mildew",
+    "test_filename": "jamun_powdery_mildew_test_0021.jpg",
+    "test_path": "data/processed/test/Jamun - Powdery Mildew/jamun_powdery_mildew_test_0021.jpg",
+    "train_filename": "jamun_powdery_mildew_train_0194.jpg",
+    "train_path": "data/processed/train/Jamun - Powdery Mildew/jamun_powdery_mildew_train_0194.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Powdery Mildew",
+    "test_filename": "jamun_powdery_mildew_test_0022.jpg",
+    "test_path": "data/processed/test/Jamun - Powdery Mildew/jamun_powdery_mildew_test_0022.jpg",
+    "train_filename": "jamun_powdery_mildew_train_0172.jpg",
+    "train_path": "data/processed/train/Jamun - Powdery Mildew/jamun_powdery_mildew_train_0172.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Powdery Mildew",
+    "test_filename": "jamun_powdery_mildew_test_0023.jpg",
+    "test_path": "data/processed/test/Jamun - Powdery Mildew/jamun_powdery_mildew_test_0023.jpg",
+    "train_filename": "jamun_powdery_mildew_train_0173.jpg",
+    "train_path": "data/processed/train/Jamun - Powdery Mildew/jamun_powdery_mildew_train_0173.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Powdery Mildew",
+    "test_filename": "jamun_powdery_mildew_test_0024.jpg",
+    "test_path": "data/processed/test/Jamun - Powdery Mildew/jamun_powdery_mildew_test_0024.jpg",
+    "train_filename": "jamun_powdery_mildew_train_0113.jpg",
+    "train_path": "data/processed/train/Jamun - Powdery Mildew/jamun_powdery_mildew_train_0113.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Powdery Mildew",
+    "test_filename": "jamun_powdery_mildew_test_0025.jpg",
+    "test_path": "data/processed/test/Jamun - Powdery Mildew/jamun_powdery_mildew_test_0025.jpg",
+    "train_filename": "jamun_powdery_mildew_train_0008.jpg",
+    "train_path": "data/processed/train/Jamun - Powdery Mildew/jamun_powdery_mildew_train_0008.jpg",
+    "dist": 8,
+    "is_zero": false,
+    "is_strict": false
+  },
+  {
+    "class_name": "Jamun - Powdery Mildew",
+    "test_filename": "jamun_powdery_mildew_test_0026.jpg",
+    "test_path": "data/processed/test/Jamun - Powdery Mildew/jamun_powdery_mildew_test_0026.jpg",
+    "train_filename": "jamun_powdery_mildew_train_0106.jpg",
+    "train_path": "data/processed/train/Jamun - Powdery Mildew/jamun_powdery_mildew_train_0106.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Powdery Mildew",
+    "test_filename": "jamun_powdery_mildew_test_0027.jpg",
+    "test_path": "data/processed/test/Jamun - Powdery Mildew/jamun_powdery_mildew_test_0027.jpg",
+    "train_filename": "jamun_powdery_mildew_train_0274.jpg",
+    "train_path": "data/processed/train/Jamun - Powdery Mildew/jamun_powdery_mildew_train_0274.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Powdery Mildew",
+    "test_filename": "jamun_powdery_mildew_test_0028.jpg",
+    "test_path": "data/processed/test/Jamun - Powdery Mildew/jamun_powdery_mildew_test_0028.jpg",
+    "train_filename": "jamun_powdery_mildew_train_0209.jpg",
+    "train_path": "data/processed/train/Jamun - Powdery Mildew/jamun_powdery_mildew_train_0209.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Powdery Mildew",
+    "test_filename": "jamun_powdery_mildew_test_0029.jpg",
+    "test_path": "data/processed/test/Jamun - Powdery Mildew/jamun_powdery_mildew_test_0029.jpg",
+    "train_filename": "jamun_powdery_mildew_train_0234.jpg",
+    "train_path": "data/processed/train/Jamun - Powdery Mildew/jamun_powdery_mildew_train_0234.jpg",
+    "dist": 8,
+    "is_zero": false,
+    "is_strict": false
+  },
+  {
+    "class_name": "Jamun - Powdery Mildew",
+    "test_filename": "jamun_powdery_mildew_test_0030.jpg",
+    "test_path": "data/processed/test/Jamun - Powdery Mildew/jamun_powdery_mildew_test_0030.jpg",
+    "train_filename": "jamun_powdery_mildew_train_0188.jpg",
+    "train_path": "data/processed/train/Jamun - Powdery Mildew/jamun_powdery_mildew_train_0188.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Powdery Mildew",
+    "test_filename": "jamun_powdery_mildew_test_0031.jpg",
+    "test_path": "data/processed/test/Jamun - Powdery Mildew/jamun_powdery_mildew_test_0031.jpg",
+    "train_filename": "jamun_powdery_mildew_train_0056.jpg",
+    "train_path": "data/processed/train/Jamun - Powdery Mildew/jamun_powdery_mildew_train_0056.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Powdery Mildew",
+    "test_filename": "jamun_powdery_mildew_test_0032.jpg",
+    "test_path": "data/processed/test/Jamun - Powdery Mildew/jamun_powdery_mildew_test_0032.jpg",
+    "train_filename": "jamun_powdery_mildew_train_0298.jpg",
+    "train_path": "data/processed/train/Jamun - Powdery Mildew/jamun_powdery_mildew_train_0298.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Powdery Mildew",
+    "test_filename": "jamun_powdery_mildew_test_0033.jpg",
+    "test_path": "data/processed/test/Jamun - Powdery Mildew/jamun_powdery_mildew_test_0033.jpg",
+    "train_filename": "jamun_powdery_mildew_train_0103.jpg",
+    "train_path": "data/processed/train/Jamun - Powdery Mildew/jamun_powdery_mildew_train_0103.jpg",
+    "dist": 6,
+    "is_zero": false,
+    "is_strict": false
+  },
+  {
+    "class_name": "Jamun - Powdery Mildew",
+    "test_filename": "jamun_powdery_mildew_test_0034.jpg",
+    "test_path": "data/processed/test/Jamun - Powdery Mildew/jamun_powdery_mildew_test_0034.jpg",
+    "train_filename": "jamun_powdery_mildew_train_0265.jpg",
+    "train_path": "data/processed/train/Jamun - Powdery Mildew/jamun_powdery_mildew_train_0265.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Powdery Mildew",
+    "test_filename": "jamun_powdery_mildew_test_0035.jpg",
+    "test_path": "data/processed/test/Jamun - Powdery Mildew/jamun_powdery_mildew_test_0035.jpg",
+    "train_filename": "jamun_powdery_mildew_train_0252.jpg",
+    "train_path": "data/processed/train/Jamun - Powdery Mildew/jamun_powdery_mildew_train_0252.jpg",
+    "dist": 8,
+    "is_zero": false,
+    "is_strict": false
+  },
+  {
+    "class_name": "Jamun - Powdery Mildew",
+    "test_filename": "jamun_powdery_mildew_test_0036.jpg",
+    "test_path": "data/processed/test/Jamun - Powdery Mildew/jamun_powdery_mildew_test_0036.jpg",
+    "train_filename": "jamun_powdery_mildew_train_0060.jpg",
+    "train_path": "data/processed/train/Jamun - Powdery Mildew/jamun_powdery_mildew_train_0060.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Powdery Mildew",
+    "test_filename": "jamun_powdery_mildew_test_0037.jpg",
+    "test_path": "data/processed/test/Jamun - Powdery Mildew/jamun_powdery_mildew_test_0037.jpg",
+    "train_filename": "jamun_powdery_mildew_train_0165.jpg",
+    "train_path": "data/processed/train/Jamun - Powdery Mildew/jamun_powdery_mildew_train_0165.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Powdery Mildew",
+    "test_filename": "jamun_powdery_mildew_test_0038.jpg",
+    "test_path": "data/processed/test/Jamun - Powdery Mildew/jamun_powdery_mildew_test_0038.jpg",
+    "train_filename": "jamun_powdery_mildew_train_0200.jpg",
+    "train_path": "data/processed/train/Jamun - Powdery Mildew/jamun_powdery_mildew_train_0200.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Powdery Mildew",
+    "test_filename": "jamun_powdery_mildew_test_0039.jpg",
+    "test_path": "data/processed/test/Jamun - Powdery Mildew/jamun_powdery_mildew_test_0039.jpg",
+    "train_filename": "jamun_powdery_mildew_train_0068.jpg",
+    "train_path": "data/processed/train/Jamun - Powdery Mildew/jamun_powdery_mildew_train_0068.jpg",
+    "dist": 2,
+    "is_zero": false,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Powdery Mildew",
+    "test_filename": "jamun_powdery_mildew_test_0040.jpg",
+    "test_path": "data/processed/test/Jamun - Powdery Mildew/jamun_powdery_mildew_test_0040.jpg",
+    "train_filename": "jamun_powdery_mildew_train_0058.jpg",
+    "train_path": "data/processed/train/Jamun - Powdery Mildew/jamun_powdery_mildew_train_0058.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Sooty Mold",
+    "test_filename": "jamun_sooty_mold_test_0001.jpg",
+    "test_path": "data/processed/test/Jamun - Sooty Mold/jamun_sooty_mold_test_0001.jpg",
+    "train_filename": "jamun_sooty_mold_train_0069.jpg",
+    "train_path": "data/processed/train/Jamun - Sooty Mold/jamun_sooty_mold_train_0069.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Sooty Mold",
+    "test_filename": "jamun_sooty_mold_test_0002.jpg",
+    "test_path": "data/processed/test/Jamun - Sooty Mold/jamun_sooty_mold_test_0002.jpg",
+    "train_filename": "jamun_sooty_mold_train_0065.jpg",
+    "train_path": "data/processed/train/Jamun - Sooty Mold/jamun_sooty_mold_train_0065.jpg",
+    "dist": 10,
+    "is_zero": false,
+    "is_strict": false
+  },
+  {
+    "class_name": "Jamun - Sooty Mold",
+    "test_filename": "jamun_sooty_mold_test_0003.jpg",
+    "test_path": "data/processed/test/Jamun - Sooty Mold/jamun_sooty_mold_test_0003.jpg",
+    "train_filename": "jamun_sooty_mold_train_0061.jpg",
+    "train_path": "data/processed/train/Jamun - Sooty Mold/jamun_sooty_mold_train_0061.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Sooty Mold",
+    "test_filename": "jamun_sooty_mold_test_0004.jpg",
+    "test_path": "data/processed/test/Jamun - Sooty Mold/jamun_sooty_mold_test_0004.jpg",
+    "train_filename": "jamun_sooty_mold_train_0007.jpg",
+    "train_path": "data/processed/train/Jamun - Sooty Mold/jamun_sooty_mold_train_0007.jpg",
+    "dist": 10,
+    "is_zero": false,
+    "is_strict": false
+  },
+  {
+    "class_name": "Jamun - Sooty Mold",
+    "test_filename": "jamun_sooty_mold_test_0005.jpg",
+    "test_path": "data/processed/test/Jamun - Sooty Mold/jamun_sooty_mold_test_0005.jpg",
+    "train_filename": "jamun_sooty_mold_train_0298.jpg",
+    "train_path": "data/processed/train/Jamun - Sooty Mold/jamun_sooty_mold_train_0298.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Sooty Mold",
+    "test_filename": "jamun_sooty_mold_test_0006.jpg",
+    "test_path": "data/processed/test/Jamun - Sooty Mold/jamun_sooty_mold_test_0006.jpg",
+    "train_filename": "jamun_sooty_mold_train_0271.jpg",
+    "train_path": "data/processed/train/Jamun - Sooty Mold/jamun_sooty_mold_train_0271.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Sooty Mold",
+    "test_filename": "jamun_sooty_mold_test_0007.jpg",
+    "test_path": "data/processed/test/Jamun - Sooty Mold/jamun_sooty_mold_test_0007.jpg",
+    "train_filename": "jamun_sooty_mold_train_0051.jpg",
+    "train_path": "data/processed/train/Jamun - Sooty Mold/jamun_sooty_mold_train_0051.jpg",
+    "dist": 10,
+    "is_zero": false,
+    "is_strict": false
+  },
+  {
+    "class_name": "Jamun - Sooty Mold",
+    "test_filename": "jamun_sooty_mold_test_0008.jpg",
+    "test_path": "data/processed/test/Jamun - Sooty Mold/jamun_sooty_mold_test_0008.jpg",
+    "train_filename": "jamun_sooty_mold_train_0205.jpg",
+    "train_path": "data/processed/train/Jamun - Sooty Mold/jamun_sooty_mold_train_0205.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Sooty Mold",
+    "test_filename": "jamun_sooty_mold_test_0009.jpg",
+    "test_path": "data/processed/test/Jamun - Sooty Mold/jamun_sooty_mold_test_0009.jpg",
+    "train_filename": "jamun_sooty_mold_train_0057.jpg",
+    "train_path": "data/processed/train/Jamun - Sooty Mold/jamun_sooty_mold_train_0057.jpg",
+    "dist": 8,
+    "is_zero": false,
+    "is_strict": false
+  },
+  {
+    "class_name": "Jamun - Sooty Mold",
+    "test_filename": "jamun_sooty_mold_test_0010.jpg",
+    "test_path": "data/processed/test/Jamun - Sooty Mold/jamun_sooty_mold_test_0010.jpg",
+    "train_filename": "jamun_sooty_mold_train_0225.jpg",
+    "train_path": "data/processed/train/Jamun - Sooty Mold/jamun_sooty_mold_train_0225.jpg",
+    "dist": 12,
+    "is_zero": false,
+    "is_strict": false
+  },
+  {
+    "class_name": "Jamun - Sooty Mold",
+    "test_filename": "jamun_sooty_mold_test_0011.jpg",
+    "test_path": "data/processed/test/Jamun - Sooty Mold/jamun_sooty_mold_test_0011.jpg",
+    "train_filename": "jamun_sooty_mold_train_0310.jpg",
+    "train_path": "data/processed/train/Jamun - Sooty Mold/jamun_sooty_mold_train_0310.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Sooty Mold",
+    "test_filename": "jamun_sooty_mold_test_0012.jpg",
+    "test_path": "data/processed/test/Jamun - Sooty Mold/jamun_sooty_mold_test_0012.jpg",
+    "train_filename": "jamun_sooty_mold_train_0289.jpg",
+    "train_path": "data/processed/train/Jamun - Sooty Mold/jamun_sooty_mold_train_0289.jpg",
+    "dist": 12,
+    "is_zero": false,
+    "is_strict": false
+  },
+  {
+    "class_name": "Jamun - Sooty Mold",
+    "test_filename": "jamun_sooty_mold_test_0013.jpg",
+    "test_path": "data/processed/test/Jamun - Sooty Mold/jamun_sooty_mold_test_0013.jpg",
+    "train_filename": "jamun_sooty_mold_train_0086.jpg",
+    "train_path": "data/processed/train/Jamun - Sooty Mold/jamun_sooty_mold_train_0086.jpg",
+    "dist": 12,
+    "is_zero": false,
+    "is_strict": false
+  },
+  {
+    "class_name": "Jamun - Sooty Mold",
+    "test_filename": "jamun_sooty_mold_test_0014.jpg",
+    "test_path": "data/processed/test/Jamun - Sooty Mold/jamun_sooty_mold_test_0014.jpg",
+    "train_filename": "jamun_sooty_mold_train_0253.jpg",
+    "train_path": "data/processed/train/Jamun - Sooty Mold/jamun_sooty_mold_train_0253.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Sooty Mold",
+    "test_filename": "jamun_sooty_mold_test_0015.jpg",
+    "test_path": "data/processed/test/Jamun - Sooty Mold/jamun_sooty_mold_test_0015.jpg",
+    "train_filename": "jamun_sooty_mold_train_0024.jpg",
+    "train_path": "data/processed/train/Jamun - Sooty Mold/jamun_sooty_mold_train_0024.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Sooty Mold",
+    "test_filename": "jamun_sooty_mold_test_0016.jpg",
+    "test_path": "data/processed/test/Jamun - Sooty Mold/jamun_sooty_mold_test_0016.jpg",
+    "train_filename": "jamun_sooty_mold_train_0010.jpg",
+    "train_path": "data/processed/train/Jamun - Sooty Mold/jamun_sooty_mold_train_0010.jpg",
+    "dist": 8,
+    "is_zero": false,
+    "is_strict": false
+  },
+  {
+    "class_name": "Jamun - Sooty Mold",
+    "test_filename": "jamun_sooty_mold_test_0017.jpg",
+    "test_path": "data/processed/test/Jamun - Sooty Mold/jamun_sooty_mold_test_0017.jpg",
+    "train_filename": "jamun_sooty_mold_train_0161.jpg",
+    "train_path": "data/processed/train/Jamun - Sooty Mold/jamun_sooty_mold_train_0161.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Sooty Mold",
+    "test_filename": "jamun_sooty_mold_test_0018.jpg",
+    "test_path": "data/processed/test/Jamun - Sooty Mold/jamun_sooty_mold_test_0018.jpg",
+    "train_filename": "jamun_sooty_mold_train_0290.jpg",
+    "train_path": "data/processed/train/Jamun - Sooty Mold/jamun_sooty_mold_train_0290.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Sooty Mold",
+    "test_filename": "jamun_sooty_mold_test_0019.jpg",
+    "test_path": "data/processed/test/Jamun - Sooty Mold/jamun_sooty_mold_test_0019.jpg",
+    "train_filename": "jamun_sooty_mold_train_0087.jpg",
+    "train_path": "data/processed/train/Jamun - Sooty Mold/jamun_sooty_mold_train_0087.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Sooty Mold",
+    "test_filename": "jamun_sooty_mold_test_0020.jpg",
+    "test_path": "data/processed/test/Jamun - Sooty Mold/jamun_sooty_mold_test_0020.jpg",
+    "train_filename": "jamun_sooty_mold_train_0113.jpg",
+    "train_path": "data/processed/train/Jamun - Sooty Mold/jamun_sooty_mold_train_0113.jpg",
+    "dist": 10,
+    "is_zero": false,
+    "is_strict": false
+  },
+  {
+    "class_name": "Jamun - Sooty Mold",
+    "test_filename": "jamun_sooty_mold_test_0021.jpg",
+    "test_path": "data/processed/test/Jamun - Sooty Mold/jamun_sooty_mold_test_0021.jpg",
+    "train_filename": "jamun_sooty_mold_train_0229.jpg",
+    "train_path": "data/processed/train/Jamun - Sooty Mold/jamun_sooty_mold_train_0229.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Sooty Mold",
+    "test_filename": "jamun_sooty_mold_test_0022.jpg",
+    "test_path": "data/processed/test/Jamun - Sooty Mold/jamun_sooty_mold_test_0022.jpg",
+    "train_filename": "jamun_sooty_mold_train_0136.jpg",
+    "train_path": "data/processed/train/Jamun - Sooty Mold/jamun_sooty_mold_train_0136.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Sooty Mold",
+    "test_filename": "jamun_sooty_mold_test_0023.jpg",
+    "test_path": "data/processed/test/Jamun - Sooty Mold/jamun_sooty_mold_test_0023.jpg",
+    "train_filename": "jamun_sooty_mold_train_0062.jpg",
+    "train_path": "data/processed/train/Jamun - Sooty Mold/jamun_sooty_mold_train_0062.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Sooty Mold",
+    "test_filename": "jamun_sooty_mold_test_0024.jpg",
+    "test_path": "data/processed/test/Jamun - Sooty Mold/jamun_sooty_mold_test_0024.jpg",
+    "train_filename": "jamun_sooty_mold_train_0017.jpg",
+    "train_path": "data/processed/train/Jamun - Sooty Mold/jamun_sooty_mold_train_0017.jpg",
+    "dist": 10,
+    "is_zero": false,
+    "is_strict": false
+  },
+  {
+    "class_name": "Jamun - Sooty Mold",
+    "test_filename": "jamun_sooty_mold_test_0025.jpg",
+    "test_path": "data/processed/test/Jamun - Sooty Mold/jamun_sooty_mold_test_0025.jpg",
+    "train_filename": "jamun_sooty_mold_train_0215.jpg",
+    "train_path": "data/processed/train/Jamun - Sooty Mold/jamun_sooty_mold_train_0215.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Sooty Mold",
+    "test_filename": "jamun_sooty_mold_test_0026.jpg",
+    "test_path": "data/processed/test/Jamun - Sooty Mold/jamun_sooty_mold_test_0026.jpg",
+    "train_filename": "jamun_sooty_mold_train_0320.jpg",
+    "train_path": "data/processed/train/Jamun - Sooty Mold/jamun_sooty_mold_train_0320.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Sooty Mold",
+    "test_filename": "jamun_sooty_mold_test_0027.jpg",
+    "test_path": "data/processed/test/Jamun - Sooty Mold/jamun_sooty_mold_test_0027.jpg",
+    "train_filename": "jamun_sooty_mold_train_0187.jpg",
+    "train_path": "data/processed/train/Jamun - Sooty Mold/jamun_sooty_mold_train_0187.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Sooty Mold",
+    "test_filename": "jamun_sooty_mold_test_0028.jpg",
+    "test_path": "data/processed/test/Jamun - Sooty Mold/jamun_sooty_mold_test_0028.jpg",
+    "train_filename": "jamun_sooty_mold_train_0294.jpg",
+    "train_path": "data/processed/train/Jamun - Sooty Mold/jamun_sooty_mold_train_0294.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Sooty Mold",
+    "test_filename": "jamun_sooty_mold_test_0029.jpg",
+    "test_path": "data/processed/test/Jamun - Sooty Mold/jamun_sooty_mold_test_0029.jpg",
+    "train_filename": "jamun_sooty_mold_train_0035.jpg",
+    "train_path": "data/processed/train/Jamun - Sooty Mold/jamun_sooty_mold_train_0035.jpg",
+    "dist": 14,
+    "is_zero": false,
+    "is_strict": false
+  },
+  {
+    "class_name": "Jamun - Sooty Mold",
+    "test_filename": "jamun_sooty_mold_test_0030.jpg",
+    "test_path": "data/processed/test/Jamun - Sooty Mold/jamun_sooty_mold_test_0030.jpg",
+    "train_filename": "jamun_sooty_mold_train_0021.jpg",
+    "train_path": "data/processed/train/Jamun - Sooty Mold/jamun_sooty_mold_train_0021.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Sooty Mold",
+    "test_filename": "jamun_sooty_mold_test_0031.jpg",
+    "test_path": "data/processed/test/Jamun - Sooty Mold/jamun_sooty_mold_test_0031.jpg",
+    "train_filename": "jamun_sooty_mold_train_0202.jpg",
+    "train_path": "data/processed/train/Jamun - Sooty Mold/jamun_sooty_mold_train_0202.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Sooty Mold",
+    "test_filename": "jamun_sooty_mold_test_0032.jpg",
+    "test_path": "data/processed/test/Jamun - Sooty Mold/jamun_sooty_mold_test_0032.jpg",
+    "train_filename": "jamun_sooty_mold_train_0092.jpg",
+    "train_path": "data/processed/train/Jamun - Sooty Mold/jamun_sooty_mold_train_0092.jpg",
+    "dist": 8,
+    "is_zero": false,
+    "is_strict": false
+  },
+  {
+    "class_name": "Jamun - Sooty Mold",
+    "test_filename": "jamun_sooty_mold_test_0033.jpg",
+    "test_path": "data/processed/test/Jamun - Sooty Mold/jamun_sooty_mold_test_0033.jpg",
+    "train_filename": "jamun_sooty_mold_train_0164.jpg",
+    "train_path": "data/processed/train/Jamun - Sooty Mold/jamun_sooty_mold_train_0164.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Sooty Mold",
+    "test_filename": "jamun_sooty_mold_test_0034.jpg",
+    "test_path": "data/processed/test/Jamun - Sooty Mold/jamun_sooty_mold_test_0034.jpg",
+    "train_filename": "jamun_sooty_mold_train_0284.jpg",
+    "train_path": "data/processed/train/Jamun - Sooty Mold/jamun_sooty_mold_train_0284.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Sooty Mold",
+    "test_filename": "jamun_sooty_mold_test_0035.jpg",
+    "test_path": "data/processed/test/Jamun - Sooty Mold/jamun_sooty_mold_test_0035.jpg",
+    "train_filename": "jamun_sooty_mold_train_0086.jpg",
+    "train_path": "data/processed/train/Jamun - Sooty Mold/jamun_sooty_mold_train_0086.jpg",
+    "dist": 12,
+    "is_zero": false,
+    "is_strict": false
+  },
+  {
+    "class_name": "Jamun - Sooty Mold",
+    "test_filename": "jamun_sooty_mold_test_0036.jpg",
+    "test_path": "data/processed/test/Jamun - Sooty Mold/jamun_sooty_mold_test_0036.jpg",
+    "train_filename": "jamun_sooty_mold_train_0262.jpg",
+    "train_path": "data/processed/train/Jamun - Sooty Mold/jamun_sooty_mold_train_0262.jpg",
+    "dist": 8,
+    "is_zero": false,
+    "is_strict": false
+  },
+  {
+    "class_name": "Jamun - Sooty Mold",
+    "test_filename": "jamun_sooty_mold_test_0037.jpg",
+    "test_path": "data/processed/test/Jamun - Sooty Mold/jamun_sooty_mold_test_0037.jpg",
+    "train_filename": "jamun_sooty_mold_train_0217.jpg",
+    "train_path": "data/processed/train/Jamun - Sooty Mold/jamun_sooty_mold_train_0217.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Sooty Mold",
+    "test_filename": "jamun_sooty_mold_test_0038.jpg",
+    "test_path": "data/processed/test/Jamun - Sooty Mold/jamun_sooty_mold_test_0038.jpg",
+    "train_filename": "jamun_sooty_mold_train_0170.jpg",
+    "train_path": "data/processed/train/Jamun - Sooty Mold/jamun_sooty_mold_train_0170.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Sooty Mold",
+    "test_filename": "jamun_sooty_mold_test_0039.jpg",
+    "test_path": "data/processed/test/Jamun - Sooty Mold/jamun_sooty_mold_test_0039.jpg",
+    "train_filename": "jamun_sooty_mold_train_0289.jpg",
+    "train_path": "data/processed/train/Jamun - Sooty Mold/jamun_sooty_mold_train_0289.jpg",
+    "dist": 0,
+    "is_zero": true,
+    "is_strict": true
+  },
+  {
+    "class_name": "Jamun - Sooty Mold",
+    "test_filename": "jamun_sooty_mold_test_0040.jpg",
+    "test_path": "data/processed/test/Jamun - Sooty Mold/jamun_sooty_mold_test_0040.jpg",
+    "train_filename": "jamun_sooty_mold_train_0255.jpg",
+    "train_path": "data/processed/train/Jamun - Sooty Mold/jamun_sooty_mold_train_0255.jpg",
+    "dist": 10,
+    "is_zero": false,
+    "is_strict": false
+  }
+]

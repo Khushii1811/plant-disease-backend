@@ -1,0 +1,39 @@
+{
+  "diagnostic_explanation": "The raw backbone ECE of 24.5% was caused by extreme underconfidence due to 198-class softmax dispersion and class-weighted training. Hard logit masking truncated the softmax denominator from 198 classes to ~5 classes, artificially inflating confidence without genuine calibration. When temperature scaling is properly fit on the validation split (T_raw = 0.6228), raw ECE drops to genuine calibrated levels. Furthermore, Soft Gating P(disease) = P(crop) * P(disease|crop) provides a rigorous, smooth probabilistic formulation.",
+  "temperature_scaling_val_fit": {
+    "T_raw_disease": 0.6227796673774719,
+    "T_crop_head": 0.7015687227249146
+  },
+  "test_comparison": {
+    "raw_uncalibrated": {
+      "accuracy": 0.9226429527634347,
+      "mean_confidence": 0.6779104471206665,
+      "ece": 0.24473246520958294,
+      "mce": 0.45893310802140685
+    },
+    "raw_temperature_scaled": {
+      "accuracy": 0.9226429527634347,
+      "mean_confidence": 0.923742949962616,
+      "ece": 0.010210694142112037,
+      "mce": 0.059883952140808105
+    },
+    "hard_masked_uncalibrated": {
+      "accuracy": 0.9239816408491107,
+      "mean_confidence": 0.9195770025253296,
+      "ece": 0.016262520152379396,
+      "mce": 0.24249787628650665,
+      "rescued_vs_raw": 31,
+      "broken_vs_raw": 17,
+      "net_delta": 14
+    },
+    "soft_gated_calibrated": {
+      "accuracy": 0.9241728820042073,
+      "mean_confidence": 0.9502996206283569,
+      "ece": 0.026269371256725293,
+      "mce": 0.37295398116111755,
+      "rescued_vs_raw": 32,
+      "broken_vs_raw": 16,
+      "net_delta": 16
+    }
+  }
+}

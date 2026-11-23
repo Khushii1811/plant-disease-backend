@@ -1,0 +1,995 @@
+{
+  "num_test_images": 10426,
+  "num_classes": 195,
+  "num_crops": 34,
+  "crop_head_accuracy": 0.9923268751198926,
+  "disease_head": {
+    "raw_accuracy": 0.956071360061385,
+    "hard_masked_accuracy": 0.956646844427393,
+    "soft_gated_accuracy": 0.956646844427393,
+    "raw_ece": 0.28026567515412426,
+    "calibrated_raw_ece": 0.004014082244403864,
+    "soft_gated_ece": 0.01349093451447115,
+    "macro_f1_all_classes": 0.9293968392560393,
+    "macro_f1_ge20_support": 0.9686594840946074,
+    "num_classes_ge20_support": 129
+  },
+  "foliar_decision_metrics_overall": {
+    "total_diseased": 8676,
+    "missed_disease": 58,
+    "missed_disease_rate": 0.006685108344859382,
+    "total_healthy": 1750,
+    "false_alarms": 31,
+    "false_alarm_rate": 0.017714285714285714
+  },
+  "top_25_lowest_f1": [
+    {
+      "class_name": "Bean - bean halo blight",
+      "crop": "Bean",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "support": 4
+    },
+    {
+      "class_name": "Bean - bean mosaic virus",
+      "crop": "Bean",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "support": 4
+    },
+    {
+      "class_name": "Zucchini - zucchini bacterial leaf spot",
+      "crop": "Zucchini",
+      "precision": 0.5,
+      "recall": 0.5,
+      "f1_score": 0.5,
+      "support": 2
+    },
+    {
+      "class_name": "Broccoli - broccoli alternaria leaf spot",
+      "crop": "Broccoli",
+      "precision": 1.0,
+      "recall": 0.3333,
+      "f1_score": 0.5,
+      "support": 3
+    },
+    {
+      "class_name": "Banana - banana black leaf streak",
+      "crop": "Banana",
+      "precision": 0.3846,
+      "recall": 0.7143,
+      "f1_score": 0.5,
+      "support": 7
+    },
+    {
+      "class_name": "Zucchini - zucchini anthracnose",
+      "crop": "Zucchini",
+      "precision": 0.4286,
+      "recall": 0.75,
+      "f1_score": 0.5455,
+      "support": 4
+    },
+    {
+      "class_name": "Cabbage - cabbage alternaria leaf spot",
+      "crop": "Cabbage",
+      "precision": 0.75,
+      "recall": 0.4286,
+      "f1_score": 0.5455,
+      "support": 7
+    },
+    {
+      "class_name": "Zucchini - zucchini downy mildew",
+      "crop": "Zucchini",
+      "precision": 0.75,
+      "recall": 0.5,
+      "f1_score": 0.6,
+      "support": 12
+    },
+    {
+      "class_name": "Apple - apple mosaic virus",
+      "crop": "Apple",
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1_score": 0.6667,
+      "support": 3
+    },
+    {
+      "class_name": "Sugarcane - Rust",
+      "crop": "Sugarcane",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1_score": 0.6667,
+      "support": 4
+    },
+    {
+      "class_name": "Zucchini - zucchini angular leaf spot",
+      "crop": "Zucchini",
+      "precision": 0.7143,
+      "recall": 0.625,
+      "f1_score": 0.6667,
+      "support": 8
+    },
+    {
+      "class_name": "Ginger - Pest Damage",
+      "crop": "Ginger",
+      "precision": 0.5411,
+      "recall": 0.8977,
+      "f1_score": 0.6752,
+      "support": 88
+    },
+    {
+      "class_name": "Soybean - Downy Mildew",
+      "crop": "Soybean",
+      "precision": 0.5455,
+      "recall": 1.0,
+      "f1_score": 0.7059,
+      "support": 6
+    },
+    {
+      "class_name": "Cabbage - cabbage downy mildew",
+      "crop": "Cabbage",
+      "precision": 0.8333,
+      "recall": 0.625,
+      "f1_score": 0.7143,
+      "support": 8
+    },
+    {
+      "class_name": "Soybean - Brown Spot",
+      "crop": "Soybean",
+      "precision": 0.6,
+      "recall": 1.0,
+      "f1_score": 0.75,
+      "support": 3
+    },
+    {
+      "class_name": "Cherry - cherry leaf spot",
+      "crop": "Cherry",
+      "precision": 1.0,
+      "recall": 0.625,
+      "f1_score": 0.7692,
+      "support": 8
+    },
+    {
+      "class_name": "Ginger - Dehydrated",
+      "crop": "Ginger",
+      "precision": 0.9192,
+      "recall": 0.6947,
+      "f1_score": 0.7913,
+      "support": 262
+    },
+    {
+      "class_name": "Sugarcane - Mosaic",
+      "crop": "Sugarcane",
+      "precision": 0.6667,
+      "recall": 1.0,
+      "f1_score": 0.8,
+      "support": 2
+    },
+    {
+      "class_name": "Ginger - ginger sheath blight",
+      "crop": "Ginger",
+      "precision": 1.0,
+      "recall": 0.6667,
+      "f1_score": 0.8,
+      "support": 6
+    },
+    {
+      "class_name": "Cabbage - cabbage black rot",
+      "crop": "Cabbage",
+      "precision": 0.7143,
+      "recall": 0.9091,
+      "f1_score": 0.8,
+      "support": 11
+    },
+    {
+      "class_name": "Soybean - Rust",
+      "crop": "Soybean",
+      "precision": 0.8571,
+      "recall": 0.75,
+      "f1_score": 0.8,
+      "support": 24
+    },
+    {
+      "class_name": "Ginger - Healthy",
+      "crop": "Ginger",
+      "precision": 0.7518,
+      "recall": 0.9115,
+      "f1_score": 0.824,
+      "support": 113
+    },
+    {
+      "class_name": "Zucchini - Healthy",
+      "crop": "Zucchini",
+      "precision": 0.8333,
+      "recall": 0.8333,
+      "f1_score": 0.8333,
+      "support": 6
+    },
+    {
+      "class_name": "Ginger - Leaf Blight",
+      "crop": "Ginger",
+      "precision": 0.875,
+      "recall": 0.8053,
+      "f1_score": 0.8387,
+      "support": 226
+    },
+    {
+      "class_name": "Bean - bean rust",
+      "crop": "Bean",
+      "precision": 0.9722,
+      "recall": 0.7609,
+      "f1_score": 0.8537,
+      "support": 46
+    }
+  ],
+  "top_30_confusion_pairs": [
+    {
+      "true_class": "Ginger - Dehydrated",
+      "pred_class": "Ginger - Pest Damage",
+      "true_crop": "Ginger",
+      "pred_crop": "Ginger",
+      "cross_crop": false,
+      "error_count": 52
+    },
+    {
+      "true_class": "Ginger - Leaf Blight",
+      "pred_class": "Ginger - Healthy",
+      "true_crop": "Ginger",
+      "pred_crop": "Ginger",
+      "cross_crop": false,
+      "error_count": 28
+    },
+    {
+      "true_class": "Ginger - Dehydrated",
+      "pred_class": "Ginger - Leaf Blight",
+      "true_crop": "Ginger",
+      "pred_crop": "Ginger",
+      "cross_crop": false,
+      "error_count": 22
+    },
+    {
+      "true_class": "Guava - Healthy",
+      "pred_class": "Guava - Dot",
+      "true_crop": "Guava",
+      "pred_crop": "Guava",
+      "cross_crop": false,
+      "error_count": 15
+    },
+    {
+      "true_class": "Banana - Sigatoka",
+      "pred_class": "Banana - Cordana",
+      "true_crop": "Banana",
+      "pred_crop": "Banana",
+      "cross_crop": false,
+      "error_count": 10
+    },
+    {
+      "true_class": "Banana - Sigatoka",
+      "pred_class": "Banana - Panama",
+      "true_crop": "Banana",
+      "pred_crop": "Banana",
+      "cross_crop": false,
+      "error_count": 10
+    },
+    {
+      "true_class": "Tomato - tomato yellow leaf curl virus",
+      "pred_class": "Tomato - Spider Mites",
+      "true_crop": "Tomato",
+      "pred_crop": "Tomato",
+      "cross_crop": false,
+      "error_count": 10
+    },
+    {
+      "true_class": "Tomato - Bacterial Spot",
+      "pred_class": "Tomato - Target Spot",
+      "true_crop": "Tomato",
+      "pred_crop": "Tomato",
+      "cross_crop": false,
+      "error_count": 10
+    },
+    {
+      "true_class": "Ginger - Leaf Blight",
+      "pred_class": "Ginger - Pest Damage",
+      "true_crop": "Ginger",
+      "pred_crop": "Ginger",
+      "cross_crop": false,
+      "error_count": 9
+    },
+    {
+      "true_class": "Pear - pear slug damage",
+      "pred_class": "Pear - pear black spot",
+      "true_crop": "Pear",
+      "pred_crop": "Pear",
+      "cross_crop": false,
+      "error_count": 9
+    },
+    {
+      "true_class": "Ginger - Pest Damage",
+      "pred_class": "Ginger - Dehydrated",
+      "true_crop": "Ginger",
+      "pred_crop": "Ginger",
+      "cross_crop": false,
+      "error_count": 9
+    },
+    {
+      "true_class": "Tomato - Spider Mites",
+      "pred_class": "Tomato - Target Spot",
+      "true_crop": "Tomato",
+      "pred_crop": "Tomato",
+      "cross_crop": false,
+      "error_count": 8
+    },
+    {
+      "true_class": "Banana - Sigatoka",
+      "pred_class": "Banana - banana black leaf streak",
+      "true_crop": "Banana",
+      "pred_crop": "Banana",
+      "cross_crop": false,
+      "error_count": 7
+    },
+    {
+      "true_class": "Ginger - Leaf Blight",
+      "pred_class": "Ginger - Dehydrated",
+      "true_crop": "Ginger",
+      "pred_crop": "Ginger",
+      "cross_crop": false,
+      "error_count": 7
+    },
+    {
+      "true_class": "Tomato - tomato yellow leaf curl virus",
+      "pred_class": "Tomato - Bacterial Spot",
+      "true_crop": "Tomato",
+      "pred_crop": "Tomato",
+      "cross_crop": false,
+      "error_count": 7
+    },
+    {
+      "true_class": "Corn - corn gray leaf spot",
+      "pred_class": "Corn - Northern Leaf Blight",
+      "true_crop": "Corn",
+      "pred_crop": "Corn",
+      "cross_crop": false,
+      "error_count": 6
+    },
+    {
+      "true_class": "Ginger - Dehydrated",
+      "pred_class": "Ginger - Healthy",
+      "true_crop": "Ginger",
+      "pred_crop": "Ginger",
+      "cross_crop": false,
+      "error_count": 6
+    },
+    {
+      "true_class": "Ginger - Healthy",
+      "pred_class": "Ginger - Pest Damage",
+      "true_crop": "Ginger",
+      "pred_crop": "Ginger",
+      "cross_crop": false,
+      "error_count": 6
+    },
+    {
+      "true_class": "Corn - Northern Leaf Blight",
+      "pred_class": "Corn - corn gray leaf spot",
+      "true_crop": "Corn",
+      "pred_crop": "Corn",
+      "cross_crop": false,
+      "error_count": 5
+    },
+    {
+      "true_class": "Banana - Sigatoka",
+      "pred_class": "Banana - Insectpest",
+      "true_crop": "Banana",
+      "pred_crop": "Banana",
+      "cross_crop": false,
+      "error_count": 5
+    },
+    {
+      "true_class": "Groundnut - Late leaf spot",
+      "pred_class": "Groundnut - Early leaf spot",
+      "true_crop": "Groundnut",
+      "pred_crop": "Groundnut",
+      "cross_crop": false,
+      "error_count": 5
+    },
+    {
+      "true_class": "Tomato - tomato yellow leaf curl virus",
+      "pred_class": "Tomato - tomato mosaic virus",
+      "true_crop": "Tomato",
+      "pred_crop": "Tomato",
+      "cross_crop": false,
+      "error_count": 5
+    },
+    {
+      "true_class": "Guava - Dot",
+      "pred_class": "Guava - Healthy",
+      "true_crop": "Guava",
+      "pred_crop": "Guava",
+      "cross_crop": false,
+      "error_count": 4
+    },
+    {
+      "true_class": "Bell Pepper - bell pepper frogeye leaf spot",
+      "pred_class": "Bell Pepper - Bacterial Spot",
+      "true_crop": "Bell Pepper",
+      "pred_crop": "Bell Pepper",
+      "cross_crop": false,
+      "error_count": 4
+    },
+    {
+      "true_class": "Plum - plum insect hole",
+      "pred_class": "Plum - Healthy",
+      "true_crop": "Plum",
+      "pred_crop": "Plum",
+      "cross_crop": false,
+      "error_count": 4
+    },
+    {
+      "true_class": "Plum - plum insect hole",
+      "pred_class": "Plum - plum yellow leaf",
+      "true_crop": "Plum",
+      "pred_crop": "Plum",
+      "cross_crop": false,
+      "error_count": 4
+    },
+    {
+      "true_class": "Guava - Canker",
+      "pred_class": "Guava - Rust",
+      "true_crop": "Guava",
+      "pred_crop": "Guava",
+      "cross_crop": false,
+      "error_count": 4
+    },
+    {
+      "true_class": "Ginger - Healthy",
+      "pred_class": "Ginger - Leaf Blight",
+      "true_crop": "Ginger",
+      "pred_crop": "Ginger",
+      "cross_crop": false,
+      "error_count": 4
+    },
+    {
+      "true_class": "Banana - Sigatoka",
+      "pred_class": "Banana - Pestalotiopsis",
+      "true_crop": "Banana",
+      "pred_crop": "Banana",
+      "cross_crop": false,
+      "error_count": 4
+    },
+    {
+      "true_class": "Tomato - Spider Mites",
+      "pred_class": "Tomato - tomato mosaic virus",
+      "true_crop": "Tomato",
+      "pred_crop": "Tomato",
+      "cross_crop": false,
+      "error_count": 3
+    }
+  ],
+  "per_crop_decision": [
+    {
+      "crop": "Apple",
+      "total_diseased": 186,
+      "missed_disease": 0,
+      "missed_disease_rate": 0.0,
+      "total_healthy": 51,
+      "false_alarms": 0,
+      "false_alarm_rate": 0.0
+    },
+    {
+      "crop": "Banana",
+      "total_diseased": 701,
+      "missed_disease": 0,
+      "missed_disease_rate": 0.0,
+      "total_healthy": 97,
+      "false_alarms": 0,
+      "false_alarm_rate": 0.0
+    },
+    {
+      "crop": "Bean",
+      "total_diseased": 105,
+      "missed_disease": 3,
+      "missed_disease_rate": 0.0286,
+      "total_healthy": 32,
+      "false_alarms": 0,
+      "false_alarm_rate": 0.0
+    },
+    {
+      "crop": "Bell Pepper",
+      "total_diseased": 249,
+      "missed_disease": 0,
+      "missed_disease_rate": 0.0,
+      "total_healthy": 139,
+      "false_alarms": 1,
+      "false_alarm_rate": 0.0072
+    },
+    {
+      "crop": "Blackgram",
+      "total_diseased": 78,
+      "missed_disease": 0,
+      "missed_disease_rate": 0.0,
+      "total_healthy": 22,
+      "false_alarms": 0,
+      "false_alarm_rate": 0.0
+    },
+    {
+      "crop": "Blueberry",
+      "total_diseased": 7,
+      "missed_disease": 0,
+      "missed_disease_rate": 0.0,
+      "total_healthy": 52,
+      "false_alarms": 0,
+      "false_alarm_rate": 0.0
+    },
+    {
+      "crop": "Broccoli",
+      "total_diseased": 3,
+      "missed_disease": 0,
+      "missed_disease_rate": 0.0,
+      "total_healthy": 2,
+      "false_alarms": 0,
+      "false_alarm_rate": 0.0
+    },
+    {
+      "crop": "Cabbage",
+      "total_diseased": 28,
+      "missed_disease": 0,
+      "missed_disease_rate": 0.0,
+      "total_healthy": 7,
+      "false_alarms": 0,
+      "false_alarm_rate": 0.0
+    },
+    {
+      "crop": "Cauliflower",
+      "total_diseased": 19,
+      "missed_disease": 0,
+      "missed_disease_rate": 0.0,
+      "total_healthy": 16,
+      "false_alarms": 0,
+      "false_alarm_rate": 0.0
+    },
+    {
+      "crop": "Cherry",
+      "total_diseased": 224,
+      "missed_disease": 1,
+      "missed_disease_rate": 0.0045,
+      "total_healthy": 61,
+      "false_alarms": 0,
+      "false_alarm_rate": 0.0
+    },
+    {
+      "crop": "Chilli",
+      "total_diseased": 123,
+      "missed_disease": 0,
+      "missed_disease_rate": 0.0,
+      "total_healthy": 33,
+      "false_alarms": 0,
+      "false_alarm_rate": 0.0
+    },
+    {
+      "crop": "Citrus",
+      "total_diseased": 147,
+      "missed_disease": 1,
+      "missed_disease_rate": 0.0068,
+      "total_healthy": 41,
+      "false_alarms": 0,
+      "false_alarm_rate": 0.0
+    },
+    {
+      "crop": "Coffee",
+      "total_diseased": 113,
+      "missed_disease": 0,
+      "missed_disease_rate": 0.0,
+      "total_healthy": 33,
+      "false_alarms": 0,
+      "false_alarm_rate": 0.0
+    },
+    {
+      "crop": "Corn",
+      "total_diseased": 207,
+      "missed_disease": 0,
+      "missed_disease_rate": 0.0,
+      "total_healthy": 116,
+      "false_alarms": 0,
+      "false_alarm_rate": 0.0
+    },
+    {
+      "crop": "Cucumber",
+      "total_diseased": 60,
+      "missed_disease": 0,
+      "missed_disease_rate": 0.0,
+      "total_healthy": 15,
+      "false_alarms": 0,
+      "false_alarm_rate": 0.0
+    },
+    {
+      "crop": "Eggplant",
+      "total_diseased": 94,
+      "missed_disease": 1,
+      "missed_disease_rate": 0.0106,
+      "total_healthy": 20,
+      "false_alarms": 0,
+      "false_alarm_rate": 0.0
+    },
+    {
+      "crop": "Fig",
+      "total_diseased": 72,
+      "missed_disease": 0,
+      "missed_disease_rate": 0.0,
+      "total_healthy": 21,
+      "false_alarms": 1,
+      "false_alarm_rate": 0.0476
+    },
+    {
+      "crop": "Ginger",
+      "total_diseased": 600,
+      "missed_disease": 34,
+      "missed_disease_rate": 0.0567,
+      "total_healthy": 113,
+      "false_alarms": 10,
+      "false_alarm_rate": 0.0885
+    },
+    {
+      "crop": "Grape",
+      "total_diseased": 632,
+      "missed_disease": 1,
+      "missed_disease_rate": 0.0016,
+      "total_healthy": 25,
+      "false_alarms": 0,
+      "false_alarm_rate": 0.0
+    },
+    {
+      "crop": "Groundnut",
+      "total_diseased": 744,
+      "missed_disease": 0,
+      "missed_disease_rate": 0.0,
+      "total_healthy": 29,
+      "false_alarms": 0,
+      "false_alarm_rate": 0.0
+    },
+    {
+      "crop": "Guava",
+      "total_diseased": 563,
+      "missed_disease": 4,
+      "missed_disease_rate": 0.0071,
+      "total_healthy": 225,
+      "false_alarms": 15,
+      "false_alarm_rate": 0.0667
+    },
+    {
+      "crop": "Jamun",
+      "total_diseased": 160,
+      "missed_disease": 1,
+      "missed_disease_rate": 0.0063,
+      "total_healthy": 28,
+      "false_alarms": 0,
+      "false_alarm_rate": 0.0
+    },
+    {
+      "crop": "Mango",
+      "total_diseased": 350,
+      "missed_disease": 0,
+      "missed_disease_rate": 0.0,
+      "total_healthy": 50,
+      "false_alarms": 0,
+      "false_alarm_rate": 0.0
+    },
+    {
+      "crop": "Paddy",
+      "total_diseased": 194,
+      "missed_disease": 1,
+      "missed_disease_rate": 0.0052,
+      "total_healthy": 44,
+      "false_alarms": 0,
+      "false_alarm_rate": 0.0
+    },
+    {
+      "crop": "Peach",
+      "total_diseased": 77,
+      "missed_disease": 0,
+      "missed_disease_rate": 0.0,
+      "total_healthy": 39,
+      "false_alarms": 0,
+      "false_alarm_rate": 0.0
+    },
+    {
+      "crop": "Pear",
+      "total_diseased": 324,
+      "missed_disease": 1,
+      "missed_disease_rate": 0.0031,
+      "total_healthy": 41,
+      "false_alarms": 1,
+      "false_alarm_rate": 0.0244
+    },
+    {
+      "crop": "Plum",
+      "total_diseased": 162,
+      "missed_disease": 4,
+      "missed_disease_rate": 0.0247,
+      "total_healthy": 14,
+      "false_alarms": 0,
+      "false_alarm_rate": 0.0
+    },
+    {
+      "crop": "Potato",
+      "total_diseased": 403,
+      "missed_disease": 1,
+      "missed_disease_rate": 0.0025,
+      "total_healthy": 46,
+      "false_alarms": 0,
+      "false_alarm_rate": 0.0
+    },
+    {
+      "crop": "Radish",
+      "total_diseased": 196,
+      "missed_disease": 0,
+      "missed_disease_rate": 0.0,
+      "total_healthy": 57,
+      "false_alarms": 0,
+      "false_alarm_rate": 0.0
+    },
+    {
+      "crop": "Soybean",
+      "total_diseased": 134,
+      "missed_disease": 0,
+      "missed_disease_rate": 0.0,
+      "total_healthy": 59,
+      "false_alarms": 1,
+      "false_alarm_rate": 0.0169
+    },
+    {
+      "crop": "Strawberry",
+      "total_diseased": 140,
+      "missed_disease": 0,
+      "missed_disease_rate": 0.0,
+      "total_healthy": 50,
+      "false_alarms": 0,
+      "false_alarm_rate": 0.0
+    },
+    {
+      "crop": "Sugarcane",
+      "total_diseased": 35,
+      "missed_disease": 0,
+      "missed_disease_rate": 0.0,
+      "total_healthy": 12,
+      "false_alarms": 0,
+      "false_alarm_rate": 0.0
+    },
+    {
+      "crop": "Tomato",
+      "total_diseased": 1486,
+      "missed_disease": 4,
+      "missed_disease_rate": 0.0027,
+      "total_healthy": 154,
+      "false_alarms": 1,
+      "false_alarm_rate": 0.0065
+    },
+    {
+      "crop": "Zucchini",
+      "total_diseased": 60,
+      "missed_disease": 1,
+      "missed_disease_rate": 0.0167,
+      "total_healthy": 6,
+      "false_alarms": 1,
+      "false_alarm_rate": 0.1667
+    }
+  ],
+  "per_source_stats": [
+    {
+      "source": "plantvillage_legacy_baseline",
+      "count": 4347,
+      "share": 0.4169,
+      "accuracy": 0.9568
+    },
+    {
+      "source": "ginger_research",
+      "count": 705,
+      "share": 0.0676,
+      "accuracy": 0.7957
+    },
+    {
+      "source": "kaggle_pv2",
+      "count": 658,
+      "share": 0.0631,
+      "accuracy": 0.9863
+    },
+    {
+      "source": "mendeley_grape_niphad",
+      "count": 602,
+      "share": 0.0577,
+      "accuracy": 0.9917
+    },
+    {
+      "source": "mendeley_guava",
+      "count": 553,
+      "share": 0.053,
+      "accuracy": 0.9512
+    },
+    {
+      "source": "plantcity",
+      "count": 462,
+      "share": 0.0443,
+      "accuracy": 0.9957
+    },
+    {
+      "source": "mango_mendeley",
+      "count": 400,
+      "share": 0.0384,
+      "accuracy": 1.0
+    },
+    {
+      "source": "rice_lab",
+      "count": 238,
+      "share": 0.0228,
+      "accuracy": 0.9874
+    },
+    {
+      "source": "paddy_doctor_kaggle",
+      "count": 235,
+      "share": 0.0225,
+      "accuracy": 0.9872
+    },
+    {
+      "source": "potato_kaggle",
+      "count": 208,
+      "share": 0.02,
+      "accuracy": 0.976
+    },
+    {
+      "source": "jamun_foliar",
+      "count": 188,
+      "share": 0.018,
+      "accuracy": 0.9947
+    },
+    {
+      "source": "corn_kaggle",
+      "count": 182,
+      "share": 0.0175,
+      "accuracy": 0.9835
+    },
+    {
+      "source": "syedzainmir_pear",
+      "count": 172,
+      "share": 0.0165,
+      "accuracy": 0.9477
+    },
+    {
+      "source": "mendeley_bell_pepper",
+      "count": 167,
+      "share": 0.016,
+      "accuracy": 0.9341
+    },
+    {
+      "source": "chilli_nirob",
+      "count": 128,
+      "share": 0.0123,
+      "accuracy": 0.9922
+    },
+    {
+      "source": "plum_lab_mendeley",
+      "count": 124,
+      "share": 0.0119,
+      "accuracy": 0.9677
+    },
+    {
+      "source": "eggplant_kaggle",
+      "count": 114,
+      "share": 0.0109,
+      "accuracy": 0.9737
+    },
+    {
+      "source": "coffee_kaggle",
+      "count": 104,
+      "share": 0.01,
+      "accuracy": 0.9808
+    },
+    {
+      "source": "diamos",
+      "count": 98,
+      "share": 0.0094,
+      "accuracy": 0.9592
+    },
+    {
+      "source": "therealoise_bean",
+      "count": 97,
+      "share": 0.0093,
+      "accuracy": 0.9794
+    },
+    {
+      "source": "datasetninja",
+      "count": 96,
+      "share": 0.0092,
+      "accuracy": 0.9896
+    },
+    {
+      "source": "sourabh2001",
+      "count": 84,
+      "share": 0.0081,
+      "accuracy": 1.0
+    },
+    {
+      "source": "peach_dataset",
+      "count": 63,
+      "share": 0.006,
+      "accuracy": 1.0
+    },
+    {
+      "source": "mendeley",
+      "count": 54,
+      "share": 0.0052,
+      "accuracy": 0.9815
+    },
+    {
+      "source": "kaggle_grape",
+      "count": 49,
+      "share": 0.0047,
+      "accuracy": 1.0
+    },
+    {
+      "source": "vaishali_soybean",
+      "count": 46,
+      "share": 0.0044,
+      "accuracy": 0.9565
+    },
+    {
+      "source": "agrivision_zucchini",
+      "count": 42,
+      "share": 0.004,
+      "accuracy": 0.7857
+    },
+    {
+      "source": "scraped_coffee",
+      "count": 37,
+      "share": 0.0035,
+      "accuracy": 1.0
+    },
+    {
+      "source": "soybean_mendeley_kaggle",
+      "count": 33,
+      "share": 0.0032,
+      "accuracy": 1.0
+    },
+    {
+      "source": "unknown",
+      "count": 32,
+      "share": 0.0031,
+      "accuracy": 0.875
+    },
+    {
+      "source": "sujay_kapadnis",
+      "count": 30,
+      "share": 0.0029,
+      "accuracy": 1.0
+    },
+    {
+      "source": "mendeley_citrus_lemon",
+      "count": 26,
+      "share": 0.0025,
+      "accuracy": 1.0
+    },
+    {
+      "source": "plum_ronokhasan",
+      "count": 20,
+      "share": 0.0019,
+      "accuracy": 1.0
+    },
+    {
+      "source": "scraped",
+      "count": 15,
+      "share": 0.0014,
+      "accuracy": 0.6
+    },
+    {
+      "source": "mendeley_cabbage",
+      "count": 13,
+      "share": 0.0012,
+      "accuracy": 0.8462
+    },
+    {
+      "source": "scraped_inaturalist",
+      "count": 4,
+      "share": 0.0004,
+      "accuracy": 0.75
+    }
+  ]
+}

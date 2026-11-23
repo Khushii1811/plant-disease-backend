@@ -1,0 +1,82 @@
+{
+  "metadata": {
+    "script": "scripts/v1/build_results.py",
+    "git_commit": "3dcee0330d3fbbf64a2674a23dbbd3f1db056090",
+    "model_version": "v1.0.0",
+    "model_architecture": "ConvNeXt-Tiny DualHead (crop + disease)",
+    "device": "cpu",
+    "cpu_threads": 1,
+    "torch_version": "2.6.0+cu124",
+    "deterministic_algorithms": true,
+    "inference_engine": "src.models.predict.predict_tensor",
+    "date_utc": "2026-11-18T13:07:10.482356+00:00",
+    "source": "curated release test split (reports/v1/dataset_v1.csv, N=9,279 post-P-007)"
+  },
+  "clean_test_counts_table": [
+    {
+      "tau": 0.5,
+      "covered_N": 9105,
+      "coverage_pct": 98.12,
+      "covered_correct": 8836,
+      "covered_accuracy_pct": 97.05,
+      "uncertain_N": 174,
+      "uncertain_pct": 1.88,
+      "uncertain_correct": 74,
+      "uncertain_accuracy_pct": 42.53,
+      "total_correct": 8910,
+      "overall_accuracy_pct": 96.02
+    },
+    {
+      "tau": 0.55,
+      "covered_N": 9050,
+      "coverage_pct": 97.53,
+      "covered_correct": 8807,
+      "covered_accuracy_pct": 97.31,
+      "uncertain_N": 229,
+      "uncertain_pct": 2.47,
+      "uncertain_correct": 103,
+      "uncertain_accuracy_pct": 44.98,
+      "total_correct": 8910,
+      "overall_accuracy_pct": 96.02
+    },
+    {
+      "tau": 0.6,
+      "covered_N": 8999,
+      "coverage_pct": 96.98,
+      "covered_correct": 8776,
+      "covered_accuracy_pct": 97.52,
+      "uncertain_N": 280,
+      "uncertain_pct": 3.02,
+      "uncertain_correct": 134,
+      "uncertain_accuracy_pct": 47.86,
+      "total_correct": 8910,
+      "overall_accuracy_pct": 96.02
+    },
+    {
+      "tau": 0.65,
+      "covered_N": 8944,
+      "coverage_pct": 96.39,
+      "covered_correct": 8736,
+      "covered_accuracy_pct": 97.67,
+      "uncertain_N": 335,
+      "uncertain_pct": 3.61,
+      "uncertain_correct": 174,
+      "uncertain_accuracy_pct": 51.94,
+      "total_correct": 8910,
+      "overall_accuracy_pct": 96.02
+    },
+    {
+      "tau": 0.7,
+      "covered_N": 8866,
+      "coverage_pct": 95.55,
+      "covered_correct": 8689,
+      "covered_accuracy_pct": 98.0,
+      "uncertain_N": 413,
+      "uncertain_pct": 4.45,
+      "uncertain_correct": 221,
+      "uncertain_accuracy_pct": 53.51,
+      "total_correct": 8910,
+      "overall_accuracy_pct": 96.02
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+# Version control & environments
+.git/
+.venv/
+__pycache__/
+*.py[cod]
+
+# Credentials & secrets
+.env*
+*token*
+*key*
+
+# Heavy data & non-runtime directories
+data/
+archive/
+scratch/
+artifacts/
+reports/
+notebooks/
+tests/
+audit_output/
+models/_legacy/
+models/prerelease/
+verification/

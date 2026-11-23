@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Foliar Disease Confusion Matrix Explorer (198 Classes)</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background: #0f172a; color: #f8fafc; margin: 0; padding: 24px; }
+  h1 { font-size: 24px; color: #38bdf8; margin-bottom: 8px; }
+  p { color: #94a3b8; font-size: 14px; margin-bottom: 20px; }
+  .toolbar { display: flex; gap: 16px; align-items: center; margin-bottom: 24px; background: #1e293b; padding: 16px; border-radius: 8px; }
+  select { background: #334155; color: #f8fafc; border: 1px solid #475569; padding: 8px 14px; border-radius: 6px; font-size: 14px; }
+  .matrix-card { background: #1e293b; border-radius: 8px; padding: 20px; overflow-x: auto; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); }
+  table { border-collapse: collapse; margin-top: 10px; font-size: 12px; }
+  th, td { border: 1px solid #334155; padding: 8px 12px; text-align: center; }
+  th { background: #0f172a; color: #94a3b8; font-weight: 600; white-space: nowrap; }
+  .row-hdr { text-align: left; background: #0f172a; color: #f1f5f9; font-weight: 500; white-space: nowrap; }
+  .diag { background: rgba(56, 189, 248, 0.25); color: #38bdf8; font-weight: bold; }
+  .diag-perfect { background: rgba(34, 197, 94, 0.25); color: #4ade80; font-weight: bold; }
+  .err { background: rgba(239, 68, 68, 0.3); color: #fca5a5; font-weight: bold; }
+  .zero { color: #475569; }
+  .stats-banner { display: flex; gap: 24px; margin-bottom: 16px; font-size: 14px; color: #cbd5e1; }
+  .stat-pill { background: #334155; padding: 6px 12px; border-radius: 6px; }
+  .stat-pill b { color: #38bdf8; }
+</style>
+</head>
+<body>
+<h1>🌿 Foliar Disease Confusion Matrix Explorer</h1>
+<p>Held-out test set evaluation (10,458 unseen images across 198 fine-grained pathology classes). Every cell displays exact sample counts and recall rates as per standard confusion matrix rules.</p>
+
+<div class="toolbar">
+  <label for="cropSelect"><b>Select Crop Species:</b></label>
+  <select id="cropSelect" onchange="renderCropMatrix()">
+    <option value="Apple">Apple (6 classes)</option>
+<option value="Banana">Banana (9 classes)</option>
+<option value="Bean">Bean (6 classes)</option>
+<option value="Bell Pepper">Bell Pepper (6 classes)</option>
+<option value="Blackgram">Blackgram (5 classes)</option>
+<option value="Blueberry">Blueberry (3 classes)</option>
+<option value="Broccoli">Broccoli (2 classes)</option>
+<option value="Cabbage">Cabbage (5 classes)</option>
+<option value="Cauliflower">Cauliflower (3 classes)</option>
+<option value="Cherry">Cherry (7 classes)</option>
+<option value="Chilli">Chilli (6 classes)</option>
+<option value="Citrus">Citrus (6 classes)</option>
+<option value="Coffee">Coffee (4 classes)</option>
+<option value="Corn">Corn (5 classes)</option>
+<option value="Cucumber">Cucumber (4 classes)</option>
+<option value="Eggplant">Eggplant (6 classes)</option>
+<option value="Fig">Fig (4 classes)</option>
+<option value="Ginger">Ginger (7 classes)</option>
+<option value="Grape">Grape (8 classes)</option>
+<option value="Groundnut">Groundnut (6 classes)</option>
+<option value="Guava">Guava (7 classes)</option>
+<option value="Jamun">Jamun (5 classes)</option>
+<option value="Mango">Mango (8 classes)</option>
+<option value="Paddy">Paddy (6 classes)</option>
+<option value="Peach">Peach (4 classes)</option>
+<option value="Pear">Pear (5 classes)</option>
+<option value="Plum">Plum (4 classes)</option>
+<option value="Potato">Potato (7 classes)</option>
+<option value="Radish">Radish (5 classes)</option>
+<option value="Soybean">Soybean (12 classes)</option>
+<option value="Strawberry">Strawberry (5 classes)</option>
+<option value="Sugarcane">Sugarcane (5 classes)</option>
+<option value="Tomato">Tomato (10 classes)</option>
+<option value="Zucchini">Zucchini (7 classes)</option>
+  </select>
+</div>
+
+<div class="stats-banner" id="statsBanner"></div>
+<div class="matrix-card" id="matrixContainer"></div>
+
+<script>
+const cropsData = {"Apple": {"classes": ["Apple - Healthy", "Apple - Rust", "Apple - apple alternaria leaf spot", "Apple - apple black rot", "Apple - apple mosaic virus", "Apple - apple scab"], "clean_names": ["Healthy", "Rust", "apple alternaria leaf spot", "apple black rot", "apple mosaic virus", "apple scab"], "matrix": [[51, 0, 0, 0, 0, 0], [0, 42, 0, 0, 0, 0], [0, 0, 54, 0, 0, 0], [0, 0, 0, 48, 0, 0], [0, 0, 0, 0, 2, 0], [0, 0, 0, 0, 0, 39]], "support": [51, 42, 54, 48, 3, 39]}, "Banana": {"classes": ["Banana - Cordana", "Banana - Healthy", "Banana - Insectpest", "Banana - Moko", "Banana - Panama", "Banana - Pestalotiopsis", "Banana - Sigatoka", "Banana - banana black leaf streak", "Banana - banana bunchy top"], "clean_names": ["Cordana", "Healthy", "Insectpest", "Moko", "Panama", "Pestalotiopsis", "Sigatoka", "banana black leaf streak", "banana bunchy top"], "matrix": [[31, 0, 0, 0, 0, 0, 0, 0, 0], [0, 97, 0, 0, 0, 0, 0, 0, 0], [0, 0, 68, 0, 0, 0, 0, 0, 0], [0, 0, 0, 44, 0, 0, 0, 0, 0], [0, 0, 0, 0, 110, 0, 0, 1, 1], [0, 0, 0, 0, 0, 53, 0, 0, 0], [9, 0, 8, 3, 14, 5, 319, 9, 3], [0, 0, 0, 0, 0, 1, 1, 4, 1], [0, 0, 0, 0, 0, 0, 0, 0, 14]], "support": [31, 97, 68, 44, 112, 53, 372, 7, 14]}, "Bean": {"classes": ["Bean - Healthy", "Bean - bean angular leaf spot", "Bean - bean halo blight", "Bean - bean leaf shot hole", "Bean - bean mosaic virus", "Bean - bean rust"], "clean_names": ["Healthy", "bean angular leaf spot", "bean halo blight", "bean leaf shot hole", "bean mosaic virus", "bean rust"], "matrix": [[32, 0, 0, 0, 0, 0], [0, 32, 0, 0, 0, 0], [0, 0, 1, 0, 1, 0], [0, 0, 0, 19, 0, 0], [0, 0, 0, 0, 1, 0], [2, 0, 1, 0, 0, 34]], "support": [32, 32, 4, 19, 4, 46]}, "Bell Pepper": {"classes": ["Bell Pepper - Bacterial Spot", "Bell Pepper - Healthy", "Bell Pepper - Leaf Curl Virus", "Bell Pepper - Nutrition Deficiency", "Bell Pepper - bell pepper frogeye leaf spot", "Bell Pepper - bell pepper powdery mildew"], "clean_names": ["Bacterial Spot", "Healthy", "Leaf Curl Virus", "Nutrition Deficiency", "bell pepper frogeye leaf spot", "bell pepper powdery mildew"], "matrix": [[104, 1, 0, 0, 0, 1], [0, 138, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [4, 0, 0, 0, 128, 0], [0, 0, 0, 0, 0, 0]], "support": [108, 139, 14, 9, 141, 8]}, "Blackgram": {"classes": ["Blackgram - Anthracnose", "Blackgram - Healthy", "Blackgram - Leaf Crinkle", "Blackgram - Powdery Mildew", "Blackgram - Yellow Mosaic"], "clean_names": ["Anthracnose", "Healthy", "Leaf Crinkle", "Powdery Mildew", "Yellow Mosaic"], "matrix": [[23, 0, 0, 0, 0], [0, 22, 0, 0, 0], [0, 0, 15, 0, 0], [0, 0, 0, 17, 0], [0, 0, 0, 0, 23]], "support": [23, 22, 15, 17, 23]}, "Blueberry": {"classes": ["Blueberry - Healthy", "Blueberry - blueberry rust", "Blueberry - blueberry scorch"], "clean_names": ["Healthy", "blueberry rust", "blueberry scorch"], "matrix": [[52, 0, 0], [0, 4, 0], [0, 0, 3]], "support": [52, 4, 3]}, "Broccoli": {"classes": ["Broccoli - Healthy", "Broccoli - broccoli alternaria leaf spot"], "clean_names": ["Healthy", "broccoli alternaria leaf spot"], "matrix": [[2, 0], [0, 1]], "support": [2, 3]}, "Cabbage": {"classes": ["Cabbage - Healthy", "Cabbage - Tip Burn", "Cabbage - cabbage alternaria leaf spot", "Cabbage - cabbage black rot", "Cabbage - cabbage downy mildew"], "clean_names": ["Healthy", "Tip Burn", "cabbage alternaria leaf spot", "cabbage black rot", "cabbage downy mildew"], "matrix": [[7, 0, 0, 0, 0], [0, 2, 0, 0, 0], [0, 1, 3, 3, 0], [0, 0, 0, 9, 0], [0, 0, 0, 0, 4]], "support": [7, 2, 7, 11, 8]}, "Cauliflower": {"classes": ["Cauliflower - Blackrot", "Cauliflower - Downy mildew", "Cauliflower - Healthy"], "clean_names": ["Blackrot", "Downy mildew", "Healthy"], "matrix": [[4, 0, 0], [0, 15, 0], [0, 0, 16]], "support": [4, 15, 16]}, "Cherry": {"classes": ["Cherry - Healthy", "Cherry - cherry brown spot", "Cherry - cherry leaf scorch", "Cherry - cherry leaf spot", "Cherry - cherry powdery mildew", "Cherry - cherry purple leaf spot", "Cherry - cherry shot hole"], "clean_names": ["Healthy", "cherry brown spot", "cherry leaf scorch", "cherry leaf spot", "cherry powdery mildew", "cherry purple leaf spot", "cherry shot hole"], "matrix": [[60, 0, 0, 0, 0, 0, 0], [0, 54, 1, 0, 0, 0, 0], [0, 0, 58, 0, 0, 0, 0], [0, 0, 0, 7, 0, 0, 0], [0, 0, 0, 0, 30, 0, 0], [0, 0, 0, 0, 0, 55, 0], [0, 0, 0, 0, 0, 0, 18]], "support": [61, 55, 58, 8, 30, 55, 18]}, "Chilli": {"classes": ["Chilli - Bacterial Spot", "Chilli - Cercospora Leaf Spot", "Chilli - Healthy", "Chilli - Leaf Curl Virus", "Chilli - Nutrition Deficiency", "Chilli - White Spot"], "clean_names": ["Bacterial Spot", "Cercospora Leaf Spot", "Healthy", "Leaf Curl Virus", "Nutrition Deficiency", "White Spot"], "matrix": [[11, 0, 0, 0, 0, 0], [1, 14, 0, 0, 0, 0], [0, 0, 33, 0, 0, 0], [0, 0, 0, 16, 0, 0], [0, 0, 0, 0, 29, 0], [0, 0, 0, 0, 0, 12]], "support": [11, 15, 33, 39, 43, 15]}, "Citrus": {"classes": ["Citrus - Black spot", "Citrus - Healthy", "Citrus - citrus algal leaf spot", "Citrus - citrus canker", "Citrus - citrus greening disease", "Citrus - citrus scab"], "clean_names": ["Black spot", "Healthy", "citrus algal leaf spot", "citrus canker", "citrus greening disease", "citrus scab"], "matrix": [[13, 0, 0, 0, 0, 0], [0, 41, 0, 0, 0, 0], [0, 0, 18, 0, 0, 0], [1, 0, 0, 34, 1, 0], [69, 2, 0, 0, 0, 0], [0, 0, 0, 0, 0, 8]], "support": [13, 41, 18, 37, 71, 8]}, "Coffee": {"classes": ["Coffee - Healthy", "Coffee - Leaf Miner", "Coffee - Phoma", "Coffee - coffee leaf rust"], "clean_names": ["Healthy", "Leaf Miner", "Phoma", "coffee leaf rust"], "matrix": [[33, 0, 0, 0], [0, 35, 0, 0], [0, 1, 35, 0], [0, 0, 0, 39]], "support": [33, 35, 36, 42]}, "Corn": {"classes": ["Corn - Healthy", "Corn - Northern Leaf Blight", "Corn - Rust", "Corn - corn gray leaf spot", "Corn - corn holcus leaf spot"], "clean_names": ["Healthy", "Northern Leaf Blight", "Rust", "corn gray leaf spot", "corn holcus leaf spot"], "matrix": [[116, 0, 0, 0, 0], [0, 81, 0, 5, 0], [0, 0, 51, 0, 0], [0, 4, 0, 50, 0], [0, 0, 0, 0, 15]], "support": [116, 87, 51, 54, 15]}, "Cucumber": {"classes": ["Cucumber - Healthy", "Cucumber - cucumber angular leaf spot", "Cucumber - cucumber bacterial wilt", "Cucumber - cucumber powdery mildew"], "clean_names": ["Healthy", "cucumber angular leaf spot", "cucumber bacterial wilt", "cucumber powdery mildew"], "matrix": [[15, 0, 0, 0], [0, 19, 0, 0], [0, 0, 25, 0], [0, 0, 1, 14]], "support": [15, 19, 25, 16]}, "Eggplant": {"classes": ["Eggplant - Cercospora Leaf Spot", "Eggplant - Healthy", "Eggplant - Little Leaf", "Eggplant - Mosaic Virus", "Eggplant - White Mold", "Eggplant - Wilt"], "clean_names": ["Cercospora Leaf Spot", "Healthy", "Little Leaf", "Mosaic Virus", "White Mold", "Wilt"], "matrix": [[17, 1, 0, 2, 0, 0], [0, 19, 0, 0, 1, 0], [0, 0, 20, 0, 0, 0], [1, 0, 0, 13, 0, 0], [0, 0, 0, 0, 19, 1], [0, 0, 0, 0, 0, 20]], "support": [20, 20, 20, 14, 20, 20]}, "Fig": {"classes": ["Fig - Healthy", "Fig - fig brown spot", "Fig - fig leaf blight", "Fig - fig rust"], "clean_names": ["Healthy", "fig brown spot", "fig leaf blight", "fig rust"], "matrix": [[20, 0, 0, 0], [0, 16, 0, 0], [0, 0, 35, 0], [0, 0, 0, 21]], "support": [21, 16, 35, 21]}, "Ginger": {"classes": ["Ginger - Bacterial Wilt", "Ginger - Dehydrated", "Ginger - Healthy", "Ginger - Leaf Blight", "Ginger - Pest Damage", "Ginger - ginger leaf spot", "Ginger - ginger sheath blight"], "clean_names": ["Bacterial Wilt", "Dehydrated", "Healthy", "Leaf Blight", "Pest Damage", "ginger leaf spot", "ginger sheath blight"], "matrix": [[15, 0, 0, 0, 0, 0, 0], [0, 120, 1, 32, 109, 0, 0], [0, 0, 94, 8, 11, 0, 0], [0, 4, 15, 187, 20, 0, 0], [0, 8, 0, 0, 80, 0, 0], [0, 0, 0, 0, 0, 2, 0], [0, 0, 0, 0, 0, 0, 5]], "support": [16, 262, 113, 226, 88, 2, 6]}, "Grape": {"classes": ["Grape - Black Rot", "Grape - Esca (Black Measles)", "Grape - Healthy", "Grape - Leaf Blight", "Grape - grape bacterial rot", "Grape - grape downy mildew", "Grape - grape leafroll disease", "Grape - grape powdery mildew"], "clean_names": ["Black Rot", "Esca (Black Measles)", "Healthy", "Leaf Blight", "grape bacterial rot", "grape downy mildew", "grape leafroll disease", "grape powdery mildew"], "matrix": [[24, 0, 0, 0, 0, 0, 0, 0], [4, 236, 0, 0, 0, 0, 0, 0], [0, 0, 25, 0, 0, 0, 0, 0], [0, 0, 0, 215, 0, 0, 0, 0], [0, 0, 0, 0, 10, 0, 0, 0], [0, 0, 0, 0, 0, 96, 0, 1], [0, 0, 0, 0, 0, 0, 6, 0], [0, 0, 0, 0, 0, 0, 0, 40]], "support": [24, 240, 25, 215, 10, 97, 6, 40]}, "Groundnut": {"classes": ["Groundnut - Early leaf spot", "Groundnut - Early rust", "Groundnut - Healthy", "Groundnut - Late leaf spot", "Groundnut - Nutrition deficiency", "Groundnut - Rust"], "clean_names": ["Early leaf spot", "Early rust", "Healthy", "Late leaf spot", "Nutrition deficiency", "Rust"], "matrix": [[116, 0, 0, 0, 0, 0], [0, 133, 0, 0, 0, 0], [0, 0, 29, 0, 0, 0], [12, 2, 0, 169, 0, 1], [0, 0, 0, 1, 159, 0], [0, 0, 0, 0, 0, 151]], "support": [116, 133, 29, 184, 160, 151]}, "Guava": {"classes": ["Guava - Anthracnose", "Guava - Canker", "Guava - Dot", "Guava - Healthy", "Guava - Mummification", "Guava - Rust", "Guava - Spiraling Whitefly"], "clean_names": ["Anthracnose", "Canker", "Dot", "Healthy", "Mummification", "Rust", "Spiraling Whitefly"], "matrix": [[84, 0, 0, 0, 0, 0, 0], [4, 116, 1, 1, 0, 2, 0], [1, 1, 102, 2, 2, 0, 0], [1, 0, 47, 177, 0, 0, 0], [0, 0, 0, 0, 28, 0, 0], [0, 1, 1, 1, 0, 121, 0], [0, 0, 2, 0, 0, 0, 93]], "support": [84, 124, 108, 225, 28, 124, 95]}, "Jamun": {"classes": ["Jamun - Bacterial Spot", "Jamun - Brown Blight", "Jamun - Healthy", "Jamun - Powdery Mildew", "Jamun - Sooty Mold"], "clean_names": ["Bacterial Spot", "Brown Blight", "Healthy", "Powdery Mildew", "Sooty Mold"], "matrix": [[39, 0, 1, 0, 0], [0, 40, 0, 0, 0], [0, 0, 28, 0, 0], [0, 0, 0, 40, 0], [0, 0, 0, 0, 40]], "support": [40, 40, 28, 40, 40]}, "Mango": {"classes": ["Mango - Anthracnose", "Mango - Bacterial Canker", "Mango - Cutting Weevil", "Mango - Die Back", "Mango - Gall Midge", "Mango - Healthy", "Mango - Powdery Mildew", "Mango - Sooty Mould"], "clean_names": ["Anthracnose", "Bacterial Canker", "Cutting Weevil", "Die Back", "Gall Midge", "Healthy", "Powdery Mildew", "Sooty Mould"], "matrix": [[50, 0, 0, 0, 0, 0, 0, 0], [0, 50, 0, 0, 0, 0, 0, 0], [0, 0, 50, 0, 0, 0, 0, 0], [0, 0, 0, 50, 0, 0, 0, 0], [0, 0, 0, 0, 50, 0, 0, 0], [0, 0, 0, 0, 0, 50, 0, 0], [0, 0, 0, 0, 0, 0, 49, 1], [0, 0, 0, 0, 0, 0, 0, 50]], "support": [50, 50, 50, 50, 50, 50, 50, 50]}, "Paddy": {"classes": ["Paddy - Bacterial Leaf Blight", "Paddy - Blast", "Paddy - Brown Spot", "Paddy - Healthy", "Paddy - Leaf Scald", "Paddy - Narrow Brown Spot"], "clean_names": ["Bacterial Leaf Blight", "Blast", "Brown Spot", "Healthy", "Leaf Scald", "Narrow Brown Spot"], "matrix": [[36, 0, 0, 0, 0, 0], [0, 38, 4, 0, 0, 0], [0, 0, 38, 1, 0, 0], [0, 0, 0, 44, 0, 0], [0, 0, 0, 0, 36, 0], [0, 0, 0, 0, 0, 41]], "support": [36, 42, 39, 44, 36, 41]}, "Peach": {"classes": ["Peach - Healthy", "Peach - peach bacterial spot", "Peach - peach leaf curl", "Peach - peach leaf shot hole"], "clean_names": ["Healthy", "peach bacterial spot", "peach leaf curl", "peach leaf shot hole"], "matrix": [[39, 0, 0, 0], [0, 60, 0, 0], [1, 0, 12, 0], [0, 0, 0, 3]], "support": [39, 60, 14, 3]}, "Pear": {"classes": ["Pear - Healthy", "Pear - pear black spot", "Pear - pear fire blight", "Pear - pear leaf curl", "Pear - pear slug damage"], "clean_names": ["Healthy", "pear black spot", "pear fire blight", "pear leaf curl", "pear slug damage"], "matrix": [[41, 0, 0, 0, 0], [2, 120, 0, 1, 5], [0, 0, 18, 0, 0], [0, 0, 0, 6, 0], [0, 10, 0, 0, 162]], "support": [41, 128, 18, 6, 172]}, "Plum": {"classes": ["Plum - Healthy", "Plum - plum insect hole", "Plum - plum weevil", "Plum - plum yellow leaf"], "clean_names": ["Healthy", "plum insect hole", "plum weevil", "plum yellow leaf"], "matrix": [[14, 0, 0, 0], [7, 61, 0, 3], [0, 0, 10, 0], [1, 4, 0, 75]], "support": [14, 71, 10, 81]}, "Potato": {"classes": ["Potato - Early Blight", "Potato - Healthy", "Potato - Late Blight", "Potato - fungal diseases", "Potato - pest damage", "Potato - potato cyst nematode", "Potato - potato virus"], "clean_names": ["Early Blight", "Healthy", "Late Blight", "fungal diseases", "pest damage", "potato cyst nematode", "potato virus"], "matrix": [[128, 0, 2, 0, 0, 0, 0], [0, 46, 0, 0, 0, 0, 0], [2, 0, 139, 1, 0, 1, 0], [0, 0, 0, 41, 0, 0, 0], [0, 0, 0, 0, 29, 2, 0], [0, 0, 0, 0, 0, 24, 0], [0, 2, 0, 0, 0, 0, 25]], "support": [136, 46, 144, 41, 31, 24, 27]}, "Radish": {"classes": ["Radish - Black leaf spot", "Radish - Downey mildew", "Radish - Flea beetle", "Radish - Healthy", "Radish - Mosaic"], "clean_names": ["Black leaf spot", "Downey mildew", "Flea beetle", "Healthy", "Mosaic"], "matrix": [[49, 0, 0, 0, 0], [0, 52, 0, 0, 0], [0, 0, 46, 0, 0], [0, 0, 0, 57, 0], [0, 0, 0, 0, 49]], "support": [49, 52, 46, 57, 49]}, "Soybean": {"classes": ["Soybean - Bacterial Blight", "Soybean - Bacterial Pustule", "Soybean - Brown Spot", "Soybean - Cercospora Leaf Blight", "Soybean - Downy Mildew", "Soybean - Frogeye Leaf Spot", "Soybean - Healthy", "Soybean - Powdery Mildew", "Soybean - Rust", "Soybean - Sudden Death Syndrome", "Soybean - Target Leaf Spot", "Soybean - Yellow Mosaic"], "clean_names": ["Bacterial Blight", "Bacterial Pustule", "Brown Spot", "Cercospora Leaf Blight", "Downy Mildew", "Frogeye Leaf Spot", "Healthy", "Powdery Mildew", "Rust", "Sudden Death Syndrome", "Target Leaf Spot", "Yellow Mosaic"], "matrix": [[17, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0], [0, 11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 7, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 6, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 1, 18, 0, 0, 0, 0, 0, 0], [0, 0, 2, 0, 25, 0, 0, 0, 23, 0, 2, 1], [0, 0, 0, 0, 0, 0, 0, 13, 0, 0, 0, 0], [0, 0, 0, 0, 1, 1, 0, 0, 16, 0, 2, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11]], "support": [18, 11, 3, 7, 6, 19, 60, 13, 24, 11, 11, 11]}, "Strawberry": {"classes": ["Strawberry - Healthy", "Strawberry - strawberry angular leaf spot", "Strawberry - strawberry leaf scorch", "Strawberry - strawberry leaf spot", "Strawberry - strawberry powdery mildew"], "clean_names": ["Healthy", "strawberry angular leaf spot", "strawberry leaf scorch", "strawberry leaf spot", "strawberry powdery mildew"], "matrix": [[50, 0, 0, 0, 0], [0, 25, 0, 0, 0], [0, 0, 44, 0, 0], [0, 0, 0, 19, 0], [0, 0, 0, 0, 51]], "support": [50, 25, 44, 20, 51]}, "Sugarcane": {"classes": ["Sugarcane - Healthy", "Sugarcane - Mosaic", "Sugarcane - Red Rot", "Sugarcane - Rust", "Sugarcane - Yellow"], "clean_names": ["Healthy", "Mosaic", "Red Rot", "Rust", "Yellow"], "matrix": [[12, 0, 0, 0, 0], [0, 2, 0, 0, 0], [0, 0, 20, 0, 0], [0, 0, 1, 2, 0], [0, 0, 0, 0, 9]], "support": [12, 2, 20, 4, 9]}, "Tomato": {"classes": ["Tomato - Bacterial Spot", "Tomato - Healthy", "Tomato - Spider Mites", "Tomato - Target Spot", "Tomato - tomato early blight", "Tomato - tomato late blight", "Tomato - tomato leaf mold", "Tomato - tomato mosaic virus", "Tomato - tomato septoria leaf spot", "Tomato - tomato yellow leaf curl virus"], "clean_names": ["Bacterial Spot", "Healthy", "Spider Mites", "Target Spot", "tomato early blight", "tomato late blight", "tomato leaf mold", "tomato mosaic virus", "tomato septoria leaf spot", "tomato yellow leaf curl virus"], "matrix": [[203, 0, 0, 10, 1, 1, 0, 2, 0, 0], [0, 151, 0, 0, 0, 0, 0, 2, 0, 0], [0, 0, 158, 2, 0, 0, 0, 8, 0, 0], [0, 0, 0, 141, 0, 0, 0, 0, 0, 0], [0, 0, 0, 1, 97, 1, 0, 0, 0, 0], [0, 1, 0, 0, 6, 186, 1, 0, 1, 0], [0, 0, 0, 1, 0, 0, 100, 3, 0, 0], [0, 0, 0, 0, 0, 0, 0, 43, 0, 0], [0, 0, 0, 0, 0, 0, 0, 2, 179, 0], [3, 0, 1, 0, 0, 1, 0, 4, 0, 318]], "support": [222, 154, 168, 141, 99, 195, 109, 43, 181, 328]}, "Zucchini": {"classes": ["Zucchini - Healthy", "Zucchini - zucchini angular leaf spot", "Zucchini - zucchini anthracnose", "Zucchini - zucchini bacterial leaf spot", "Zucchini - zucchini downy mildew", "Zucchini - zucchini powdery mildew", "Zucchini - zucchini yellow mosaic virus"], "clean_names": ["Healthy", "zucchini angular leaf spot", "zucchini anthracnose", "zucchini bacterial leaf spot", "zucchini downy mildew", "zucchini powdery mildew", "zucchini yellow mosaic virus"], "matrix": [[4, 0, 0, 0, 1, 0, 1], [0, 5, 3, 0, 0, 0, 0], [0, 0, 4, 0, 0, 0, 0], [0, 1, 0, 1, 0, 0, 0], [0, 1, 1, 0, 5, 0, 1], [0, 0, 0, 0, 0, 12, 0], [1, 0, 0, 0, 0, 0, 16]], "support": [6, 8, 4, 2, 12, 16, 18]}};
+
+function renderCropMatrix() {
+  const crop = document.getElementById('cropSelect').value;
+  const data = cropsData[crop];
+  const n = data.classes.length;
+  
+  let totalSupport = 0;
+  let totalCorrect = 0;
+  
+  for (let i = 0; i < n; i++) {
+    totalSupport += data.support[i];
+    totalCorrect += data.matrix[i][i];
+  }
+  const cropAcc = totalSupport > 0 ? (totalCorrect / totalSupport * 100).toFixed(2) : '100.0';
+  
+  document.getElementById('statsBanner').innerHTML = `
+    <div class="stat-pill">Crop: <b>${crop}</b></div>
+    <div class="stat-pill">Pathology Classes: <b>${n}</b></div>
+    <div class="stat-pill">Test Support: <b>${totalSupport} leaves</b></div>
+    <div class="stat-pill">Within-Crop Accuracy: <b>${cropAcc}%</b> (${totalCorrect}/${totalSupport})</div>
+  `;
+  
+  let html = '<table><thead><tr><th>True \ Pred</th>';
+  for (let j = 0; j < n; j++) {
+    html += `<th>${data.clean_names[j]}</th>`;
+  }
+  html += '<th>Support</th><th>Recall %</th></tr></thead><tbody>';
+  
+  for (let i = 0; i < n; i++) {
+    html += `<tr><td class="row-hdr">${data.clean_names[i]}</td>`;
+    const rowSup = data.support[i];
+    const diagVal = data.matrix[i][i];
+    
+    for (let j = 0; j < n; j++) {
+      const val = data.matrix[i][j];
+      if (i === j) {
+        const recPct = rowSup > 0 ? (diagVal / rowSup * 100).toFixed(1) : '100.0';
+        const clsName = recPct >= 95 ? 'diag-perfect' : 'diag';
+        html += `<td class="${clsName}">${val}<br><span style="font-size:10px;">(${recPct}%)</span></td>`;
+      } else if (val > 0) {
+        html += `<td class="err">${val}</td>`;
+      } else {
+        html += `<td class="zero">0</td>`;
+      }
+    }
+    const rowRec = rowSup > 0 ? (diagVal / rowSup * 100).toFixed(1) : '100.0';
+    html += `<td><b>${rowSup}</b></td><td><b>${rowRec}%</b></td></tr>`;
+  }
+  
+  html += '</tbody></table>';
+  document.getElementById('matrixContainer').innerHTML = html;
+}
+
+// Initial render
+renderCropMatrix();
+</script>
+</body>
+</html>

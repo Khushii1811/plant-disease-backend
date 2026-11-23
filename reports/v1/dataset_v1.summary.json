@@ -1,0 +1,17 @@
+{
+  "total_images": 96835,
+  "splits": {
+    "train": 78187,
+    "val": 9321,
+    "test": 9327
+  },
+  "num_classes": 195,
+  "num_crops": 34,
+  "manifest_sha256": "7267ec4595eff802731eff86618dc79de33820752037ee5e92b88468cda89c30",
+  "zero_support_test_classes": [
+    "Jamun - Bacterial Spot",
+    "Jamun - Brown Blight",
+    "Jamun - Healthy"
+  ],
+  "tiny_support_test_classes_count": 21
+}

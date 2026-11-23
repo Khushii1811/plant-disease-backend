@@ -1,0 +1,37 @@
+source_name,url_doi_citation,license,redistributable,release_snapshot_image_count,notes
+plantvillage_legacy_baseline,"Hughes & Salathe (2015), arXiv:1511.08060; https://github.com/spMohanty/PlantVillage-Dataset",CC BY-SA 4.0,,41747,Foundational laboratory baseline across multiple crops; non-commercial compilation restriction conflict with CC BY-SA terms.
+ginger_research,"Wong (2024), TARUMT; https://github.com/wongxinjie/ginger-leaf-disease",MIT,,6960,Verified permissive academic source; flatbed and macro ginger leaves.
+kaggle_pv2,"PlantVillage Kaggle Mirror / Master Plant Disease Dataset (Tanniru, 2025)",CC BY-SA 4.0,,5744,"Master Plant Disease Dataset ingestion containing PlantVillage, Multi-Crop, and PlantSeg components under CC BY-SA 4.0 terms."
+mendeley_grape_niphad,"Dharrao et al. (2023), Mendeley Data, doi:10.17632/89t4pdzbpd.1",CC BY 4.0,,5298,Niphad region vineyard grape leaves; laboratory and natural-background specimens.
+mendeley_guava,"Hasan & Rahman (2023), Mendeley Data, doi:10.17632/95d8524k5y.1",CC BY 4.0,,3837,Guava foliar disease dataset from Bangladesh.
+mango_mendeley,"Shah et al. (2023), Mendeley Data / Kaggle, doi:10.17632/ggh6nhpbt7.1",CC0 1.0,,3460,"Public domain mango leaves; Algal leaf spot, Anthracnose, Die back, Cutting weevil."
+plantcity,"Khan et al. (2025), Data in Brief, doi:10.1016/j.dib.2025.111245",ODbL 1.0,,2556,PlantCity urban and orchard foliar dataset; Share-Alike open database terms.
+rice_lab,"Saputra (2022), Kaggle Rice Leafs Disease / ResearchGate",Unspecified,,2018,High-resolution laboratory rice leaves; research use only.
+syedzainmir_pear,"Syed Zain Mir (2023), Kaggle Pear Leaf Diseases",Unspecified,,1717,Kaggle user dump of pear disease images; unverified upstream provenance.
+paddy_doctor_kaggle,"Arjunan et al. (2022), IEEE DataPort / Kaggle Paddy Doctor",CC BY 4.0,,1702,Paddy Doctor natural-background benchmark subset retained after wide-angle pruning.
+mendeley_bell_pepper,"Elvsava et al. (2023), Mendeley Data, doi:10.17632/w9drvtxg9g.1",CC BY 4.0,,1554,Mendeley bell pepper leaf images; Bell Pepper and Chilli overlaps quarantined in P-001.
+corn_kaggle,"Ghose (2021), Kaggle Corn/Maize Leaf Disease Dataset",CC0 1.0,,1509,"Public domain corn leaves; Common Rust, Gray Leaf Spot, Blight."
+jamun_foliar,"Bhowmik & Ahad (2023), Mendeley Data, doi:10.17632/43d75vptz4.2",CC BY 4.0,,1392,Syzygium cumini foliar disease benchmark from Bangladesh.
+potato_kaggle,"Hossin (2022), Kaggle Potato Leaf Disease",Unspecified,,1326,Kaggle community mirror; unverified upstream licensing.
+plum_lab_mendeley,"Nayeem et al. (2023), Mendeley Data, doi:10.17632/67t8v9t6h6.1",CC BY 4.0,,1165,Laboratory plum leaves; non-foliar fruit images quarantined in P-005.
+chilli_nirob,"Nirob et al. (2025), Data in Brief / Kaggle, doi:10.1016/j.dib.2025.111422",CC BY 4.0,,1055,"Verified primary chilli dataset; Leaf Curl, Cercospora, Bacterial Spot."
+diamos,"Fenu & Malloci (2021), Agronomy, doi:10.3390/agronomy11050934",CC BY 4.0,,956,DiaMOS Plant pear and fruit orchard in-situ captures.
+datasetninja,DatasetNinja / Supervisely Plant Disease Aggregation,CC BY 4.0,,941,Re-annotated foliar pathology splits.
+therealoise_bean,Makerere AI Lab / therealoise Bean Disease Dataset (Kaggle),Unspecified,,873,In-situ natural-background bean disease images from Uganda; thumb crops preserved in test.
+eggplant_kaggle,"Kapadnis et al. (2023), Kaggle Eggplant Disease Dataset",Unspecified,,867,Eggplant Little Leaf and Mosaic Virus; mixed Cercospora folder quarantined in P-005.
+sourabh2001,"Sourabh (2022), Kaggle Citrus Leaves Dataset",Unspecified,,817,"Citrus Black Spot, Canker, Greening, Melanose."
+peach_dataset,"Farman et al. (2022), Mendeley Data, doi:10.17632/5h7p4xft82.1",CC BY 4.0,,631,"Peach foliar pathology; Bacterial Spot, Peach leaf curl."
+mendeley,"Prem Kumar E. (2025), Mendeley Data, doi:10.17632/tywbtsjrJV.1",CC BY 4.0,,566,"Multi-crop disease specimens (Banana, Cauliflower, Groundnut, Radish)."
+vaishali_soybean,"Thorwat et al. (2022), Mendeley Data, doi:10.17632/m638k43y9v.1",CC BY 4.0,,474,"Soybean foliar diseases from Maharashtra, India."
+coffee_kaggle,"Esgario et al. (2020), BrACoLD Coffee Dataset, doi:10.1016/j.compag.2020.105437",CC BY 4.0,,402,"Brazilian Coffee Leaf Disease dataset; Rust, Brown Eye Spot, Miner, Cercospora."
+kaggle_grape,"rm1000 (2021), Kaggle Grape Disease Dataset",CC0 1.0,,395,Public domain grape leaves.
+unknown,Uncataloged historical legacy ingestion paths,Unspecified,,326,Unverified legacy paths; non-commercial research use only.
+sujay_kapadnis,"Kapadnis (2023), Kaggle Cucumber Disease Dataset",Unspecified,,304,"Cucumber Downy Mildew, Powdery Mildew, Healthy."
+soybean_mendeley_kaggle,"Bhujade (2023), Kaggle Soybean Disease Mirror",Unspecified,,304,Kaggle mirror of Indian soybean farm leaves.
+scraped_coffee,Targeted agronomic extension search queries for coffee pathology,Unspecified,,278,Targeted web downloads; non-commercial research use only.
+mendeley_citrus_lemon,"Al Amin (2023), Mendeley Data, doi:10.17632/bvrw7px54t.1",CC BY 4.0,,255,"Lemon leaf diseases; Citrus canker, leaf miner, algal spot."
+plum_ronokhasan,"Hasan (2023), Kaggle Plum Leafs Field Dataset",Unspecified,,197,European plum natural-background captures from Bangladesh.
+agrivision_zucchini,"Billah et al. (2023), Agri-Vision4 / Mendeley Data, doi:10.17632/k35623m4t6.1",CC BY 4.0,,193,"Zucchini foliar diseases; Yellow mosaic, Powdery mildew, Downy mildew."
+mendeley_cabbage,"Ayawli et al. (2023), Mendeley Data, doi:10.17632/wzrhnw7t3t.1",CC BY 4.0,,102,"Cabbage foliar diseases; Black rot, Alternaria leaf spot, Downy mildew."
+scraped,Manual agronomic extension searches for missing rare disease controls,Unspecified,,36,Curated rare leaf images; research use only.
+scraped_inaturalist,iNaturalist Research-Grade Observations (inaturalist.org),CC BY-NC 4.0,,27,Research-grade community observations; strictly non-commercial.

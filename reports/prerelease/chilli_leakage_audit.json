@@ -1,0 +1,73 @@
+{
+  "per_class_leakage": {
+    "Chilli - Bacterial Spot": {
+      "train_vs_val": {
+        "sha_matches": 0,
+        "phash_matches": 0,
+        "cosine_matches": 0,
+        "details": {
+          "sha": [],
+          "phash": [],
+          "cosine": []
+        }
+      },
+      "train_vs_test": {
+        "sha_matches": 0,
+        "phash_matches": 0,
+        "cosine_matches": 2,
+        "details": {
+          "sha": [],
+          "phash": [],
+          "cosine": [
+            [
+              "chilli_-_bacterial_spot_train_01677.jpg",
+              "chilli_-_bacterial_spot_test_00190.jpg",
+              0.9781230688095093
+            ],
+            [
+              "chilli_-_bacterial_spot_train_01727.jpg",
+              "chilli_-_bacterial_spot_test_00151.jpg",
+              0.9638739228248596
+            ]
+          ]
+        }
+      },
+      "val_vs_test": {
+        "sha_matches": 0,
+        "phash_matches": 0,
+        "cosine_matches": 0,
+        "details": {
+          "sha": [],
+          "phash": [],
+          "cosine": []
+        }
+      }
+    },
+    "Chilli - Cercospora Leaf Spot": {
+      "train_vs_val": {
+        "sha_matches": 0,
+        "phash_matches": 0,
+        "cosine_matches": 1,
+        "details": {
+          "sha": [],
+          "phash": [],
+          "cosine": [
+            [
+              "chilli_-_cercospora_leaf_spot_train_01109.jpg",
+              "chilli_-_cercospora_leaf_spot_val_00043.jpg",
+              0.9759316444396973
+            ]
+          ]
+        }
+      },
+      "train_vs_test": {
+        "sha_matches": 0,
+        "phash_matches": 1,
+        "cosine_matches": 5,
+        "details": {
+          "sha": [],
+          "phash": [
+            [
+              "chilli_-_cercospora_leaf_spot_train_00078.jpg",
+              "chilli_-_cercospora_leaf_spot_test_00214.jpg",
+              

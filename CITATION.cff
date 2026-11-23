@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this benchmark, dataset manifests, or model weights in your research, please cite it as below."
+title: "plant-disease-backend: Foliar Plant Leaf Disease Classification Benchmark"
+version: 1.0.0
+date-released: "2026-11-23"
+authors:
+  - family-names: "Patel"
+    given-names: "Khushi"
+repository-code: "https://github.com/Khushii1811/plant-disease-backend"
+license: "MIT"
+keywords:
+  - "plant pathology"
+  - "leaf disease classification"
+  - "computer vision"
+  - "ConvNeXt"
+  - "agricultural benchmark"

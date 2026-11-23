@@ -1,0 +1,90 @@
+{
+  "author": "Khushi Patel",
+  "repository": "https://github.com/Khushii1811/plant-disease-detection",
+  "model_architecture": "DualHead ConvNeXt-Tiny (crop + disease)",
+  "weights_sha256": "3bb5785efa957a5fd4eb9d071fa92ff57adbef9788275a810e9cce99cf016dcb",
+  "seed_status": "training run was not seeded; seeding added later in 16635f4",
+  "weights_trained_on_release_snapshot": false,
+  "removed_after_training": {
+    "train": 0,
+    "val": 0,
+    "test": 181,
+    "total": 181,
+    "note": "Only test split leakage frames were quarantined by Patch P-007; train and val splits were untouched."
+  },
+  "stages": {
+    "S1": {
+      "stage": "S1_training_snapshot",
+      "description": "Dataset snapshot on which DualHead ConvNeXt-Tiny weights were trained",
+      "date_utc": "2026-11-06T07:51:36.602000+00:00",
+      "git_commit": "21086895979c683ed3c2044da7b9ca919f1dbaa0 (uncommitted tree during run; committed as dbacd9c7b2c74e863ff34a383f9383e0a6ace818)",
+      "manifest_path": "reports/v1/dataset_v1.csv",
+      "manifest_sha256": "5b5bc90a052d10a4d9ffc9b0659c95fa280ddd493da4e24fe9753a34f19fbde2",
+      "total_images": 92165,
+      "split_counts": {
+        "train": 73356,
+        "val": 9349,
+        "test": 9460
+      },
+      "num_classes": 177,
+      "num_crops": 33,
+      "action": "Trained DualHead ConvNeXt-Tiny for 25 epochs (best step 19, epoch 20) under MLflow run cb46c7f8f10f45e59ad809720c7bccb6",
+      "evidence": "mlflow.db run cb46c7f8f10f45e59ad809720c7bccb6: train_disease_acc=0.9914935384 (72732/73356), val_masked_disease_acc=0.9599957215 (8975/9349)"
+    },
+    "S2": {
+      "stage": "S2_val_checkpoint_and_calibration",
+      "description": "Validation split evaluation for checkpoint selection and Platt temperature scaling",
+      "date_utc": "2026-11-15",
+      "git_commit": "dbacd9c7b2c74e863ff34a383f9383e0a6ace818",
+      "manifest_sha256": "5b5bc90a052d10a4d9ffc9b0659c95fa280ddd493da4e24fe9753a34f19fbde2",
+      "total_images": 92165,
+      "split_counts": {
+        "train": 73356,
+        "val": 9349,
+        "test": 9460
+      },
+      "val_samples_used": 9349,
+      "num_classes": 177,
+      "num_crops": 33,
+      "action": "Selected best checkpoint at step 19 (epoch 20) with masked accuracy 0.9600 (8975/9349) and fitted temperature parameters (T_crop=0.5931, T_disease=0.5013) via L-BFGS NLL minimization",
+      "evidence": "models/v1/calibration.json, artifacts/checkpoints/train_checkpoint_v1.pth"
+    },
+    "S3": {
+      "stage": "S3_evaluation",
+      "description": "Evaluation of official headline metrics on the release snapshot test folder (9,279 files, manifest SHA-256 9822de8f...); earlier 8,911 figures measured on S1 minus the 181-image list are marked historical.",
+      "date_utc": "2026-11-18T13:07:10.482356+00:00",
+      "git_commit": "3dcee0330d3fbbf64a2674a23dbbd3f1db056090",
+      "manifest_sha256": "9822de8f77e4a587b8752772af85fbc8c0978e50354f108968d3065e736c50cd",
+      "total_images_in_release_manifest": 91984,
+      "evaluated_test_N": 9279,
+      "num_classes": 177,
+      "num_crops": 33,
+      "action": "Evaluated ConvNeXt-Tiny DualHead on the release snapshot test folder (N=9279) producing official headline metrics (8,910 / 9,279, 96.02%). The earlier 8,911 figures (measured on S1 test minus the 181-image list) are marked historical.",
+      "historical_evaluation": {
+        "test_N": 9279,
+        "total_correct": 8911,
+        "soft_gated_disease_accuracy": 96.03,
+        "basis": "S1 test split minus 181-image candidate list before physical quarantine P-007; marked historical."
+      },
+      "evidence": "reports/v1/results.json, reports/v1/counts_table.json, scripts/v1/build_results.py"
+    },
+    "S4": {
+      "stage": "S4_release_snapshot",
+      "description": "Curated production release dataset snapshot following Patch P-007",
+      "date_utc": "2026-11-18T11:36:19+05:30",
+      "git_commit": "781f8bdc142702a29a9c86eb3be98885f3f734e3",
+      "manifest_path": "reports/v1/dataset_v1.csv",
+      "manifest_sha256": "9822de8f77e4a587b8752772af85fbc8c0978e50354f108968d3065e736c50cd",
+      "total_images": 91984,
+      "split_counts": {
+        "train": 73356,
+        "val": 9349,
+        "test": 9279
+      },
+      "num_classes": 177,
+      "num_crops": 33,
+      "action": "Executed Patch P-007: moved 181 near-duplicate test leakage frames from data/processed/test/ into data/raw/quarantine_test_leakage_twins/test/; synchronized manifest reports/v1/dataset_v1.csv (N=91984). Test split physically equals evaluated test set.",
+      "evidence": "reports/v1/dataset_v1.csv, data/patches/P-007_test_leakage_quarantine_PLAN.csv"
+    }
+  }
+}

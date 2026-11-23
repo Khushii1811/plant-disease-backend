@@ -1,0 +1,534 @@
+{
+  "manifest_path": "reports/v1/dataset_v1.csv",
+  "total_images": 91984,
+  "exact_sha256_duplicates": {
+    "total_duplicate_sets": 0,
+    "by_split_pair": {},
+    "by_class": {}
+  },
+  "phash_hamming_le4": {
+    "total_pairs": 2829,
+    "d0_exact_phash_pairs": 1066,
+    "d1_4_near_duplicate_pairs": 1763,
+    "by_split_pair": {
+      "train_vs_train": {
+        "d0": 853,
+        "d1_4": 1611,
+        "total": 2464
+      },
+      "train_vs_val": {
+        "d0": 145,
+        "d1_4": 115,
+        "total": 260
+      },
+      "val_vs_val": {
+        "d0": 34,
+        "d1_4": 15,
+        "total": 49
+      },
+      "test_vs_test": {
+        "d0": 34,
+        "d1_4": 22,
+        "total": 56
+      }
+    },
+    "by_class": {
+      "Guava - Insect Damage": {
+        "within_split": 119,
+        "cross_split": 31,
+        "total": 150
+      },
+      "Guava - Dot": {
+        "within_split": 264,
+        "cross_split": 3,
+        "total": 267
+      },
+      "Guava - Algal Leaf Spot": {
+        "within_split": 194,
+        "cross_split": 8,
+        "total": 202
+      },
+      "Paddy - Leaf Scald": {
+        "within_split": 119,
+        "cross_split": 29,
+        "total": 148
+      },
+      "Paddy - Blast": {
+        "within_split": 44,
+        "cross_split": 16,
+        "total": 60
+      },
+      "Jamun - Healthy": {
+        "within_split": 80,
+        "cross_split": 23,
+        "total": 103
+      },
+      "Citrus - citrus algal leaf spot": {
+        "within_split": 8,
+        "cross_split": 0,
+        "total": 8
+      },
+      "Jamun - Powdery Mildew": {
+        "within_split": 136,
+        "cross_split": 20,
+        "total": 156
+      },
+      "Guava - Spiraling Whitefly": {
+        "within_split": 153,
+        "cross_split": 7,
+        "total": 160
+      },
+      "Radish - Flea beetle": {
+        "within_split": 64,
+        "cross_split": 0,
+        "total": 64
+      },
+      "Jamun - Brown Blight": {
+        "within_split": 200,
+        "cross_split": 44,
+        "total": 244
+      },
+      "Pear - pear black spot": {
+        "within_split": 2,
+        "cross_split": 0,
+        "total": 2
+      },
+      "Mango - Anthracnose": {
+        "within_split": 10,
+        "cross_split": 0,
+        "total": 10
+      },
+      "Bell Pepper - bell pepper frogeye leaf spot": {
+        "within_split": 102,
+        "cross_split": 0,
+        "total": 102
+      },
+      "Tomato - Bacterial Spot": {
+        "within_split": 8,
+        "cross_split": 0,
+        "total": 8
+      },
+      "Groundnut - Early leaf spot": {
+        "within_split": 5,
+        "cross_split": 0,
+        "total": 5
+      },
+      "Bell Pepper - Bacterial Spot": {
+        "within_split": 4,
+        "cross_split": 0,
+        "total": 4
+      },
+      "Radish - Healthy": {
+        "within_split": 58,
+        "cross_split": 0,
+        "total": 58
+      },
+      "Banana - Sigatoka": {
+        "within_split": 4,
+        "cross_split": 0,
+        "total": 4
+      },
+      "Banana - banana black leaf streak": {
+        "within_split": 3,
+        "cross_split": 0,
+        "total": 3
+      },
+      "Guava - Healthy": {
+        "within_split": 251,
+        "cross_split": 8,
+        "total": 259
+      },
+      "Mango - Cutting Weevil": {
+        "within_split": 276,
+        "cross_split": 0,
+        "total": 276
+      },
+      "Groundnut - Late leaf spot and early rust": {
+        "within_split": 23,
+        "cross_split": 0,
+        "total": 23
+      },
+      "Tomato - tomato yellow leaf curl virus": {
+        "within_split": 7,
+        "cross_split": 0,
+        "total": 7
+      },
+      "Groundnut - Nutrition deficiency": {
+        "within_split": 16,
+        "cross_split": 0,
+        "total": 16
+      },
+      "Jamun - Sooty Mold": {
+        "within_split": 138,
+        "cross_split": 23,
+        "total": 161
+      },
+      "Jamun - Bacterial Spot": {
+        "within_split": 211,
+        "cross_split": 42,
+        "total": 253
+      },
+      "Radish - Black leaf spot": {
+        "within_split": 45,
+        "cross_split": 0,
+        "total": 45
+      },
+      "Plum - plum yellow leaf": {
+        "within_split": 52,
+        "cross_split": 0,
+        "total": 52
+      },
+      "Banana - Healthy": {
+        "within_split": 1,
+        "cross_split": 0,
+        "total": 1
+      },
+      "Pear - pear slug damage": {
+        "within_split": 5,
+        "cross_split": 0,
+        "total": 5
+      },
+      "Paddy - Brown Spot": {
+        "within_split": 30,
+        "cross_split": 7,
+        "total": 37
+      },
+      "Tomato - tomato septoria leaf spot": {
+        "within_split": 4,
+        "cross_split": 0,
+        "total": 4
+      },
+      "Paddy - Healthy": {
+        "within_split": 66,
+        "cross_split": 5,
+        "total": 71
+      },
+      "Mango - Gall Midge": {
+        "within_split": 10,
+        "cross_split": 0,
+        "total": 10
+      },
+      "Paddy - Narrow Brown Spot": {
+        "within_split": 74,
+        "cross_split": 13,
+        "total": 87
+      },
+      "Groundnut - Late leaf spot": {
+        "within_split": 15,
+        "cross_split": 0,
+        "total": 15
+      },
+      "Soybean - Powdery Mildew": {
+        "within_split": 33,
+        "cross_split": 9,
+        "total": 42
+      },
+      "Radish - Downey mildew": {
+        "within_split": 28,
+        "cross_split": 0,
+        "total": 28
+      },
+      "Ginger - Dehydrated": {
+        "within_split": 21,
+        "cross_split": 0,
+        "total": 21
+      },
+      "Plum - plum insect hole": {
+        "within_split": 34,
+        "cross_split": 0,
+        "total": 34
+      },
+      "Tomato - tomato mosaic virus": {
+        "within_split": 1,
+        "cross_split": 0,
+        "total": 1
+      },
+      "Bell Pepper - Healthy": {
+        "within_split": 14,
+        "cross_split": 0,
+        "total": 14
+      },
+      "Ginger - Bacterial Wilt": {
+        "within_split": 39,
+        "cross_split": 13,
+        "total": 52
+      },
+      "Cherry - Healthy": {
+        "within_split": 2,
+        "cross_split": 0,
+        "total": 2
+      },
+      "Pear - Healthy": {
+        "within_split": 3,
+        "cross_split": 0,
+        "total": 3
+      },
+      "Chilli - Leaf Curl Virus": {
+        "within_split": 7,
+        "cross_split": 0,
+        "total": 7
+      },
+      "Potato - Early Blight": {
+        "within_split": 3,
+        "cross_split": 0,
+        "total": 3
+      },
+      "Ginger - Pest Damage": {
+        "within_split": 11,
+        "cross_split": 0,
+        "total": 11
+      },
+      "Ginger - Healthy": {
+        "within_split": 14,
+        "cross_split": 0,
+        "total": 14
+      },
+      "Ginger - Leaf Blight": {
+        "within_split": 19,
+        "cross_split": 0,
+        "total": 19
+      },
+      "Tomato - tomato early blight": {
+        "within_split": 1,
+        "cross_split": 0,
+        "total": 1
+      },
+      "Banana - Pestalotiopsis": {
+        "within_split": 1,
+        "cross_split": 0,
+        "total": 1
+      },
+      "Chilli - Nutrition Deficiency": {
+        "within_split": 8,
+        "cross_split": 0,
+        "total": 8
+      },
+      "Soybean - Healthy": {
+        "within_split": 13,
+        "cross_split": 0,
+        "total": 13
+      },
+      "Tomato - Spider Mites": {
+        "within_split": 6,
+        "cross_split": 0,
+        "total": 6
+      },
+      "Mango - Healthy": {
+        "within_split": 11,
+        "cross_split": 0,
+        "total": 11
+      },
+      "Mango - Die Back": {
+        "within_split": 8,
+        "cross_split": 0,
+        "total": 8
+      },
+      "Groundnut - Rust": {
+        "within_split": 19,
+        "cross_split": 0,
+        "total": 19
+      },
+      "Groundnut - Healthy": {
+        "within_split": 9,
+        "cross_split": 0,
+        "total": 9
+      },
+      "Soybean - Bacterial Blight": {
+        "within_split": 4,
+        "cross_split": 0,
+        "total": 4
+      },
+      "Chilli - White Spot": {
+        "within_split": 3,
+        "cross_split": 0,
+        "total": 3
+      },
+      "Banana - Cordana": {
+        "within_split": 2,
+        "cross_split": 0,
+        "total": 2
+      },
+      "Corn - corn gray leaf spot": {
+        "within_split": 2,
+        "cross_split": 0,
+        "total": 2
+      },
+      "Corn - Northern Leaf Blight": {
+        "within_split": 2,
+        "cross_split": 0,
+        "total": 2
+      },
+      "Grape - grape powdery mildew": {
+        "within_split": 8,
+        "cross_split": 0,
+        "total": 8
+      },
+      "Citrus - Healthy": {
+        "within_split": 1,
+        "cross_split": 0,
+        "total": 1
+      },
+      "Soybean - Rust": {
+        "within_split": 1,
+        "cross_split": 0,
+        "total": 1
+      },
+      "Bean - bean rust": {
+        "within_split": 1,
+        "cross_split": 0,
+        "total": 1
+      },
+      "Eggplant - Little Leaf": {
+        "within_split": 17,
+        "cross_split": 0,
+        "total": 17
+      },
+      "Grape - Leaf Blight": {
+        "within_split": 1,
+        "cross_split": 0,
+        "total": 1
+      },
+      "Grape - Esca (Black Measles)": {
+        "within_split": 2,
+        "cross_split": 0,
+        "total": 2
+      },
+      "Paddy - Bacterial Leaf Blight": {
+        "within_split": 14,
+        "cross_split": 0,
+        "total": 14
+      },
+      "Chilli - Healthy": {
+        "within_split": 7,
+        "cross_split": 0,
+        "total": 7
+      },
+      "Cucumber - cucumber angular leaf spot": {
+        "within_split": 1,
+        "cross_split": 0,
+        "total": 1
+      },
+      "Blueberry - Healthy": {
+        "within_split": 2,
+        "cross_split": 0,
+        "total": 2
+      },
+      "Mango - Sooty Mould": {
+        "within_split": 12,
+        "cross_split": 0,
+        "total": 12
+      },
+      "Soybean - Downy Mildew": {
+        "within_split": 1,
+        "cross_split": 0,
+        "total": 1
+      },
+      "Potato - Late Blight": {
+        "within_split": 1,
+        "cross_split": 0,
+        "total": 1
+      },
+      "Plum - Healthy": {
+        "within_split": 1,
+        "cross_split": 0,
+        "total": 1
+      },
+      "Chilli - Cercospora Leaf Spot": {
+        "within_split": 2,
+        "cross_split": 0,
+        "total": 2
+      },
+      "Eggplant - White Mold": {
+        "within_split": 1,
+        "cross_split": 0,
+        "total": 1
+      },
+      "Cherry - cherry brown spot": {
+        "within_split": 3,
+        "cross_split": 0,
+        "total": 3
+      },
+      "Apple - Healthy": {
+        "within_split": 1,
+        "cross_split": 0,
+        "total": 1
+      },
+      "Citrus - Alternaria leaf spot": {
+        "within_split": 1,
+        "cross_split": 0,
+        "total": 1
+      },
+      "Grape - grape bacterial rot": {
+        "within_split": 1,
+        "cross_split": 0,
+        "total": 1
+      },
+      "Cherry - cherry leaf scorch": {
+        "within_split": 1,
+        "cross_split": 0,
+        "total": 1
+      },
+      "Citrus - citrus greening disease": {
+        "within_split": 3,
+        "cross_split": 0,
+        "total": 3
+      },
+      "Tomato - tomato late blight": {
+        "within_split": 2,
+        "cross_split": 0,
+        "total": 2
+      },
+      "Potato - Healthy": {
+        "within_split": 2,
+        "cross_split": 0,
+        "total": 2
+      },
+      "Tomato - Healthy": {
+        "within_split": 1,
+        "cross_split": 0,
+        "total": 1
+      },
+      "Tomato - tomato leaf mold": {
+        "within_split": 1,
+        "cross_split": 0,
+        "total": 1
+      },
+      "Citrus - Citrus Hindu mite": {
+        "within_split": 1,
+        "cross_split": 0,
+        "total": 1
+      },
+      "Chilli - Bacterial Spot": {
+        "within_split": 1,
+        "cross_split": 0,
+        "total": 1
+      },
+      "Coffee - coffee leaf rust": {
+        "within_split": 1,
+        "cross_split": 0,
+        "total": 1
+      }
+    }
+  },
+  "clustering": {
+    "total_clusters": 1621,
+    "multi_image_clusters": 1621,
+    "cross_split_clusters": 154
+  },
+  "p008_dryrun_summary": {
+    "total_flagged_images": 162,
+    "removals_by_split": {
+      "val": 162
+    },
+    "num_affected_classes": 13,
+    "classes_support_below_3": [
+      {
+        "class": "Jamun - Bacterial Spot",
+        "val_before": 31,
+        "val_after": 4,
+        "test_before": 1,
+        "test_after": 1
+      }
+    ]
+  }
+}

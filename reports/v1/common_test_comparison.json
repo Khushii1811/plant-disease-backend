@@ -1,0 +1,327 @@
+{
+  "num_common_images": 10321,
+  "overall_common": {
+    "v0_accuracy": 0.9318864451119078,
+    "v1_accuracy": 0.9558182346671834,
+    "accuracy_delta": 0.02393178955527564,
+    "v0_macro_f1": 0.8901236581065579,
+    "v1_macro_f1": 0.9314311420404541,
+    "macro_f1_delta": 0.04130748393389616
+  },
+  "excluding_patched_classes": {
+    "num_images": 10186,
+    "v0_accuracy": 0.9380522285489888,
+    "v1_accuracy": 0.9552326722953073,
+    "accuracy_delta": 0.01718044374631844,
+    "v0_macro_f1": 0.9180049280312792,
+    "v1_macro_f1": 0.9302073027765623,
+    "macro_f1_delta": 0.012202374745283073
+  },
+  "patched_classes_contribution": [
+    {
+      "class_name": "Citrus - citrus greening disease",
+      "support": 14,
+      "v0_accuracy": 0.0,
+      "v1_accuracy": 1.0,
+      "accuracy_delta": 1.0,
+      "v0_f1": 0.0,
+      "v1_f1": 0.9032,
+      "f1_delta": 0.9032
+    },
+    {
+      "class_name": "Soybean - Healthy",
+      "support": 11,
+      "v0_accuracy": 0.0,
+      "v1_accuracy": 1.0,
+      "accuracy_delta": 1.0,
+      "v0_f1": 0.0,
+      "v1_f1": 0.9167,
+      "f1_delta": 0.9167
+    },
+    {
+      "class_name": "Citrus - Black spot",
+      "support": 13,
+      "v0_accuracy": 1.0,
+      "v1_accuracy": 1.0,
+      "accuracy_delta": 0.0,
+      "v0_f1": 0.6667,
+      "v1_f1": 1.0,
+      "f1_delta": 0.3333
+    },
+    {
+      "class_name": "Chilli - Leaf Curl Virus",
+      "support": 39,
+      "v0_accuracy": 0.2821,
+      "v1_accuracy": 1.0,
+      "accuracy_delta": 0.7179,
+      "v0_f1": 0.44,
+      "v1_f1": 1.0,
+      "f1_delta": 0.56
+    },
+    {
+      "class_name": "Chilli - Nutrition Deficiency",
+      "support": 43,
+      "v0_accuracy": 0.6512,
+      "v1_accuracy": 1.0,
+      "accuracy_delta": 0.3488,
+      "v0_f1": 0.7887,
+      "v1_f1": 1.0,
+      "f1_delta": 0.2113
+    },
+    {
+      "class_name": "Chilli - White Spot",
+      "support": 15,
+      "v0_accuracy": 0.7333,
+      "v1_accuracy": 1.0,
+      "accuracy_delta": 0.2667,
+      "v0_f1": 0.8462,
+      "v1_f1": 1.0,
+      "f1_delta": 0.1538
+    }
+  ],
+  "classes_changed_gt_5_f1_points": 24,
+  "top_15_improved": [
+    {
+      "class_name": "Bean - bean mosaic virus",
+      "crop": "Bean",
+      "support": 4,
+      "v0_f1": 0.0,
+      "v1_f1": 0.4,
+      "f1_delta": 0.4
+    },
+    {
+      "class_name": "Apple - apple mosaic virus",
+      "crop": "Apple",
+      "support": 3,
+      "v0_f1": 0.5714,
+      "v1_f1": 0.8571,
+      "f1_delta": 0.2857
+    },
+    {
+      "class_name": "Ginger - Dehydrated",
+      "crop": "Ginger",
+      "support": 262,
+      "v0_f1": 0.5323,
+      "v1_f1": 0.7913,
+      "f1_delta": 0.259
+    },
+    {
+      "class_name": "Ginger - ginger sheath blight",
+      "crop": "Ginger",
+      "support": 6,
+      "v0_f1": 0.7692,
+      "v1_f1": 1.0,
+      "f1_delta": 0.2308
+    },
+    {
+      "class_name": "Ginger - Pest Damage",
+      "crop": "Ginger",
+      "support": 88,
+      "v0_f1": 0.4969,
+      "v1_f1": 0.6781,
+      "f1_delta": 0.1812
+    },
+    {
+      "class_name": "Soybean - Downy Mildew",
+      "crop": "Soybean",
+      "support": 6,
+      "v0_f1": 0.5455,
+      "v1_f1": 0.7059,
+      "f1_delta": 0.1604
+    },
+    {
+      "class_name": "Cabbage - cabbage downy mildew",
+      "crop": "Cabbage",
+      "support": 8,
+      "v0_f1": 0.7143,
+      "v1_f1": 0.8235,
+      "f1_delta": 0.1092
+    },
+    {
+      "class_name": "Guava - Dot",
+      "crop": "Guava",
+      "support": 108,
+      "v0_f1": 0.7823,
+      "v1_f1": 0.8899,
+      "f1_delta": 0.1076
+    },
+    {
+      "class_name": "Zucchini - Healthy",
+      "crop": "Zucchini",
+      "support": 6,
+      "v0_f1": 0.7273,
+      "v1_f1": 0.8333,
+      "f1_delta": 0.1061
+    },
+    {
+      "class_name": "Soybean - Rust",
+      "crop": "Soybean",
+      "support": 24,
+      "v0_f1": 0.7442,
+      "v1_f1": 0.8444,
+      "f1_delta": 0.1003
+    },
+    {
+      "class_name": "Cauliflower - Blackrot",
+      "crop": "Cauliflower",
+      "support": 4,
+      "v0_f1": 0.8,
+      "v1_f1": 0.8889,
+      "f1_delta": 0.0889
+    },
+    {
+      "class_name": "Blackgram - Healthy",
+      "crop": "Blackgram",
+      "support": 22,
+      "v0_f1": 0.9167,
+      "v1_f1": 1.0,
+      "f1_delta": 0.0833
+    },
+    {
+      "class_name": "Soybean - Sudden Death Syndrome",
+      "crop": "Soybean",
+      "support": 11,
+      "v0_f1": 0.88,
+      "v1_f1": 0.9565,
+      "f1_delta": 0.0765
+    },
+    {
+      "class_name": "Plum - Healthy",
+      "crop": "Plum",
+      "support": 14,
+      "v0_f1": 0.8,
+      "v1_f1": 0.875,
+      "f1_delta": 0.075
+    },
+    {
+      "class_name": "Guava - Healthy",
+      "crop": "Guava",
+      "support": 225,
+      "v0_f1": 0.8894,
+      "v1_f1": 0.9567,
+      "f1_delta": 0.0673
+    }
+  ],
+  "top_15_regressed": [
+    {
+      "class_name": "Cabbage - Tip Burn",
+      "crop": "Cabbage",
+      "support": 2,
+      "v0_f1": 1.0,
+      "v1_f1": 0.8,
+      "f1_delta": -0.2
+    },
+    {
+      "class_name": "Grape - grape leafroll disease",
+      "crop": "Grape",
+      "support": 6,
+      "v0_f1": 1.0,
+      "v1_f1": 0.8,
+      "f1_delta": -0.2
+    },
+    {
+      "class_name": "Sugarcane - Mosaic",
+      "crop": "Sugarcane",
+      "support": 2,
+      "v0_f1": 1.0,
+      "v1_f1": 0.8,
+      "f1_delta": -0.2
+    },
+    {
+      "class_name": "Soybean - Brown Spot",
+      "crop": "Soybean",
+      "support": 3,
+      "v0_f1": 1.0,
+      "v1_f1": 0.8571,
+      "f1_delta": -0.1429
+    },
+    {
+      "class_name": "Broccoli - broccoli alternaria leaf spot",
+      "crop": "Broccoli",
+      "support": 3,
+      "v0_f1": 0.5714,
+      "v1_f1": 0.4444,
+      "f1_delta": -0.127
+    },
+    {
+      "class_name": "Pear - pear leaf curl",
+      "crop": "Pear",
+      "support": 6,
+      "v0_f1": 1.0,
+      "v1_f1": 0.9231,
+      "f1_delta": -0.0769
+    },
+    {
+      "class_name": "Cherry - cherry leaf spot",
+      "crop": "Cherry",
+      "support": 8,
+      "v0_f1": 0.7778,
+      "v1_f1": 0.7059,
+      "f1_delta": -0.0719
+    },
+    {
+      "class_name": "Cucumber - cucumber powdery mildew",
+      "crop": "Cucumber",
+      "support": 16,
+      "v0_f1": 0.9375,
+      "v1_f1": 0.8667,
+      "f1_delta": -0.0708
+    },
+    {
+      "class_name": "Sugarcane - Yellow",
+      "crop": "Sugarcane",
+      "support": 9,
+      "v0_f1": 1.0,
+      "v1_f1": 0.9412,
+      "f1_delta": -0.0588
+    },
+    {
+      "class_name": "Strawberry - strawberry angular leaf spot",
+      "crop": "Strawberry",
+      "support": 25,
+      "v0_f1": 0.9434,
+      "v1_f1": 0.9091,
+      "f1_delta": -0.0343
+    },
+    {
+      "class_name": "Zucchini - zucchini powdery mildew",
+      "crop": "Zucchini",
+      "support": 16,
+      "v0_f1": 0.9032,
+      "v1_f1": 0.875,
+      "f1_delta": -0.0282
+    },
+    {
+      "class_name": "Corn - corn gray leaf spot",
+      "crop": "Corn",
+      "support": 54,
+      "v0_f1": 0.9074,
+      "v1_f1": 0.8807,
+      "f1_delta": -0.0267
+    },
+    {
+      "class_name": "Strawberry - strawberry leaf spot",
+      "crop": "Strawberry",
+      "support": 20,
+      "v0_f1": 0.9524,
+      "v1_f1": 0.9302,
+      "f1_delta": -0.0221
+    },
+    {
+      "class_name": "Grape - Healthy",
+      "crop": "Grape",
+      "support": 25,
+      "v0_f1": 0.9804,
+      "v1_f1": 0.9615,
+      "f1_delta": -0.0189
+    },
+    {
+      "class_name": "Bean - Healthy",
+      "crop": "Bean",
+      "support": 32,
+      "v0_f1": 0.9846,
+      "v1_f1": 0.9697,
+      "f1_delta": -0.0149
+    }
+  ]
+}

@@ -1,0 +1,168 @@
+{
+  "total_test_images": 10426,
+  "total_zero_bit_duplicates": 673,
+  "zero_bit_share_percentage": 6.46,
+  "classes_with_zero_bit_duplicates": 20,
+  "per_class": [
+    {
+      "class_name": "Grape - Leaf Blight",
+      "crop": "Grape",
+      "test_total": 215,
+      "zero_bit_duplicates": 181,
+      "zero_bit_share": 0.8419,
+      "total_twins_le4": 182
+    },
+    {
+      "class_name": "Grape - Esca (Black Measles)",
+      "crop": "Grape",
+      "test_total": 240,
+      "zero_bit_duplicates": 165,
+      "zero_bit_share": 0.6875,
+      "total_twins_le4": 167
+    },
+    {
+      "class_name": "Guava - Anthracnose",
+      "crop": "Guava",
+      "test_total": 84,
+      "zero_bit_duplicates": 46,
+      "zero_bit_share": 0.5476,
+      "total_twins_le4": 62
+    },
+    {
+      "class_name": "Jamun - Brown Blight",
+      "crop": "Jamun",
+      "test_total": 40,
+      "zero_bit_duplicates": 40,
+      "zero_bit_share": 1.0,
+      "total_twins_le4": 40
+    },
+    {
+      "class_name": "Jamun - Bacterial Spot",
+      "crop": "Jamun",
+      "test_total": 40,
+      "zero_bit_duplicates": 35,
+      "zero_bit_share": 0.875,
+      "total_twins_le4": 38
+    },
+    {
+      "class_name": "Jamun - Powdery Mildew",
+      "crop": "Jamun",
+      "test_total": 40,
+      "zero_bit_duplicates": 29,
+      "zero_bit_share": 0.725,
+      "total_twins_le4": 32
+    },
+    {
+      "class_name": "Paddy - Leaf Scald",
+      "crop": "Paddy",
+      "test_total": 36,
+      "zero_bit_duplicates": 28,
+      "zero_bit_share": 0.7778,
+      "total_twins_le4": 31
+    },
+    {
+      "class_name": "Jamun - Healthy",
+      "crop": "Jamun",
+      "test_total": 28,
+      "zero_bit_duplicates": 25,
+      "zero_bit_share": 0.8929,
+      "total_twins_le4": 26
+    },
+    {
+      "class_name": "Jamun - Sooty Mold",
+      "crop": "Jamun",
+      "test_total": 40,
+      "zero_bit_duplicates": 25,
+      "zero_bit_share": 0.625,
+      "total_twins_le4": 25
+    },
+    {
+      "class_name": "Paddy - Narrow Brown Spot",
+      "crop": "Paddy",
+      "test_total": 41,
+      "zero_bit_duplicates": 24,
+      "zero_bit_share": 0.5854,
+      "total_twins_le4": 32
+    },
+    {
+      "class_name": "Paddy - Bacterial Leaf Blight",
+      "crop": "Paddy",
+      "test_total": 36,
+      "zero_bit_duplicates": 23,
+      "zero_bit_share": 0.6389,
+      "total_twins_le4": 24
+    },
+    {
+      "class_name": "Paddy - Blast",
+      "crop": "Paddy",
+      "test_total": 42,
+      "zero_bit_duplicates": 21,
+      "zero_bit_share": 0.5,
+      "total_twins_le4": 24
+    },
+    {
+      "class_name": "Paddy - Brown Spot",
+      "crop": "Paddy",
+      "test_total": 39,
+      "zero_bit_duplicates": 17,
+      "zero_bit_share": 0.4359,
+      "total_twins_le4": 20
+    },
+    {
+      "class_name": "Paddy - Healthy",
+      "crop": "Paddy",
+      "test_total": 44,
+      "zero_bit_duplicates": 6,
+      "zero_bit_share": 0.1364,
+      "total_twins_le4": 16
+    },
+    {
+      "class_name": "Soybean - Powdery Mildew",
+      "crop": "Soybean",
+      "test_total": 13,
+      "zero_bit_duplicates": 2,
+      "zero_bit_share": 0.1538,
+      "total_twins_le4": 7
+    },
+    {
+      "class_name": "Guava - Dot",
+      "crop": "Guava",
+      "test_total": 108,
+      "zero_bit_duplicates": 2,
+      "zero_bit_share": 0.0185,
+      "total_twins_le4": 26
+    },
+    {
+      "class_name": "Soybean - Bacterial Blight",
+      "crop": "Soybean",
+      "test_total": 18,
+      "zero_bit_duplicates": 1,
+      "zero_bit_share": 0.0556,
+      "total_twins_le4": 1
+    },
+    {
+      "class_name": "Grape - grape powdery mildew",
+      "crop": "Grape",
+      "test_total": 40,
+      "zero_bit_duplicates": 1,
+      "zero_bit_share": 0.025,
+      "total_twins_le4": 1
+    },
+    {
+      "class_name": "Groundnut - Rust",
+      "crop": "Groundnut",
+      "test_total": 151,
+      "zero_bit_duplicates": 1,
+      "zero_bit_share": 0.0066,
+      "total_twins_le4": 9
+    },
+    {
+      "class_name": "Groundnut - Late leaf spot",
+      "crop": "Groundnut",
+      "test_total": 184,
+      "zero_bit_duplicates": 1,
+      "zero_bit_share": 0.0054,
+      "total_twins_le4": 6
+    }
+  ]
+}

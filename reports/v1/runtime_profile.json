@@ -1,0 +1,35 @@
+{
+  "hardware": {
+    "cpu_model": "AMD Ryzen 7 6800H with Radeon Graphics",
+    "cpu_thread_count": 8,
+    "torch_version": "2.6.0+cu124",
+    "cuda_available": true,
+    "gpu_model": "NVIDIA GeForce RTX 3050 Laptop GPU"
+  },
+  "profiles": {
+    "cpu": {
+      "device": "cpu",
+      "bundle_load_time_seconds": 0.3876,
+      "bundle_load_peak_rss_mb": 784.93,
+      "warmup_time_seconds": 0.0561,
+      "warmup_time_ms": 56.12,
+      "latency_forward_pass_p50_ms": 53.01,
+      "latency_forward_pass_p95_ms": 59.34,
+      "latency_end_to_end_p50_ms": 54.79,
+      "latency_end_to_end_p95_ms": 63.36,
+      "concurrent_2_requests_peak_rss_mb": 855.44
+    },
+    "cuda": {
+      "device": "cuda",
+      "bundle_load_time_seconds": 0.5943,
+      "bundle_load_peak_rss_mb": 978.7,
+      "warmup_time_seconds": 0.2356,
+      "warmup_time_ms": 235.63,
+      "latency_forward_pass_p50_ms": 9.08,
+      "latency_forward_pass_p95_ms": 12.84,
+      "latency_end_to_end_p50_ms": 11.25,
+      "latency_end_to_end_p95_ms": 18.26,
+      "concurrent_2_requests_peak_rss_mb": 1321.2
+    }
+  }
+}

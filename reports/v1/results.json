@@ -1,0 +1,465 @@
+{
+  "metadata": {
+    "script": "scripts/v1/build_results.py",
+    "git_commit": "3dcee0330d3fbbf64a2674a23dbbd3f1db056090",
+    "model_version": "v1.0.0",
+    "model_architecture": "ConvNeXt-Tiny DualHead (crop + disease)",
+    "device": "cpu",
+    "cpu_threads": 1,
+    "torch_version": "2.6.0+cu124",
+    "deterministic_algorithms": true,
+    "inference_engine": "src.models.predict.predict_tensor",
+    "date_utc": "2026-11-18T13:07:10.482356+00:00",
+    "source": "curated release test split (reports/v1/dataset_v1.csv, N=9,279 post-P-007)"
+  },
+  "headline_metrics": {
+    "clean_test_N": 9279,
+    "num_classes": 177,
+    "num_crops": 33,
+    "classes_with_ge_10_clean_test": 147,
+    "classes_with_lt_10_clean_test": 30,
+    "crop_accuracy": 99.28,
+    "crop_accuracy_95ci": [
+      99.11,
+      99.44
+    ],
+    "soft_gated_disease_accuracy": 96.02,
+    "soft_gated_disease_accuracy_95ci": [
+      95.62,
+      96.45
+    ],
+    "raw_disease_accuracy": 95.83,
+    "raw_disease_accuracy_95ci": [
+      95.42,
+      96.25
+    ],
+    "macro_f1_all_classes": 93.86,
+    "macro_f1_all_classes_95ci": [
+      91.84,
+      94.42
+    ],
+    "macro_f1_classes_ge_10_test": 96.54,
+    "macro_f1_classes_ge_10_test_95ci": [
+      95.96,
+      97.0
+    ],
+    "calibrated_ece_15_bins_pct": 0.57,
+    "calibration_temperatures": {
+      "T_crop": 0.5931,
+      "T_disease": 0.5013
+    }
+  },
+  "tau_table_clean_test": [
+    {
+      "tau": 0.5,
+      "covered_N": 9105,
+      "coverage_pct": 98.12,
+      "covered_correct": 8836,
+      "covered_accuracy_pct": 97.05,
+      "uncertain_N": 174,
+      "uncertain_pct": 1.88,
+      "uncertain_correct": 74,
+      "uncertain_accuracy_pct": 42.53,
+      "total_correct": 8910,
+      "overall_accuracy_pct": 96.02
+    },
+    {
+      "tau": 0.55,
+      "covered_N": 9050,
+      "coverage_pct": 97.53,
+      "covered_correct": 8807,
+      "covered_accuracy_pct": 97.31,
+      "uncertain_N": 229,
+      "uncertain_pct": 2.47,
+      "uncertain_correct": 103,
+      "uncertain_accuracy_pct": 44.98,
+      "total_correct": 8910,
+      "overall_accuracy_pct": 96.02
+    },
+    {
+      "tau": 0.6,
+      "covered_N": 8999,
+      "coverage_pct": 96.98,
+      "covered_correct": 8776,
+      "covered_accuracy_pct": 97.52,
+      "uncertain_N": 280,
+      "uncertain_pct": 3.02,
+      "uncertain_correct": 134,
+      "uncertain_accuracy_pct": 47.86,
+      "total_correct": 8910,
+      "overall_accuracy_pct": 96.02
+    },
+    {
+      "tau": 0.65,
+      "covered_N": 8944,
+      "coverage_pct": 96.39,
+      "covered_correct": 8736,
+      "covered_accuracy_pct": 97.67,
+      "uncertain_N": 335,
+      "uncertain_pct": 3.61,
+      "uncertain_correct": 174,
+      "uncertain_accuracy_pct": 51.94,
+      "total_correct": 8910,
+      "overall_accuracy_pct": 96.02
+    },
+    {
+      "tau": 0.7,
+      "covered_N": 8866,
+      "coverage_pct": 95.55,
+      "covered_correct": 8689,
+      "covered_accuracy_pct": 98.0,
+      "uncertain_N": 413,
+      "uncertain_pct": 4.45,
+      "uncertain_correct": 221,
+      "uncertain_accuracy_pct": 53.51,
+      "total_correct": 8910,
+      "overall_accuracy_pct": 96.02
+    }
+  ],
+  "reliability_diagram_15_bins": [
+    {
+      "bin": 0,
+      "range": [
+        0.0,
+        0.06666666666666667
+      ],
+      "count": 35,
+      "confidence": 0.03827860206365585,
+      "accuracy": 0.37142857142857144,
+      "gap": 0.3331499693649156
+    },
+    {
+      "bin": 1,
+      "range": [
+        0.06666666666666667,
+        0.13333333333333333
+      ],
+      "count": 16,
+      "confidence": 0.09372995793819427,
+      "accuracy": 0.1875,
+      "gap": 0.09377004206180573
+    },
+    {
+      "bin": 2,
+      "range": [
+        0.13333333333333333,
+        0.2
+      ],
+      "count": 12,
+      "confidence": 0.17874093353748322,
+      "accuracy": 0.25,
+      "gap": 0.07125906646251678
+    },
+    {
+      "bin": 3,
+      "range": [
+        0.2,
+        0.26666666666666666
+      ],
+      "count": 15,
+      "confidence": 0.23993219435214996,
+      "accuracy": 0.2,
+      "gap": 0.03993219435214995
+    },
+    {
+      "bin": 4,
+      "range": [
+        0.26666666666666666,
+        0.3333333333333333
+      ],
+      "count": 17,
+      "confidence": 0.3024706542491913,
+      "accuracy": 0.5882352941176471,
+      "gap": 0.2857646398684558
+    },
+    {
+      "bin": 5,
+      "range": [
+        0.3333333333333333,
+        0.4
+      ],
+      "count": 19,
+      "confidence": 0.3691834509372711,
+      "accuracy": 0.42105263157894735,
+      "gap": 0.05186918064167623
+    },
+    {
+      "bin": 6,
+      "range": [
+        0.4,
+        0.4666666666666667
+      ],
+      "count": 33,
+      "confidence": 0.43512505292892456,
+      "accuracy": 0.5454545454545454,
+      "gap": 0.11032949252562085
+    },
+    {
+      "bin": 7,
+      "range": [
+        0.4666666666666667,
+        0.5333333333333333
+      ],
+      "count": 67,
+      "confidence": 0.5042048692703247,
+      "accuracy": 0.5223880597014925,
+      "gap": 0.018183190431167784
+    },
+    {
+      "bin": 8,
+      "range": [
+        0.5333333333333333,
+        0.6
+      ],
+      "count": 66,
+      "confidence": 0.564410388469696,
+      "accuracy": 0.6212121212121212,
+      "gap": 0.05680173274242517
+    },
+    {
+      "bin": 9,
+      "range": [
+        0.6,
+        0.6666666666666666
+      ],
+      "count": 75,
+      "confidence": 0.6361398100852966,
+      "accuracy": 0.6666666666666666,
+      "gap": 0.03052685658137
+    },
+    {
+      "bin": 10,
+      "range": [
+        0.6666666666666666,
+        0.7333333333333333
+      ],
+      "count": 99,
+      "confidence": 0.6972605586051941,
+      "accuracy": 0.6565656565656566,
+      "gap": 0.04069490203953752
+    },
+    {
+      "bin": 11,
+      "range": [
+        0.7333333333333333,
+        0.8
+      ],
+      "count": 121,
+      "confidence": 0.771169900894165,
+      "accuracy": 0.8099173553719008,
+      "gap": 0.038747454477735754
+    },
+    {
+      "bin": 12,
+      "range": [
+        0.8,
+        0.8666666666666667
+      ],
+      "count": 211,
+      "confidence": 0.8361298441886902,
+      "accuracy": 0.8672985781990521,
+      "gap": 0.03116873401036191
+    },
+    {
+      "bin": 13,
+      "range": [
+        0.8666666666666667,
+        0.9333333333333333
+      ],
+      "count": 362,
+      "confidence": 0.9071793556213379,
+      "accuracy": 0.9060773480662984,
+      "gap": 0.0011020075550395303
+    },
+    {
+      "bin": 14,
+      "range": [
+        0.9333333333333333,
+        1.0
+      ],
+      "count": 8131,
+      "confidence": 0.9909934997558594,
+      "accuracy": 0.9902840978969376,
+      "gap": 0.0007094018589217654
+    }
+  ],
+  "per_class_support": {
+    "Apple - Healthy": 51,
+    "Apple - Rust": 42,
+    "Apple - apple black rot": 48,
+    "Apple - apple mosaic virus": 3,
+    "Apple - apple scab": 39,
+    "Banana - Cordana": 31,
+    "Banana - Healthy": 96,
+    "Banana - Insectpest": 68,
+    "Banana - Moko": 44,
+    "Banana - Panama": 111,
+    "Banana - Pestalotiopsis": 52,
+    "Banana - Sigatoka": 370,
+    "Banana - banana black leaf streak": 7,
+    "Banana - banana bunchy top": 14,
+    "Bean - Healthy": 32,
+    "Bean - bean angular leaf spot": 32,
+    "Bean - bean halo blight": 3,
+    "Bean - bean leaf shot hole": 19,
+    "Bean - bean mosaic virus": 4,
+    "Bean - bean rust": 46,
+    "Bell Pepper - Bacterial Spot": 108,
+    "Bell Pepper - Healthy": 134,
+    "Bell Pepper - bell pepper frogeye leaf spot": 126,
+    "Blackgram - Anthracnose": 23,
+    "Blackgram - Healthy": 22,
+    "Blackgram - Leaf Crinkle": 15,
+    "Blackgram - Powdery Mildew": 17,
+    "Blackgram - Yellow Mosaic": 23,
+    "Blueberry - Healthy": 52,
+    "Blueberry - blueberry rust": 4,
+    "Blueberry - blueberry scorch": 3,
+    "Broccoli - Healthy": 3,
+    "Broccoli - broccoli alternaria leaf spot": 3,
+    "Cabbage - Healthy": 7,
+    "Cabbage - Tip Burn": 3,
+    "Cabbage - cabbage alternaria leaf spot": 7,
+    "Cabbage - cabbage black rot": 11,
+    "Cabbage - cabbage downy mildew": 8,
+    "Cauliflower - Blackrot": 4,
+    "Cauliflower - Downy mildew": 15,
+    "Cauliflower - Healthy": 16,
+    "Cherry - Healthy": 61,
+    "Cherry - cherry brown spot": 55,
+    "Cherry - cherry leaf scorch": 57,
+    "Cherry - cherry leaf spot": 8,
+    "Cherry - cherry powdery mildew": 30,
+    "Cherry - cherry purple leaf spot": 55,
+    "Cherry - cherry shot hole": 18,
+    "Chilli - Bacterial Spot": 11,
+    "Chilli - Cercospora Leaf Spot": 15,
+    "Chilli - Healthy": 32,
+    "Chilli - Leaf Curl Virus": 39,
+    "Chilli - Nutrition Deficiency": 41,
+    "Chilli - White Spot": 14,
+    "Citrus - Alternaria leaf spot": 12,
+    "Citrus - Citrus Hindu mite": 8,
+    "Citrus - Healthy": 41,
+    "Citrus - citrus algal leaf spot": 16,
+    "Citrus - citrus canker": 37,
+    "Citrus - citrus greening disease": 71,
+    "Coffee - Healthy": 33,
+    "Coffee - Leaf Miner": 35,
+    "Coffee - Phoma": 36,
+    "Coffee - coffee leaf rust": 42,
+    "Corn - Healthy": 116,
+    "Corn - Northern Leaf Blight": 87,
+    "Corn - Rust": 51,
+    "Corn - corn gray leaf spot": 54,
+    "Corn - corn holcus leaf spot": 15,
+    "Cucumber - Healthy": 15,
+    "Cucumber - cucumber angular leaf spot": 17,
+    "Cucumber - cucumber bacterial wilt": 25,
+    "Cucumber - cucumber powdery mildew": 16,
+    "Eggplant - Healthy": 20,
+    "Eggplant - Little Leaf": 18,
+    "Eggplant - Mosaic Virus": 14,
+    "Eggplant - White Mold": 20,
+    "Eggplant - Wilt": 19,
+    "Ginger - Bacterial Wilt": 11,
+    "Ginger - Dehydrated": 260,
+    "Ginger - Healthy": 108,
+    "Ginger - Leaf Blight": 215,
+    "Ginger - Pest Damage": 87,
+    "Ginger - ginger leaf spot": 3,
+    "Grape - Black Rot": 24,
+    "Grape - Esca (Black Measles)": 204,
+    "Grape - Healthy": 25,
+    "Grape - Leaf Blight": 178,
+    "Grape - grape bacterial rot": 10,
+    "Grape - grape downy mildew": 96,
+    "Grape - grape leafroll disease": 6,
+    "Grape - grape powdery mildew": 39,
+    "Groundnut - Early leaf spot": 111,
+    "Groundnut - Healthy": 25,
+    "Groundnut - Late leaf spot": 177,
+    "Groundnut - Late leaf spot and early rust": 126,
+    "Groundnut - Nutrition deficiency": 155,
+    "Groundnut - Rust": 147,
+    "Guava - Algal Leaf Spot": 83,
+    "Guava - Dot": 80,
+    "Guava - Healthy": 190,
+    "Guava - Insect Damage": 45,
+    "Guava - Spiraling Whitefly": 78,
+    "Jamun - Bacterial Spot": 1,
+    "Jamun - Brown Blight": 4,
+    "Jamun - Healthy": 6,
+    "Jamun - Powdery Mildew": 11,
+    "Jamun - Sooty Mold": 14,
+    "Mango - Anthracnose": 49,
+    "Mango - Cutting Weevil": 50,
+    "Mango - Die Back": 47,
+    "Mango - Gall Midge": 50,
+    "Mango - Healthy": 47,
+    "Mango - Sooty Mould": 100,
+    "Paddy - Bacterial Leaf Blight": 30,
+    "Paddy - Blast": 29,
+    "Paddy - Brown Spot": 32,
+    "Paddy - Healthy": 35,
+    "Paddy - Leaf Scald": 17,
+    "Paddy - Narrow Brown Spot": 23,
+    "Peach - Healthy": 39,
+    "Peach - peach bacterial spot": 60,
+    "Peach - peach leaf curl": 13,
+    "Peach - peach leaf shot hole": 3,
+    "Pear - Healthy": 41,
+    "Pear - pear black spot": 128,
+    "Pear - pear fire blight": 18,
+    "Pear - pear leaf curl": 6,
+    "Pear - pear slug damage": 172,
+    "Plum - Healthy": 13,
+    "Plum - plum insect hole": 71,
+    "Plum - plum weevil": 10,
+    "Plum - plum yellow leaf": 76,
+    "Potato - Early Blight": 136,
+    "Potato - Healthy": 45,
+    "Potato - Late Blight": 144,
+    "Potato - pest damage": 31,
+    "Potato - potato virus": 27,
+    "Radish - Black leaf spot": 35,
+    "Radish - Downey mildew": 43,
+    "Radish - Flea beetle": 33,
+    "Radish - Healthy": 46,
+    "Soybean - Bacterial Blight": 17,
+    "Soybean - Bacterial Pustule": 11,
+    "Soybean - Brown Spot": 3,
+    "Soybean - Cercospora Leaf Blight": 7,
+    "Soybean - Downy Mildew": 6,
+    "Soybean - Frogeye Leaf Spot": 18,
+    "Soybean - Healthy": 57,
+    "Soybean - Powdery Mildew": 7,
+    "Soybean - Rust": 24,
+    "Soybean - Sudden Death Syndrome": 11,
+    "Soybean - Target Leaf Spot": 11,
+    "Soybean - Yellow Mosaic": 11,
+    "Strawberry - Healthy": 50,
+    "Strawberry - strawberry angular leaf spot": 25,
+    "Strawberry - strawberry leaf scorch": 44,
+    "Strawberry - strawberry leaf spot": 20,
+    "Strawberry - strawberry powdery mildew": 51,
+    "Sugarcane - Healthy": 12,
+    "Sugarcane - Mosaic": 3,
+    "Sugarcane - Red Rot": 20,
+    "Sugarcane - Rust": 4,
+    "Sugarcane - Yellow": 9,
+    "Tomato - Bacterial Spot": 220,
+    "Tomato - Healthy": 150,
+    "Tomato - Spider Mites": 167,
+    "Tomato - Target Spot": 141,
+    "Tomato - tomato early blight": 99,
+    "Tomato - tomato late blight": 195,
+    "Tomato - tomato leaf mold": 109,
+    "Tomato - tomato mosaic virus": 43,
+    "Tomato - tomato septoria leaf spot": 181,
+    "Tomato - tomato yellow leaf curl virus": 325,
+    "Zucchini - Healthy": 6,
+    "Zucchini - zucchini powdery mildew": 16,
+    "Zucchini - zucchini yellow mosaic virus": 18
+  }
+}

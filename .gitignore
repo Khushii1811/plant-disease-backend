@@ -1,0 +1,108 @@
+# Python & Virtual Environments
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.swp
+*~
+
+# Heavy Machine Learning Artifacts & Runs
+mlruns/
+mlflow.db
+mlflow.db*
+artifacts/
+cached_features/
+
+# PyTorch Model Checkpoints & Weights
+*.pth
+*.pt
+*.bin
+models/checkpoints/
+artifacts/checkpoints/
+
+# Data & Scratch directories
+/data/*
+!/data/patches/
+data/processed/test_in_the_wild/
+scratch/
+verification/
+*.egg-info/
+*.egg-info
+audit_output/**/*.py
+audit_output/**/*.log
+audit_output/verify/
+
+# Secrets & Environment variables
+.env
+.env.*
+gemini_key.txt
+*token*
+*.token
+
+# Deploy bundles (local HF Space git repository)
+deploy/
+
+archive/
+scripts/data/curation/_archive/
+__pycache__/
+*.pyc
+
+audit_output/
+reports/v1/phash_cache.csv
+
+# Dropped exploratory scrapers (0 images in Dataset v1.0)
+scripts/data/collection/scrape_flickr.py
+scripts/data/collection/scrape_missing_classes.py
+scripts/data/collection/scrape_rare_classes.py
+
+# Unverified evidence images (available on request; replaced by placeholder.svg)
+docs/assets/p005/apple_potassium_deficiency_evidence.jpg
+docs/assets/p005/citrus_black_spot_anthracnose_evidence.png
+docs/assets/p005/citrus_scab_hindu_mite_evidence.jpg
+docs/assets/p005/eggplant_cercospora_mixed_folder_screenshot.jpg
+docs/assets/p005/fig_grape_contamination_evidence.jpg
+docs/assets/p005/ginger_sheath_blight_corn_contamination.jpg
+docs/assets/p005/ginger_sheath_blight_evidence.jpg
+docs/assets/p005/ginger_sheath_blight_folder_grid_screenshot.jpg
+docs/assets/p005/ginger_sheath_blight_paddy_contamination.jpg
+docs/assets/p005/ginger_wheat_contamination_val_0044166.jpg
+docs/assets/p005/groundnut_mixed_disease_evidence.jpg
+docs/assets/p005/guava_fruit_mummification_evidence.jpg
+docs/assets/p005/jamun_val_0038_outlier.jpg
+docs/assets/p005/potato_cyst_nematode_evidence.jpg
+docs/assets/p005/potato_fungal_disease_umbrella_evidence.jpg
+docs/assets/p005/radish_mosaic_ambiguous_evidence.jpg
+docs/assets/p005/zucchini_angular_yellow_evidence.jpg
+docs/assets/p005/zucchini_downy_mildew_evidence.jpg
+
+# Untracked figures, screenshots, and internal audit assets (Public Release Preparation)
+docs/assets/features/*.png
+reports/v1/figures/contact_sheet_*
+reports/v1/figures/side_by_side_duplicate_samples.png
+reports/v1/figures/contact_sheet_greening_as_pear.png
+reports/prerelease/figures/
+docs/wiki_samples/
+*.db.bak
+*.bak
+*.db
+reports/history/v0_interactive_all_478_cropped_comparison.html
+
+# Internal forensic audit collages (unverified upstream leaf rights)
+docs/assets/cleaner_page_*.png
+docs/assets/citrus_phash_near_duplicate_collage.png
+docs/assets/citrus_leafminer_phash_duplicates.png
+docs/assets/apple_vs_rose_impostor_comparison.png
+docs/assets/bean_thumb_cropping_comparison.png
+docs/assets/eggplant_cercospora_mixed_folder_screenshot.jpg
+docs/assets/crop_parity_audit_side_by_side_comparison.png
+docs/assets/side_by_side_0*.png
+docs/assets/cleaner_modal_ui.png
+docs/assets/interactive_demo_scanner.png

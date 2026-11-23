@@ -1,0 +1,1476 @@
+{
+  "release": "v1.0",
+  "model_version": "Model v1.0",
+  "dataset_version": "Dataset v1.0",
+  "architecture": "DualHead ConvNeXt-Tiny (shared backbone, crop head + disease head)",
+  "checkpoint": {
+    "path": "models/v1/model_dualhead_convnext_tiny.pth",
+    "sha256": "f28b568b89b089529f8318e2aecd71e6361271bd06c3461e188e6e64b2ea3d04",
+    "size_bytes": 114158461
+  },
+  "dataset_manifest": {
+    "path": "reports/v1/dataset_v1.csv",
+    "sha256": "7267ec4595eff802731eff86618dc79de33820752037ee5e92b88468cda89c30"
+  },
+  "calibration": {
+    "temperature_disease": 0.5327,
+    "temperature_crop": 0.6356,
+    "fitted_on_split": "validation (9,321 images in purified val split)",
+    "method": "Temperature Scaling (vector NLL optimization)"
+  },
+  "confidence_threshold": {
+    "recommended_tau": 0.6,
+    "threshold_selection_split": "validation (accuracy 96.29%, coverage 96.59%)",
+    "purified_test_coverage": 0.961081,
+    "purified_test_accuracy": 0.971097,
+    "wild_test_coverage": 0.44186,
+    "wild_test_accuracy": 0.684211,
+    "note": "Confidence threshold to mark low-certainty predictions as 'uncertain'. NOT an out-of-distribution detector.",
+    "wild_test_covered_accuracy": {
+      "k_correct": 13,
+      "n_covered": 19,
+      "accuracy": 0.684211,
+      "wilson_95_ci": [
+        0.460104,
+        0.846356
+      ],
+      "note": "Evaluated on covered subset (confidence >= 0.60) of 43 citrus field photos."
+    }
+  },
+  "metric_definitions": {
+    "crop_gated_disease_accuracy": "Crop-gated joint probability argmax: argmax_j [ P(crop_k) * P(disease_j | crop_k) ]. Crop accuracy is 99.16%, so soft-gated predictions and hard-masked predictions are 100% identical across all test images.",
+    "headline_macro_f1": "Unweighted macro-average over classes with independent test support (192 classes in purified test split). Formula: f1_score(y_true, y_pred, labels=supported_classes, average='macro').",
+    "secondary_macro_f1": "Strict unweighted macro-average across all 195 classes with zero_division=0: f1_score(y_true, y_pred, labels=list(range(195)), average='macro', zero_division=0). Zero-support classes contribute 0.0 F1 score. The previous report figure (92.55%) was this secondary definition on the pre-P004 split.",
+    "robust_macro_f1": "Unweighted macro-average across classes with support N >= 20 images.",
+    "expected_calibration_error": "ECE with 15 equal-width confidence bins evaluated with temperature-scaled probabilities."
+  },
+  "purified_test_split": {
+    "status": "HEADLINE (Recommended Benchmark Standard)",
+    "description": "Purified test split post Patch P-003 and P-004 deduplication. 0 exact duplicates and 0 pHash<=4 cross-split pairs on disk.",
+    "n_samples": 9327,
+    "num_classes": 195,
+    "supported_classes_count": 192,
+    "zero_support_classes": [
+      "Jamun - Bacterial Spot",
+      "Jamun - Brown Blight",
+      "Jamun - Healthy"
+    ],
+    "zero_support_classes_note": "No independent test support (own-captured images planned for v1.1). Quarantined due to zero-bit or pHash<=4 cross-split leakage.",
+    "crop_accuracy": 0.991637,
+    "raw_disease_accuracy": 0.952075,
+    "crop_gated_disease_accuracy": 0.952718,
+    "hard_masked_disease_accuracy": 0.952718,
+    "headline_macro_f1": 0.934451,
+    "secondary_macro_f1_all_195_classes": 0.920075,
+    "robust_macro_f1_support_ge_20": 0.966484,
+    "num_classes_ge_20": 116,
+    "expected_calibration_error_calibrated": 0.007595,
+    "expected_calibration_error_raw": 0.006059,
+    "bootstrap_95_ci": {
+      "num_bootstrap_resamples": 1000,
+      "random_seed": 42,
+      "crop_accuracy": {
+        "point_estimate": 0.991637,
+        "ci_95_lower": 0.989812,
+        "ci_95_upper": 0.993567
+      },
+      "crop_gated_disease_accuracy": {
+        "point_estimate": 0.952718,
+        "ci_95_lower": 0.948319,
+        "ci_95_upper": 0.957007
+      },
+      "headline_macro_f1_192": {
+        "point_estimate": 0.934451,
+        "ci_95_lower": 0.912326,
+        "ci_95_upper": 0.939281
+      },
+      "secondary_macro_f1_195": {
+        "point_estimate": 0.920075,
+        "ci_95_lower": 0.898291,
+        "ci_95_upper": 0.924831
+      }
+    },
+    "per_class_support_and_f1": [
+      {
+        "class_index": 0,
+        "class_name": "Apple - Healthy",
+        "crop": "Apple",
+        "test_support": 51,
+        "f1_score": 0.9901
+      },
+      {
+        "class_index": 1,
+        "class_name": "Apple - Rust",
+        "crop": "Apple",
+        "test_support": 42,
+        "f1_score": 0.9882
+      },
+      {
+        "class_index": 2,
+        "class_name": "Apple - apple alternaria leaf spot",
+        "crop": "Apple",
+        "test_support": 52,
+        "f1_score": 1.0
+      },
+      {
+        "class_index": 3,
+        "class_name": "Apple - apple black rot",
+        "crop": "Apple",
+        "test_support": 48,
+        "f1_score": 1.0
+      },
+      {
+        "class_index": 4,
+        "class_name": "Apple - apple mosaic virus",
+        "crop": "Apple",
+        "test_support": 3,
+        "f1_score": 1.0
+      },
+      {
+        "class_index": 5,
+        "class_name": "Apple - apple scab",
+        "crop": "Apple",
+        "test_support": 39,
+        "f1_score": 1.0
+      },
+      {
+        "class_index": 6,
+        "class_name": "Banana - Cordana",
+        "crop": "Banana",
+        "test_support": 31,
+        "f1_score": 0.8611
+      },
+      {
+        "class_index": 7,
+        "class_name": "Banana - Healthy",
+        "crop": "Banana",
+        "test_support": 96,
+        "f1_score": 1.0
+      },
+      {
+        "class_index": 8,
+        "class_name": "Banana - Insectpest",
+        "crop": "Banana",
+        "test_support": 68,
+        "f1_score": 0.9645
+      },
+      {
+        "class_index": 9,
+        "class_name": "Banana - Moko",
+        "crop": "Banana",
+        "test_support": 44,
+        "f1_score": 0.9888
+      },
+      {
+        "class_index": 10,
+        "class_name": "Banana - Panama",
+        "crop": "Banana",
+        "test_support": 111,
+        "f1_score": 0.9478
+      },
+      {
+        "class_index": 11,
+        "class_name": "Banana - Pestalotiopsis",
+        "crop": "Banana",
+        "test_support": 52,
+        "f1_score": 0.9541
+      },
+      {
+        "class_index": 12,
+        "class_name": "Banana - Sigatoka",
+        "crop": "Banana",
+        "test_support": 370,
+        "f1_score": 0.943
+      },
+      {
+        "class_index": 13,
+        "class_name": "Banana - banana black leaf streak",
+        "crop": "Banana",
+        "test_support": 7,
+        "f1_score": 0.5
+      },
+      {
+        "class_index": 14,
+        "class_name": "Banana - banana bunchy top",
+        "crop": "Banana",
+        "test_support": 14,
+        "f1_score": 0.9032
+      },
+      {
+        "class_index": 15,
+        "class_name": "Bean - Healthy",
+        "crop": "Bean",
+        "test_support": 32,
+        "f1_score": 0.9697
+      },
+      {
+        "class_index": 16,
+        "class_name": "Bean - bean angular leaf spot",
+        "crop": "Bean",
+        "test_support": 32,
+        "f1_score": 1.0
+      },
+      {
+        "class_index": 17,
+        "class_name": "Bean - bean halo blight",
+        "crop": "Bean",
+        "test_support": 4,
+        "f1_score": 0.2857
+      },
+      {
+        "class_index": 18,
+        "class_name": "Bean - bean leaf shot hole",
+        "crop": "Bean",
+        "test_support": 19,
+        "f1_score": 1.0
+      },
+      {
+        "class_index": 19,
+        "class_name": "Bean - bean mosaic virus",
+        "crop": "Bean",
+        "test_support": 4,
+        "f1_score": 0.2857
+      },
+      {
+        "class_index": 20,
+        "class_name": "Bean - bean rust",
+        "crop": "Bean",
+        "test_support": 46,
+        "f1_score": 0.8837
+      },
+      {
+        "class_index": 21,
+        "class_name": "Bell Pepper - Bacterial Spot",
+        "crop": "Bell Pepper",
+        "test_support": 108,
+        "f1_score": 0.9677
+      },
+      {
+        "class_index": 22,
+        "class_name": "Bell Pepper - Healthy",
+        "crop": "Bell Pepper",
+        "test_support": 134,
+        "f1_score": 0.9888
+      },
+      {
+        "class_index": 23,
+        "class_name": "Bell Pepper - bell pepper frogeye leaf spot",
+        "crop": "Bell Pepper",
+        "test_support": 126,
+        "f1_score": 0.9412
+      },
+      {
+        "class_index": 24,
+        "class_name": "Blackgram - Anthracnose",
+        "crop": "Blackgram",
+        "test_support": 23,
+        "f1_score": 0.9787
+      },
+      {
+        "class_index": 25,
+        "class_name": "Blackgram - Healthy",
+        "crop": "Blackgram",
+        "test_support": 22,
+        "f1_score": 1.0
+      },
+      {
+        "class_index": 26,
+        "class_name": "Blackgram - Leaf Crinkle",
+        "crop": "Blackgram",
+        "test_support": 15,
+        "f1_score": 1.0
+      },
+      {
+        "class_index": 27,
+        "class_name": "Blackgram - Powdery Mildew",
+        "crop": "Blackgram",
+        "test_support": 17,
+        "f1_score": 0.9714
+      },
+      {
+        "class_index": 28,
+        "class_name": "Blackgram - Yellow Mosaic",
+        "crop": "Blackgram",
+        "test_support": 23,
+        "f1_score": 0.9787
+      },
+      {
+        "class_index": 29,
+        "class_name": "Blueberry - Healthy",
+        "crop": "Blueberry",
+        "test_support": 52,
+        "f1_score": 0.9905
+      },
+      {
+        "class_index": 30,
+        "class_name": "Blueberry - blueberry rust",
+        "crop": "Blueberry",
+        "test_support": 4,
+        "f1_score": 0.8889
+      },
+      {
+        "class_index": 31,
+        "class_name": "Blueberry - blueberry scorch",
+        "crop": "Blueberry",
+        "test_support": 3,
+        "f1_score": 1.0
+      },
+      {
+        "class_index": 32,
+        "class_name": "Broccoli - Healthy",
+        "crop": "Broccoli",
+        "test_support": 2,
+        "f1_score": 1.0
+      },
+      {
+        "class_index": 33,
+        "class_name": "Broccoli - broccoli alternaria leaf spot",
+        "crop": "Broccoli",
+        "test_support": 3,
+        "f1_score": 0.8
+      },
+      {
+        "class_index": 34,
+        "class_name": "Cabbage - Healthy",
+        "crop": "Cabbage",
+        "test_support": 7,
+        "f1_score": 0.9333
+      },
+      {
+        "class_index": 35,
+        "class_name": "Cabbage - Tip Burn",
+        "crop": "Cabbage",
+        "test_support": 2,
+        "f1_score": 1.0
+      },
+      {
+        "class_index": 36,
+        "class_name": "Cabbage - cabbage alternaria leaf spot",
+        "crop": "Cabbage",
+        "test_support": 7,
+        "f1_score": 0.5455
+      },
+      {
+        "class_index": 37,
+        "class_name": "Cabbage - cabbage black rot",
+        "crop": "Cabbage",
+        "test_support": 11,
+        "f1_score": 0.7692
+      },
+      {
+        "class_index": 38,
+        "class_name": "Cabbage - cabbage downy mildew",
+        "crop": "Cabbage",
+        "test_support": 8,
+        "f1_score": 0.8
+      },
+      {
+        "class_index": 39,
+        "class_name": "Cauliflower - Blackrot",
+        "crop": "Cauliflower",
+        "test_support": 4,
+        "f1_score": 1.0
+      },
+      {
+        "class_index": 40,
+        "class_name": "Cauliflower - Downy mildew",
+        "crop": "Cauliflower",
+        "test_support": 15,
+        "f1_score": 0.9677
+      },
+      {
+        "class_index": 41,
+        "class_name": "Cauliflower - Healthy",
+        "crop": "Cauliflower",
+        "test_support": 16,
+        "f1_score": 1.0
+      },
+      {
+        "class_index": 42,
+        "class_name": "Cherry - Healthy",
+        "crop": "Cherry",
+        "test_support": 61,
+        "f1_score": 0.9836
+      },
+      {
+        "class_index": 43,
+        "class_name": "Cherry - cherry brown spot",
+        "crop": "Cherry",
+        "test_support": 55,
+        "f1_score": 1.0
+      },
+      {
+        "class_index": 44,
+        "class_name": "Cherry - cherry leaf scorch",
+        "crop": "Cherry",
+        "test_support": 57,
+        "f1_score": 0.9912
+      },
+      {
+        "class_index": 45,
+        "class_name": "Cherry - cherry leaf spot",
+        "crop": "Cherry",
+        "test_support": 8,
+        "f1_score": 0.625
+      },
+      {
+        "class_index": 46,
+        "class_name": "Cherry - cherry powdery mildew",
+        "crop": "Cherry",
+        "test_support": 30,
+        "f1_score": 1.0
+      },
+      {
+        "class_index": 47,
+        "class_name": "Cherry - cherry purple leaf spot",
+        "crop": "Cherry",
+        "test_support": 55,
+        "f1_score": 1.0
+      },
+      {
+        "class_index": 48,
+        "class_name": "Cherry - cherry shot hole",
+        "crop": "Cherry",
+        "test_support": 18,
+        "f1_score": 1.0
+      },
+      {
+        "class_index": 49,
+        "class_name": "Chilli - Bacterial Spot",
+        "crop": "Chilli",
+        "test_support": 11,
+        "f1_score": 0.9565
+      },
+      {
+        "class_index": 50,
+        "class_name": "Chilli - Cercospora Leaf Spot",
+        "crop": "Chilli",
+        "test_support": 15,
+        "f1_score": 0.9333
+      },
+      {
+        "class_index": 51,
+        "class_name": "Chilli - Healthy",
+        "crop": "Chilli",
+        "test_support": 32,
+        "f1_score": 1.0
+      },
+      {
+        "class_index": 52,
+        "class_name": "Chilli - Leaf Curl Virus",
+        "crop": "Chilli",
+        "test_support": 39,
+        "f1_score": 1.0
+      },
+      {
+        "class_index": 53,
+        "class_name": "Chilli - Nutrition Deficiency",
+        "crop": "Chilli",
+        "test_support": 41,
+        "f1_score": 1.0
+      },
+      {
+        "class_index": 54,
+        "class_name": "Chilli - White Spot",
+        "crop": "Chilli",
+        "test_support": 14,
+        "f1_score": 1.0
+      },
+      {
+        "class_index": 55,
+        "class_name": "Citrus - Black spot",
+        "crop": "Citrus",
+        "test_support": 12,
+        "f1_score": 1.0
+      },
+      {
+        "class_index": 56,
+        "class_name": "Citrus - Healthy",
+        "crop": "Citrus",
+        "test_support": 41,
+        "f1_score": 1.0
+      },
+      {
+        "class_index": 57,
+        "class_name": "Citrus - citrus algal leaf spot",
+        "crop": "Citrus",
+        "test_support": 16,
+        "f1_score": 1.0
+      },
+      {
+        "class_index": 58,
+        "class_name": "Citrus - citrus canker",
+        "crop": "Citrus",
+        "test_support": 37,
+        "f1_score": 0.9211
+      },
+      {
+        "class_index": 59,
+        "class_name": "Citrus - citrus greening disease",
+        "crop": "Citrus",
+        "test_support": 71,
+        "f1_score": 0.979
+      },
+      {
+        "class_index": 60,
+        "class_name": "Citrus - citrus scab",
+        "crop": "Citrus",
+        "test_support": 8,
+        "f1_score": 1.0
+      },
+      {
+        "class_index": 61,
+        "class_name": "Coffee - Healthy",
+        "crop": "Coffee",
+        "test_support": 33,
+        "f1_score": 1.0
+      },
+      {
+        "class_index": 62,
+        "class_name": "Coffee - Leaf Miner",
+        "crop": "Coffee",
+        "test_support": 35,
+        "f1_score": 0.9714
+      },
+      {
+        "class_index": 63,
+        "class_name": "Coffee - Phoma",
+        "crop": "Coffee",
+        "test_support": 36,
+        "f1_score": 0.9589
+      },
+      {
+        "class_index": 64,
+        "class_name": "Coffee - coffee leaf rust",
+        "crop": "Coffee",
+        "test_support": 42,
+        "f1_score": 0.963
+      },
+      {
+        "class_index": 65,
+        "class_name": "Corn - Healthy",
+        "crop": "Corn",
+        "test_support": 116,
+        "f1_score": 1.0
+      },
+      {
+        "class_index": 66,
+        "class_name": "Corn - Northern Leaf Blight",
+        "crop": "Corn",
+        "test_support": 87,
+        "f1_score": 0.9249
+      },
+      {
+        "class_index": 67,
+        "class_name": "Corn - Rust",
+        "crop": "Corn",
+        "test_support": 51,
+        "f1_score": 0.9709
+      },
+      {
+        "class_index": 68,
+        "class_name": "Corn - corn gray leaf spot",
+        "crop": "Corn",
+        "test_support": 54,
+        "f1_score": 0.8807
+      },
+      {
+        "class_index": 69,
+        "class_name": "Corn - corn holcus leaf spot",
+        "crop": "Corn",
+        "test_support": 15,
+        "f1_score": 0.9677
+      },
+      {
+        "class_index": 70,
+        "class_name": "Cucumber - Healthy",
+        "crop": "Cucumber",
+        "test_support": 15,
+        "f1_score": 1.0
+      },
+      {
+        "class_index": 71,
+        "class_name": "Cucumber - cucumber angular leaf spot",
+        "crop": "Cucumber",
+        "test_support": 19,
+        "f1_score": 0.878
+      },
+      {
+        "class_index": 72,
+        "class_name": "Cucumber - cucumber bacterial wilt",
+        "crop": "Cucumber",
+        "test_support": 25,
+        "f1_score": 1.0
+      },
+      {
+        "class_index": 73,
+        "class_name": "Cucumber - cucumber powdery mildew",
+        "crop": "Cucumber",
+        "test_support": 16,
+        "f1_score": 0.8387
+      },
+      {
+        "class_index": 74,
+        "class_name": "Eggplant - Cercospora Leaf Spot",
+        "crop": "Eggplant",
+        "test_support": 20,
+        "f1_score": 0.9189
+      },
+      {
+        "class_index": 75,
+        "class_name": "Eggplant - Healthy",
+        "crop": "Eggplant",
+        "test_support": 20,
+        "f1_score": 0.9756
+      },
+      {
+        "class_index": 76,
+        "class_name": "Eggplant - Little Leaf",
+        "crop": "Eggplant",
+        "test_support": 18,
+        "f1_score": 1.0
+      },
+      {
+        "class_index": 77,
+        "class_name": "Eggplant - Mosaic Virus",
+        "crop": "Eggplant",
+        "test_support": 14,
+        "f1_score": 0.9333
+      },
+      {
+        "class_index": 78,
+        "class_name": "Eggplant - White Mold",
+        "crop": "Eggplant",
+        "test_support": 20,
+        "f1_score": 0.9756
+      },
+      {
+        "class_index": 79,
+        "class_name": "Eggplant - Wilt",
+        "crop": "Eggplant",
+        "test_support": 19,
+        "f1_score": 1.0
+      },
+      {
+        "class_index": 80,
+        "class_name": "Fig - Healthy",
+        "crop": "Fig",
+        "test_support": 21,
+        "f1_score": 0.9524
+      },
+      {
+        "class_index": 81,
+        "class_name": "Fig - fig brown spot",
+        "crop": "Fig",
+        "test_support": 16,
+        "f1_score": 1.0
+      },
+      {
+        "class_index": 82,
+        "class_name": "Fig - fig leaf blight",
+        "crop": "Fig",
+        "test_support": 35,
+        "f1_score": 1.0
+      },
+      {
+        "class_index": 83,
+        "class_name": "Fig - fig rust",
+        "crop": "Fig",
+        "test_support": 21,
+        "f1_score": 1.0
+      },
+      {
+        "class_index": 84,
+        "class_name": "Ginger - Bacterial Wilt",
+        "crop": "Ginger",
+        "test_support": 9,
+        "f1_score": 0.9412
+      },
+      {
+        "class_index": 85,
+        "class_name": "Ginger - Dehydrated",
+        "crop": "Ginger",
+        "test_support": 260,
+        "f1_score": 0.7921
+      },
+      {
+        "class_index": 86,
+        "class_name": "Ginger - Healthy",
+        "crop": "Ginger",
+        "test_support": 108,
+        "f1_score": 0.825
+      },
+      {
+        "class_index": 87,
+        "class_name": "Ginger - Leaf Blight",
+        "crop": "Ginger",
+        "test_support": 215,
+        "f1_score": 0.8329
+      },
+      {
+        "class_index": 88,
+        "class_name": "Ginger - Pest Damage",
+        "crop": "Ginger",
+        "test_support": 87,
+        "f1_score": 0.6783
+      },
+      {
+        "class_index": 89,
+        "class_name": "Ginger - ginger leaf spot",
+        "crop": "Ginger",
+        "test_support": 2,
+        "f1_score": 1.0
+      },
+      {
+        "class_index": 90,
+        "class_name": "Ginger - ginger sheath blight",
+        "crop": "Ginger",
+        "test_support": 6,
+        "f1_score": 0.9091
+      },
+      {
+        "class_index": 91,
+        "class_name": "Grape - Black Rot",
+        "crop": "Grape",
+        "test_support": 24,
+        "f1_score": 0.9796
+      },
+      {
+        "class_index": 92,
+        "class_name": "Grape - Esca (Black Measles)",
+        "crop": "Grape",
+        "test_support": 50,
+        "f1_score": 0.9899
+      },
+      {
+        "class_index": 93,
+        "class_name": "Grape - Healthy",
+        "crop": "Grape",
+        "test_support": 25,
+        "f1_score": 1.0
+      },
+      {
+        "class_index": 94,
+        "class_name": "Grape - Leaf Blight",
+        "crop": "Grape",
+        "test_support": 14,
+        "f1_score": 1.0
+      },
+      {
+        "class_index": 95,
+        "class_name": "Grape - grape bacterial rot",
+        "crop": "Grape",
+        "test_support": 10,
+        "f1_score": 1.0
+      },
+      {
+        "class_index": 96,
+        "class_name": "Grape - grape downy mildew",
+        "crop": "Grape",
+        "test_support": 96,
+        "f1_score": 0.9895
+      },
+      {
+        "class_index": 97,
+        "class_name": "Grape - grape leafroll disease",
+        "crop": "Grape",
+        "test_support": 6,
+        "f1_score": 0.8571
+      },
+      {
+        "class_index": 98,
+        "class_name": "Grape - grape powdery mildew",
+        "crop": "Grape",
+        "test_support": 39,
+        "f1_score": 0.975
+      },
+      {
+        "class_index": 99,
+        "class_name": "Groundnut - Early leaf spot",
+        "crop": "Groundnut",
+        "test_support": 111,
+        "f1_score": 0.9737
+      },
+      {
+        "class_index": 100,
+        "class_name": "Groundnut - Early rust",
+        "crop": "Groundnut",
+        "test_support": 126,
+        "f1_score": 1.0
+      },
+      {
+        "class_index": 101,
+        "class_name": "Groundnut - Healthy",
+        "crop": "Groundnut",
+        "test_support": 25,
+        "f1_score": 1.0
+      },
+      {
+        "class_index": 102,
+        "class_name": "Groundnut - Late leaf spot",
+        "crop": "Groundnut",
+        "test_support": 177,
+        "f1_score": 0.9857
+      },
+      {
+        "class_index": 103,
+        "class_name": "Groundnut - Nutrition deficiency",
+        "crop": "Groundnut",
+        "test_support": 155,
+        "f1_score": 1.0
+      },
+      {
+        "class_index": 104,
+        "class_name": "Groundnut - Rust",
+        "crop": "Groundnut",
+        "test_support": 147,
+        "f1_score": 1.0
+      },
+      {
+        "class_index": 105,
+        "class_name": "Guava - Anthracnose",
+        "crop": "Guava",
+        "test_support": 23,
+        "f1_score": 1.0
+      },
+      {
+        "class_index": 106,
+        "class_name": "Guava - Canker",
+        "crop": "Guava",
+        "test_support": 108,
+        "f1_score": 0.9813
+      },
+      {
+        "class_index": 107,
+        "class_name": "Guava - Dot",
+        "crop": "Guava",
+        "test_support": 80,
+        "f1_score": 0.869
+      },
+      {
+        "class_index": 108,
+        "class_name": "Guava - Healthy",
+        "crop": "Guava",
+        "test_support": 190,
+        "f1_score": 0.9542
+      },
+      {
+        "class_index": 109,
+        "class_name": "Guava - Mummification",
+        "crop": "Guava",
+        "test_support": 28,
+        "f1_score": 0.9655
+      },
+      {
+        "class_index": 110,
+        "class_name": "Guava - Rust",
+        "crop": "Guava",
+        "test_support": 83,
+        "f1_score": 0.9704
+      },
+      {
+        "class_index": 111,
+        "class_name": "Guava - Spiraling Whitefly",
+        "crop": "Guava",
+        "test_support": 79,
+        "f1_score": 0.9872
+      },
+      {
+        "class_index": 112,
+        "class_name": "Jamun - Bacterial Spot",
+        "crop": "Jamun",
+        "test_support": 0,
+        "f1_score": 0.0
+      },
+      {
+        "class_index": 113,
+        "class_name": "Jamun - Brown Blight",
+        "crop": "Jamun",
+        "test_support": 0,
+        "f1_score": 0.0
+      },
+      {
+        "class_index": 114,
+        "class_name": "Jamun - Healthy",
+        "crop": "Jamun",
+        "test_support": 0,
+        "f1_score": 0.0
+      },
+      {
+        "class_index": 115,
+        "class_name": "Jamun - Powdery Mildew",
+        "crop": "Jamun",
+        "test_support": 4,
+        "f1_score": 1.0
+      },
+      {
+        "class_index": 116,
+        "class_name": "Jamun - Sooty Mold",
+        "crop": "Jamun",
+        "test_support": 11,
+        "f1_score": 1.0
+      },
+      {
+        "class_index": 117,
+        "class_name": "Mango - Anthracnose",
+        "crop": "Mango",
+        "test_support": 49,
+        "f1_score": 1.0
+      },
+      {
+        "class_index": 118,
+        "class_name": "Mango - Bacterial Canker",
+        "crop": "Mango",
+        "test_support": 49,
+        "f1_score": 1.0
+      },
+      {
+        "class_index": 119,
+        "class_name": "Mango - Cutting Weevil",
+        "crop": "Mango",
+        "test_support": 50,
+        "f1_score": 1.0
+      },
+      {
+        "class_index": 120,
+        "class_name": "Mango - Die Back",
+        "crop": "Mango",
+        "test_support": 47,
+        "f1_score": 1.0
+      },
+      {
+        "class_index": 121,
+        "class_name": "Mango - Gall Midge",
+        "crop": "Mango",
+        "test_support": 50,
+        "f1_score": 1.0
+      },
+      {
+        "class_index": 122,
+        "class_name": "Mango - Healthy",
+        "crop": "Mango",
+        "test_support": 47,
+        "f1_score": 1.0
+      },
+      {
+        "class_index": 123,
+        "class_name": "Mango - Powdery Mildew",
+        "crop": "Mango",
+        "test_support": 50,
+        "f1_score": 1.0
+      },
+      {
+        "class_index": 124,
+        "class_name": "Mango - Sooty Mould",
+        "crop": "Mango",
+        "test_support": 50,
+        "f1_score": 1.0
+      },
+      {
+        "class_index": 125,
+        "class_name": "Paddy - Bacterial Leaf Blight",
+        "crop": "Paddy",
+        "test_support": 5,
+        "f1_score": 1.0
+      },
+      {
+        "class_index": 126,
+        "class_name": "Paddy - Blast",
+        "crop": "Paddy",
+        "test_support": 19,
+        "f1_score": 0.9444
+      },
+      {
+        "class_index": 127,
+        "class_name": "Paddy - Brown Spot",
+        "crop": "Paddy",
+        "test_support": 19,
+        "f1_score": 0.9231
+      },
+      {
+        "class_index": 128,
+        "class_name": "Paddy - Healthy",
+        "crop": "Paddy",
+        "test_support": 35,
+        "f1_score": 0.9859
+      },
+      {
+        "class_index": 129,
+        "class_name": "Paddy - Leaf Scald",
+        "crop": "Paddy",
+        "test_support": 5,
+        "f1_score": 1.0
+      },
+      {
+        "class_index": 130,
+        "class_name": "Paddy - Narrow Brown Spot",
+        "crop": "Paddy",
+        "test_support": 2,
+        "f1_score": 1.0
+      },
+      {
+        "class_index": 131,
+        "class_name": "Peach - Healthy",
+        "crop": "Peach",
+        "test_support": 39,
+        "f1_score": 1.0
+      },
+      {
+        "class_index": 132,
+        "class_name": "Peach - peach bacterial spot",
+        "crop": "Peach",
+        "test_support": 60,
+        "f1_score": 1.0
+      },
+      {
+        "class_index": 133,
+        "class_name": "Peach - peach leaf curl",
+        "crop": "Peach",
+        "test_support": 13,
+        "f1_score": 0.963
+      },
+      {
+        "class_index": 134,
+        "class_name": "Peach - peach leaf shot hole",
+        "crop": "Peach",
+        "test_support": 3,
+        "f1_score": 0.8571
+      },
+      {
+        "class_index": 135,
+        "class_name": "Pear - Healthy",
+        "crop": "Pear",
+        "test_support": 41,
+        "f1_score": 0.9756
+      },
+      {
+        "class_index": 136,
+        "class_name": "Pear - pear black spot",
+        "crop": "Pear",
+        "test_support": 128,
+        "f1_score": 0.9506
+      },
+      {
+        "class_index": 137,
+        "class_name": "Pear - pear fire blight",
+        "crop": "Pear",
+        "test_support": 18,
+        "f1_score": 1.0
+      },
+      {
+        "class_index": 138,
+        "class_name": "Pear - pear leaf curl",
+        "crop": "Pear",
+        "test_support": 6,
+        "f1_score": 0.8571
+      },
+      {
+        "class_index": 139,
+        "class_name": "Pear - pear slug damage",
+        "crop": "Pear",
+        "test_support": 172,
+        "f1_score": 0.9702
+      },
+      {
+        "class_index": 140,
+        "class_name": "Plum - Healthy",
+        "crop": "Plum",
+        "test_support": 13,
+        "f1_score": 0.8667
+      },
+      {
+        "class_index": 141,
+        "class_name": "Plum - plum insect hole",
+        "crop": "Plum",
+        "test_support": 71,
+        "f1_score": 0.9403
+      },
+      {
+        "class_index": 142,
+        "class_name": "Plum - plum weevil",
+        "crop": "Plum",
+        "test_support": 10,
+        "f1_score": 1.0
+      },
+      {
+        "class_index": 143,
+        "class_name": "Plum - plum yellow leaf",
+        "crop": "Plum",
+        "test_support": 76,
+        "f1_score": 0.9744
+      },
+      {
+        "class_index": 144,
+        "class_name": "Potato - Early Blight",
+        "crop": "Potato",
+        "test_support": 136,
+        "f1_score": 0.9481
+      },
+      {
+        "class_index": 145,
+        "class_name": "Potato - Healthy",
+        "crop": "Potato",
+        "test_support": 45,
+        "f1_score": 0.989
+      },
+      {
+        "class_index": 146,
+        "class_name": "Potato - Late Blight",
+        "crop": "Potato",
+        "test_support": 144,
+        "f1_score": 0.9653
+      },
+      {
+        "class_index": 147,
+        "class_name": "Potato - fungal diseases",
+        "crop": "Potato",
+        "test_support": 41,
+        "f1_score": 0.9412
+      },
+      {
+        "class_index": 148,
+        "class_name": "Potato - pest damage",
+        "crop": "Potato",
+        "test_support": 31,
+        "f1_score": 0.9508
+      },
+      {
+        "class_index": 149,
+        "class_name": "Potato - potato cyst nematode",
+        "crop": "Potato",
+        "test_support": 24,
+        "f1_score": 0.9412
+      },
+      {
+        "class_index": 150,
+        "class_name": "Potato - potato virus",
+        "crop": "Potato",
+        "test_support": 27,
+        "f1_score": 0.9811
+      },
+      {
+        "class_index": 151,
+        "class_name": "Radish - Black leaf spot",
+        "crop": "Radish",
+        "test_support": 35,
+        "f1_score": 1.0
+      },
+      {
+        "class_index": 152,
+        "class_name": "Radish - Downey mildew",
+        "crop": "Radish",
+        "test_support": 43,
+        "f1_score": 1.0
+      },
+      {
+        "class_index": 153,
+        "class_name": "Radish - Flea beetle",
+        "crop": "Radish",
+        "test_support": 33,
+        "f1_score": 1.0
+      },
+      {
+        "class_index": 154,
+        "class_name": "Radish - Healthy",
+        "crop": "Radish",
+        "test_support": 46,
+        "f1_score": 1.0
+      },
+      {
+        "class_index": 155,
+        "class_name": "Radish - Mosaic",
+        "crop": "Radish",
+        "test_support": 42,
+        "f1_score": 0.9882
+      },
+      {
+        "class_index": 156,
+        "class_name": "Soybean - Bacterial Blight",
+        "crop": "Soybean",
+        "test_support": 17,
+        "f1_score": 0.9091
+      },
+      {
+        "class_index": 157,
+        "class_name": "Soybean - Bacterial Pustule",
+        "crop": "Soybean",
+        "test_support": 11,
+        "f1_score": 1.0
+      },
+      {
+        "class_index": 158,
+        "class_name": "Soybean - Brown Spot",
+        "crop": "Soybean",
+        "test_support": 3,
+        "f1_score": 0.75
+      },
+      {
+        "class_index": 159,
+        "class_name": "Soybean - Cercospora Leaf Blight",
+        "crop": "Soybean",
+        "test_support": 7,
+        "f1_score": 1.0
+      },
+      {
+        "class_index": 160,
+        "class_name": "Soybean - Downy Mildew",
+        "crop": "Soybean",
+        "test_support": 6,
+        "f1_score": 0.7059
+      },
+      {
+        "class_index": 161,
+        "class_name": "Soybean - Frogeye Leaf Spot",
+        "crop": "Soybean",
+        "test_support": 18,
+        "f1_score": 0.8718
+      },
+      {
+        "class_index": 162,
+        "class_name": "Soybean - Healthy",
+        "crop": "Soybean",
+        "test_support": 57,
+        "f1_score": 0.9825
+      },
+      {
+        "class_index": 163,
+        "class_name": "Soybean - Powdery Mildew",
+        "crop": "Soybean",
+        "test_support": 10,
+        "f1_score": 0.9524
+      },
+      {
+        "class_index": 164,
+        "class_name": "Soybean - Rust",
+        "crop": "Soybean",
+        "test_support": 24,
+        "f1_score": 0.8696
+      },
+      {
+        "class_index": 165,
+        "class_name": "Soybean - Sudden Death Syndrome",
+        "crop": "Soybean",
+        "test_support": 11,
+        "f1_score": 0.9565
+      },
+      {
+        "class_index": 166,
+        "class_name": "Soybean - Target Leaf Spot",
+        "crop": "Soybean",
+        "test_support": 11,
+        "f1_score": 0.9167
+      },
+      {
+        "class_index": 167,
+        "class_name": "Soybean - Yellow Mosaic",
+        "crop": "Soybean",
+        "test_support": 11,
+        "f1_score": 1.0
+      },
+      {
+        "class_index": 168,
+        "class_name": "Strawberry - Healthy",
+        "crop": "Strawberry",
+        "test_support": 50,
+        "f1_score": 1.0
+      },
+      {
+        "class_index": 169,
+        "class_name": "Strawberry - strawberry angular leaf spot",
+        "crop": "Strawberry",
+        "test_support": 25,
+        "f1_score": 0.9259
+      },
+      {
+        "class_index": 170,
+        "class_name": "Strawberry - strawberry leaf scorch",
+        "crop": "Strawberry",
+        "test_support": 44,
+        "f1_score": 0.9888
+      },
+      {
+        "class_index": 171,
+        "class_name": "Strawberry - strawberry leaf spot",
+        "crop": "Strawberry",
+        "test_support": 20,
+        "f1_score": 0.9048
+      },
+      {
+        "class_index": 172,
+        "class_name": "Strawberry - strawberry powdery mildew",
+        "crop": "Strawberry",
+        "test_support": 51,
+        "f1_score": 1.0
+      },
+      {
+        "class_index": 173,
+        "class_name": "Sugarcane - Healthy",
+        "crop": "Sugarcane",
+        "test_support": 12,
+        "f1_score": 1.0
+      },
+      {
+        "class_index": 174,
+        "class_name": "Sugarcane - Mosaic",
+        "crop": "Sugarcane",
+        "test_support": 2,
+        "f1_score": 0.8
+      },
+      {
+        "class_index": 175,
+        "class_name": "Sugarcane - Red Rot",
+        "crop": "Sugarcane",
+        "test_support": 20,
+        "f1_score": 0.9524
+      },
+      {
+        "class_index": 176,
+        "class_name": "Sugarcane - Rust",
+        "crop": "Sugarcane",
+        "test_support": 4,
+        "f1_score": 0.6667
+      },
+      {
+        "class_index": 177,
+        "class_name": "Sugarcane - Yellow",
+        "crop": "Sugarcane",
+        "test_support": 9,
+        "f1_score": 0.9412
+      },
+      {
+        "class_index": 178,
+        "class_name": "Tomato - Bacterial Spot",
+        "crop": "Tomato",
+        "test_support": 220,
+        "f1_score": 0.9368
+      },
+      {
+        "class_index": 179,
+        "class_name": "Tomato - Healthy",
+        "crop": "Tomato",
+        "test_support": 150,
+        "f1_score": 0.9834
+      },
+      {
+        "class_index": 180,
+        "class_name": "Tomato - Spider Mites",
+        "crop": "Tomato",
+        "test_support": 167,
+        "f1_score": 0.9401
+      },
+      {
+        "class_index": 181,
+        "class_name": "Tomato - Target Spot",
+        "crop": "Tomato",
+        "test_support": 141,
+        "f1_score": 0.9333
+      },
+      {
+        "class_index": 182,
+        "class_name": "Tomato - tomato early blight",
+        "crop": "Tomato",
+        "test_support": 99,
+        "f1_score": 0.9596
+      },
+      {
+        "class_index": 183,
+        "class_name": "Tomato - tomato late blight",
+        "crop": "Tomato",
+        "test_support": 195,
+        "f1_score": 0.9744
+      },
+      {
+        "class_index": 184,
+        "class_name": "Tomato - tomato leaf mold",
+        "crop": "Tomato",
+        "test_support": 109,
+        "f1_score": 0.9519
+      },
+      {
+        "class_index": 185,
+        "class_name": "Tomato - tomato mosaic virus",
+        "crop": "Tomato",
+        "test_support": 43,
+        "f1_score": 0.8958
+      },
+      {
+        "class_index": 186,
+        "class_name": "Tomato - tomato septoria leaf spot",
+        "crop": "Tomato",
+        "test_support": 181,
+        "f1_score": 0.9945
+      },
+      {
+        "class_index": 187,
+        "class_name": "Tomato - tomato yellow leaf curl virus",
+        "crop": "Tomato",
+        "test_support": 325,
+        "f1_score": 0.9633
+      },
+      {
+        "class_index": 188,
+        "class_name": "Zucchini - Healthy",
+        "crop": "Zucchini",
+        "test_support": 6,
+        "f1_score": 0.8333
+      },
+      {
+        "class_index": 189,
+        "class_name": "Zucchini - zucchini angular leaf spot",
+        "crop": "Zucchini",
+        "test_support": 8,
+        "f1_score": 0.6667
+      },
+      {
+        "class_index": 190,
+        "class_name": "Zucchini - zucchini anthracnose",
+        "crop": "Zucchini",
+        "test_support": 4,
+        "f1_score": 0.5455
+      },
+      {
+        "class_index": 191,
+        "class_name": "Zucchini - zucchini bacterial leaf spot",
+        "crop": "Zucchini",
+        "test_support": 2,
+        "f1_score": 0.5
+      },
+      {
+        "class_index": 192,
+        "class_name": "Zucchini - zucchini downy mildew",
+        "crop": "Zucchini",
+        "test_support": 12,
+        "f1_score": 0.6316
+      },
+      {
+        "class_index": 193,
+        "class_name": "Zucchini - zucchini powdery mildew",
+        "crop": "Zucchini",
+        "test_support": 16,
+        "f1_score": 0.8387
+      },
+      {
+        "class_index": 194,
+        "class_name": "Zucchini - zucchini yellow mosaic virus",
+        "crop": "Zucchini",
+        "test_support": 18,
+        "f1_score": 0.9143
+      }
+    ]
+  },
+  "historical_full_test_split": {
+    "status": "REFERENCE ONLY",
+    "description": "Historical 10,426-image test split evaluated for provenance and continuity. Contains images later quarantined by Patch P-003 and P-004. Reference only, not reproducible from the current repo with one command.",
+    "n_samples": 10426,
+    "num_classes": 195,
+    "crop_accuracy": 0.992327,
+    "raw_disease_accuracy": 0.956071,
+    "crop_gated_disease_accuracy": 0.956647,
+    "hard_masked_disease_accuracy": 0.956647,
+    "macro_f1_all_195_classes": 0.935779,
+    "robust_macro_f1_support_ge_20": 0.969141,
+    "num_classes_ge_20": 129,
+    "expected_calibration_error_calibrated": 0.004014,
+    "expected_calibration_error_raw": 0.280266
+  }
+}

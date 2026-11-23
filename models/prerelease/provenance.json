@@ -1,0 +1,78 @@
+{
+  "model_name": "DualHead ConvNeXt-Tiny",
+  "version": "v1.0.0",
+  "status": "production_release",
+  "created_at": "2026-10-27T12:10:59.649097+00:00",
+  "random_seed": 42,
+  "initialization": {
+    "source": "ImageNet-22k pretrained / 1k fine-tuned (convnext_tiny.fb_in22k_ft_in1k via timm)",
+    "no_v0_weights_used": true,
+    "no_v0_resume_used": true,
+    "code_paths_verified": [
+      "src/models/train_dualhead.py: build_dualhead_convnext_tiny(pretrained=True)",
+      "src/models/convnext.py: timm.create_model('convnext_tiny.fb_in22k_ft_in1k', pretrained=True)"
+    ]
+  },
+  "source_code": {
+    "repository": "https://github.com/TODO/plant-disease-backend",
+    "git_commit": "992750169072a3c545440a91df02a0f7204bd2d6",
+    "training_script": "src/models/train_dualhead.py"
+  },
+  "dataset_provenance": {
+    "manifest_sha256": "b2a00b463c8003c4e2aa88adc61a5805a0f2ee4168dc5fd37a80a7d2cb4b93f2",
+    "manifest_path": "reports/v1/dataset_v1.csv",
+    "total_curated_images": 99495,
+    "num_classes": 195,
+    "num_crops": 34,
+    "patches_applied": [
+      "P-001: Quarantined 253 Bell Pepper synthetic duplicate impostors (Leaf Curl, Nutrition, Powdery Mildew)",
+      "P-002: Shifted 57 Citrus Greening and 35 Soybean Healthy natural field images from val/test into train"
+    ],
+    "split_counts": {
+      "train": 78758,
+      "val": 10311,
+      "test": 10426
+    }
+  },
+  "training_run": {
+    "mlflow_run_id": "3df7523b29cd420fa814bb6ce6ea4abe",
+    "mlflow_experiment": "dualhead_convnext_tiny",
+    "chosen_epoch": 20,
+    "total_epochs_configured": 25,
+    "wall_clock_time_hours": 2.13,
+    "training_environment": {
+      "python_version": "3.14.7",
+      "pytorch_version": "2.6.0+cu124",
+      "cuda_version": "12.4",
+      "os": "Windows 11",
+      "hardware": "NVIDIA GeForce RTX 3050 Laptop GPU (4096 MiB, Driver 566.07)"
+    },
+    "hyperparameters": {
+      "epochs": 25,
+      "warmup_epochs": 5,
+      "batch_size": 16,
+      "head_lr": 0.0002,
+      "stage3_lr": 3e-05,
+      "stage2_lr": 1e-05,
+      "unfreeze_stages": 2,
+      "crop_loss_weight": 0.3,
+      "disease_loss_weight": 1.0,
+      "label_smoothing": 0.1,
+      "optimizer": "AdamW",
+      "weight_decay": 0.01
+    }
+  },
+  "validation_selection_metrics": {
+    "epoch": 20,
+    "val_loss": 3.10214,
+    "val_crop_acc": 0.99505,
+    "val_raw_disease_acc": 0.95345,
+    "val_masked_disease_acc": 0.95364,
+    "val_macro_f1": 0.93487
+  },
+  "calibration": {
+    "T_disease": 0.5327,
+    "T_crop": 0.6356,
+    "method": "Vectorized Platt Temperature Scaling (L-BFGS NLL minimization on 10,311 Val samples)"
+  }
+}

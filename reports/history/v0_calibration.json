@@ -1,0 +1,10 @@
+{
+  "version": "v1",
+  "T_disease": 0.6228,
+  "T_crop": 0.7016,
+  "optimization_method": "L-BFGS minimization of Negative Log-Likelihood (NLL)",
+  "fitted_split": "val",
+  "num_validation_samples": 6670,
+  "uncalibrated_temperature": 1.0,
+  "date_fitted": "2026-10-23"
+}
